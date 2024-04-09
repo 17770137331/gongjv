@@ -1,6 +1,6 @@
 var stop, staticx;
 var img = new Image();
-img.src = "/fengye/202202251325420.webp";
+img.src = "https://gongjv.jun-ye.top/fengye/202202251325420.webp";
 
 function Sakura(x, y, s, r, fn) {
     this.x = x;
