@@ -113,7 +113,7 @@ window.boot = function () {
         }
     }
 
-    cc.assetManager.loadScript(settings.jsList.map(function (x) { return 'src/' + x;}), cb);
+    cc.assetManager.loadScript(settings.jsList.map(function (x) { return 'https://gongjv.jun-ye.top/yanghtml5/src/' + x;}), cb);
 
     for (var i = 0; i < bundleRoot.length; i++) {
         cc.assetManager.loadBundle(bundleRoot[i], cb);
