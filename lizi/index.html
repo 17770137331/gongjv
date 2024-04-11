@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="shortcut icon" href="https://gongjv.jun-ye.top/image/huoying.svg" type="image/x-icon">
+        <title>three-particle</title>
+    <body>
+        <script src="https://gongjv.jun-ye.top/lizi/three.min.js"></script>
+        <div></div>
+        <script>
+            var Stats = function() {
+                var e = Date.now()
+                  , t = e
+                  , n = 0
+                  , i = 1 / 0
+                  , o = 0
+                  , d = 0
+                  , a = 1 / 0
+                  , r = 0
+                  , l = 0
+                  , s = 0
+                  , c = document.createElement("div");
+                c.id = "stats",
+                c.addEventListener("mousedown", (function(e) {
+                    e.preventDefault(),
+                    v(++s % 2)
+                }
+                ), !1),
+                c.style.cssText = "width:80px;opacity:0.9;cursor:pointer";
+                var p = document.createElement("div");
+                p.id = "fps",
+                p.style.cssText = "padding:0 0 3px 3px;text-align:left;background-color:#002",
+                c.appendChild(p);
+                var h = document.createElement("div");
+                h.id = "fpsText",
+                h.style.cssText = "color:#0ff;font-family:Helvetica,Arial,sans-serif;font-size:9px;font-weight:bold;line-height:15px",
+                h.innerHTML = "FPS",
+                p.appendChild(h);
+                var m = document.createElement("div");
+                for (m.id = "fpsGraph",
+                m.style.cssText = "position:relative;width:74px;height:30px;background-color:#0ff",
+                p.appendChild(m); 74 > m.children.length; ) {
+                    (w = document.createElement("span")).style.cssText = "width:1px;height:30px;float:left;background-color:#113",
+                    m.appendChild(w)
+                }
+                var u = document.createElement("div");
+                u.id = "ms",
+                u.style.cssText = "padding:0 0 3px 3px;text-align:left;background-color:#020;display:none",
+                c.appendChild(u);
+                var f = document.createElement("div");
+                f.id = "msText",
+                f.style.cssText = "color:#0f0;font-family:Helvetica,Arial,sans-serif;font-size:9px;font-weight:bold;line-height:15px",
+                f.innerHTML = "MS",
+                u.appendChild(f);
+                var x = document.createElement("div");
+                for (x.id = "msGraph",
+                x.style.cssText = "position:relative;width:74px;height:30px;background-color:#0f0",
+                u.appendChild(x); 74 > x.children.length; ) {
+                    var w;
+                    (w = document.createElement("span")).style.cssText = "width:1px;height:30px;float:left;background-color:#131",
+                    x.appendChild(w)
+                }
+                var v = function(e) {
+                    switch (s = e) {
+                    case 0:
+                        p.style.display = "block",
+                        u.style.display = "none";
+                        break;
+                    case 1:
+                        p.style.display = "none",
+                        u.style.display = "block"
+                    }
+                }
+                  , E = function(e, t) {
+                    e.appendChild(e.firstChild).style.height = t + "px"
+                };
+                return {
+                    REVISION: 11,
+                    domElement: c,
+                    setMode: v,
+                    begin: function() {
+                        e = Date.now()
+                    },
+                    end: function() {
+                        var s = Date.now();
+                        return n = s - e,
+                        i = Math.min(i, n),
+                        o = Math.max(o, n),
+                        f.textContent = n + " MS (" + i + "-" + o + ")",
+                        E(x, Math.min(30, 30 - n / 200 * 30)),
+                        l++,
+                        s > t + 1e3 && (d = Math.round(1e3 * l / (s - t)),
+                        a = Math.min(a, d),
+                        r = Math.max(r, d),
+                        h.textContent = d + " FPS (" + a + "-" + r + ")",
+                        E(m, Math.min(30, 30 - d / 100 * 30)),
+                        t = s,
+                        l = 0),
+                        s
+                    },
+                    update: function() {
+                        e = this.end()
+                    }
+                }
+            };
+            !function() {
+                "use strict";
+                function e(e) {
+                    T = e.clientX - w,
+                    M = e.clientY - v
+                }
+                function t(e) {
+                    1 === e.touches.length && (e.preventDefault(),
+                    T = e.touches[0].pageX - w,
+                    M = e.touches[0].pageY - v)
+                }
+                function n(e) {
+                    1 === e.touches.length && (e.preventDefault(),
+                    T = e.touches[0].pageX - w,
+                    M = e.touches[0].pageY - v)
+                }
+                function i() {
+                    w = window.innerWidth / 2,
+                    v = window.innerHeight / 2,
+                    d.aspect = window.innerWidth / window.innerHeight,
+                    d.updateProjectionMatrix(),
+                    a.setSize(window.innerWidth, window.innerHeight)
+                }
+                var o, d, a, r, l, s, c, p, h, m, u, f, x, w, v, E, g, y = [], T = 0, M = 0, C = {};
+                (function() {
+                    for (l = window.innerHeight,
+                    s = window.innerWidth,
+                    w = s / 2,
+                    v = l / 2,
+                    75,
+                    c = s / l,
+                    1,
+                    300,
+                    100,
+                    0,
+                    7e-4,
+                    (d = new THREE.PerspectiveCamera(75,c,1,300)).position.z = 100,
+                    (o = new THREE.Scene).fog = new THREE.FogExp2(0,7e-4),
+                    r = document.createElement("div"),
+                    document.body.appendChild(r),
+                    document.body.style.margin = 0,
+                    document.body.style.overflow = "hidden",
+                    h = new THREE.Geometry,
+                    2e4,
+                    m = 0; 2e4 > m; m++) {
+                        var u = new THREE.Vector3;
+                        u.x = 2e3 * Math.random() - 1e3,
+                        u.y = 2e3 * Math.random() - 1e3,
+                        u.z = 2e3 * Math.random() - 1e3,
+                        h.vertices.push(u)
+                    }
+                    for (E = (C = [[[1, 1, .5], 5], [[.95, 1, .5], 4], [[.9, 1, .5], 3], [[.85, 1, .5], 2], [[.8, 1, .5], 1]]).length,
+                    m = 0; E > m; m++)
+                        f = C[m][0],
+                        x = C[m][1],
+                        y[m] = new THREE.PointCloudMaterial({
+                            size: x
+                        }),
+                        (g = new THREE.PointCloud(h,y[m])).rotation.x = 6 * Math.random(),
+                        g.rotation.y = 6 * Math.random(),
+                        g.rotation.z = 6 * Math.random(),
+                        o.add(g);
+                    (a = new THREE.WebGLRenderer).setPixelRatio(window.devicePixelRatio),
+                    a.setSize(s, l),
+                    r.appendChild(a.domElement),
+                    (p = new Stats).domElement.style.position = "absolute",
+                    p.domElement.style.top = "0px",
+                    p.domElement.style.right = "0px",
+                    r.appendChild(p.domElement),
+                    window.addEventListener("resize", i, !1),
+                    document.addEventListener("mousemove", e, !1),
+                    document.addEventListener("touchstart", t, !1),
+                    document.addEventListener("touchmove", n, !1)
+                }
+                )(),
+                function e() {
+                    requestAnimationFrame(e),
+                    function() {
+                        var e = 5e-5 * Date.now();
+                        for (d.position.x += .05 * (T - d.position.x),
+                        d.position.y += .05 * (-M - d.position.y),
+                        d.lookAt(o.position),
+                        m = 0; m < o.children.length; m++) {
+                            var t = o.children[m];
+                            t instanceof THREE.PointCloud && (t.rotation.y = e * (4 > m ? m + 1 : -(m + 1)))
+                        }
+                        for (m = 0; m < y.length; m++)
+                            f = C[m][0],
+                            u = 360 * (f[0] + e) % 360 / 360,
+                            y[m].color.setHSL(u, f[1], f[2]);
+                        a.render(o, d)
+                    }(),
+                    p.update()
+                }()
+            }()
+        </script>
+    </body>
+    <script src="https://gongjv.jun-ye.top/js/index.js"></script>
+</head></html>
