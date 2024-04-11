@@ -1,0 +1,27 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "@ctrl/tinycolor": "^3.4.0",
+    "element-plus": "2.0.2",
+    "element-theme-ink": "^1.1.4",
+    "sass": "^1.49.7",
+    "vue": "^3.2.31",
+    "vue-about-me": "^1.2.3",
+    "wc-github-corners": "^0.1.5"
+  },
+  "devDependencies": {
+    "@iconify-json/ri": "^1.1.0",
+    "@vitejs/plugin-vue": "^2.2.0",
+    "@vueuse/core": "^7.6.2",
+    "unplugin-icons": "^0.13.1",
+    "unplugin-vue-components": "^0.17.18",
+    "vite": "^2.8.2",
+    "vite-plugin-pwa": "^0.11.13",
+    "vite-plugin-windicss": "^1.7.0"
+  }
+}
