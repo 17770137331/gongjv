@@ -76,9 +76,9 @@
       document.body.appendChild(domScript);
     }
 
-    loadScript(debug ? 'cocos2d-js.js' : 'cocos2d-js-min.0c302.js', function () {
+    loadScript(debug ? 'https://gongjv.jun-ye.top/yanghtml5/cocos2d-js.js' : 'https://gongjv.jun-ye.top/yanghtml5/cocos2d-js-min.0c302.js', function () {
       if (CC_PHYSICS_BUILTIN || CC_PHYSICS_CANNON) {
-        loadScript(debug ? 'physics.js' : 'physics-min.ce5ee.js', window.boot);
+        loadScript(debug ? 'https://gongjv.jun-ye.top/yanghtml5/physics.js' : 'https://gongjv.jun-ye.top/yanghtml5/physics-min.ce5ee.js', window.boot);
       }
       else {
         window.boot();

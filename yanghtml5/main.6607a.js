@@ -123,20 +123,20 @@ window.boot = function () {
 if (window.jsb) {
     var isRuntime = (typeof loadRuntime === 'function');
     if (isRuntime) {
-        require('src/settings.62a91.js');
-        require('src/cocos2d-runtime.js');
+        require('https://gongjv.jun-ye.top/yanghtml5/src/settings.62a91.js');
+        require('https://gongjv.jun-ye.top/yanghtml5/src/cocos2d-runtime.js');
         if (CC_PHYSICS_BUILTIN || CC_PHYSICS_CANNON) {
-            require('src/physics.js');
+            require('https://gongjv.jun-ye.top/yanghtml5/src/physics.js');
         }
-        require('jsb-adapter/engine/index.js');
+        require('https://gongjv.jun-ye.top/yanghtml5/jsb-adapter/engine/index.js');
     }
     else {
-        require('src/settings.62a91.js');
-        require('src/cocos2d-jsb.js');
+        require('https://gongjv.jun-ye.top/yanghtml5/src/settings.62a91.js');
+        require('https://gongjv.jun-ye.top/yanghtml5/src/cocos2d-jsb.js');
         if (CC_PHYSICS_BUILTIN || CC_PHYSICS_CANNON) {
-            require('src/physics.js');
+            require('https://gongjv.jun-ye.top/yanghtml5/src/physics.js');
         }
-        require('jsb-adapter/jsb-engine.js');
+        require('https://gongjv.jun-ye.top/yanghtml5/jsb-adapter/jsb-engine.js');
     }
 
     cc.macro.CLEANUP_IMAGE_CACHE = true;
