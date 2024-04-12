@@ -13,11 +13,12 @@ function queren (mod) {
   console.log(mod);
   layer.close(layer.index);
   var qq = $('#input').val();
+  var $url;
   switch (mod) {
     case 'shoujichaqq':
       $url = 'https://zy.xywlapi.cc/qqphone?phone=' + qq;
       break;
-      case 'qqjichashouji':
+      case 'qqchashouji':
       $url = 'https://zy.xywlapi.cc/qqapi?qq=' + qq;
       break;
       case 'qqchalol':
