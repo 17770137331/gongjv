@@ -1,8 +1,8 @@
 ﻿oS.Init({
     PName: [oThreepeater,oTenManNut],
     ZName: [oZombie, oZombie2, oConeheadZombie, oBucketheadZombie, oZombie3],
-    PicArr: ["images/interface/djt.jpg", "images/interface/trophy.png"],
-    backgroundImage: "images/interface/djt.jpg",
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/djt.jpg", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/trophy.png"],
+    backgroundImage: "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/djt.jpg",
     CanSelectCard: 0,
     
     
@@ -86,7 +86,7 @@
       
     },
  FlagToEnd: function() {
-  NewImg("imgSF", "images/interface/trophy.png", "left:260px;top:233px", EDAll, {
+  NewImg("imgSF", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/trophy.png", "left:260px;top:233px", EDAll, {
               onclick: function() {
                   SelectModal(0)
               }

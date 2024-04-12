@@ -1,8 +1,8 @@
 ﻿oS.Init({
     PName: [oHypnoShroom],
     ZName: [oZombie, oConeheadZombie, oDancingZombie, oFootballZombie, oHeiFootballZombie],
-    PicArr: ["images/interface/background2.jpg", "images/interface/trophy.png"],
-    backgroundImage: "images/interface/background2.jpg",
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/background2.jpg", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/trophy.png"],
+    backgroundImage: "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/background2.jpg",
     CanSelectCard: 0,
     DKind: 0,
     LevelName: "以牙还牙",
@@ -75,12 +75,12 @@
         9 : [ShowLargeWave, 0]
     },
     FlagToEnd: function() {
-        NewImg("imgSF", "images/interface/trophy.png", "left:260px;top:233px", EDAll, {
+        NewImg("imgSF", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/trophy.png", "left:260px;top:233px", EDAll, {
             onclick: function() {
                 SelectModal(0)
             }
         });
-        NewImg("PointerUD", "images/interface/PointerDown.gif", "top:198px;left:269px", EDAll)
+        NewImg("PointerUD", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/PointerDown.gif", "top:198px;left:269px", EDAll)
     }
 },
 {

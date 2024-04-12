@@ -4,9 +4,9 @@
     PicArr: function() {
         var a = oCherryBomb.prototype,
         b = a.PicArr;
-        return ["images/interface/SodRollCap.png", "images/interface/SodRoll.png", "images/interface/background1unsodded2.jpg", "images/interface/background1unsodded_1.jpg", b[a.CardGif], b[a.NormalGif]]
+        return ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/SodRollCap.png", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/SodRoll.png", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/background1unsodded2.jpg", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/background1unsodded_1.jpg", b[a.CardGif], b[a.NormalGif]]
     } (),
-    backgroundImage: "images/interface/background1unsodded_1.jpg",
+    backgroundImage: "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/background1unsodded_1.jpg",
     LF: [0, 0, 1, 1, 1, 0],
     CanSelectCard: 0,
     LevelName: "新兵训练2",
@@ -22,16 +22,16 @@
         }
     },
     StartGame: function() {
-        NewImg("imgSF", "images/interface/tiaoguo.png", "left:1px;top:150px", EDAll, {
+        NewImg("imgSF", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/tiaoguo.png", "left:1px;top:150px", EDAll, {
             onclick: function() {
                 SelectModal(3)
             }
         });
-        NewEle("sod3row", "div", "position:absolute;left:-115px;top:0;height:600px;width:264px;z-index:0;background:url(images/interface/background1unsodded2.jpg);over-flow:hidden", 0, EDPZ);
-        NewImg("SodRoll_1", "images/interface/SodRoll.png", "left:136px;top:128px;z-index:1", EDPZ);
-        NewImg("SodRollCap_1", "images/interface/SodRollCap.png", "left:131px;top:211px;z-index:1", EDPZ);
-        NewImg("SodRoll_2", "images/interface/SodRoll.png", "left:136px;top:348px;z-index:1", EDPZ);
-        NewImg("SodRollCap_2", "images/interface/SodRollCap.png", "left:131px;top:431px;z-index:1", EDPZ);
+        NewEle("sod3row", "div", "position:absolute;left:-115px;top:0;height:600px;width:264px;z-index:0;background:url(https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/background1unsodded2.jpg);over-flow:hidden", 0, EDPZ);
+        NewImg("SodRoll_1", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/SodRoll.png", "left:136px;top:128px;z-index:1", EDPZ);
+        NewImg("SodRollCap_1", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/SodRollCap.png", "left:131px;top:211px;z-index:1", EDPZ);
+        NewImg("SodRoll_2", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/SodRoll.png", "left:136px;top:348px;z-index:1", EDPZ);
+        NewImg("SodRollCap_2", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/SodRollCap.png", "left:131px;top:431px;z-index:1", EDPZ);
         PlayAudio("", true); (function(e, h, b, d, c, g, a, f) {
             e += 15;
             h += 16;
@@ -73,7 +73,7 @@
                             switch (l) {
                             case 0:
                                 innerText($("DivTeach"), "向日葵是非常重要的植物！");
-                                NewImg("PointerUD", "images/interface/PointerUP.gif", "top:120px;left:50px", EDAll);
+                                NewImg("PointerUD", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/PointerUP.gif", "top:120px;left:50px", EDAll);
                                 oSym.addTask(10, arguments.callee, [++l]);
                                 break;
                             case 1:
@@ -134,12 +134,12 @@
         5 : [ShowFinalWave, 0]
     },
     FlagToEnd: function() {
-        NewImg("imgSF", "images/Card/Plants/CherryBomb.png", "left:827px;top:220px;clip:rect(auto,auto,60px,auto)", EDAll, {
+        NewImg("imgSF", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Plants/CherryBomb.png", "left:827px;top:220px;clip:rect(auto,auto,60px,auto)", EDAll, {
             onclick: function() {
                 GetNewCard(this, oCherryBomb, 3)
             }
         });
-        EditImg($("PointerUD"), 0, "images/interface/PointerDown.gif", {
+        EditImg($("PointerUD"), 0, "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/PointerDown.gif", {
             left: "836px",
             top: "185px",
             display: "block"

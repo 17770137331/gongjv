@@ -4,12 +4,12 @@
     PicArr: function() {
         var a = oJalapeno.prototype,
         b = a.PicArr;
-        return ["images/interface/background3.jpg", "images/interface/trophy.png", b[a.CardGif], b[a.NormalGif]]
+        return ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/background3.jpg", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/trophy.png", b[a.CardGif], b[a.NormalGif]]
     } (),
     Coord: 2,
     SunNum: 50,
     LF: [0, 1, 1, 2, 2, 1, 1],
-    backgroundImage: "images/interface/background3.jpg",
+    backgroundImage: "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/background3.jpg",
     CanSelectCard: 1,
     LevelName: "关卡 3-4",
     LvlEName: 24,
@@ -36,7 +36,7 @@
         29 : [ShowFinalWave, 0]
     },
     FlagToEnd: function() {
-        NewImg("imgSF", "images/interface/trophy.png", "left:417px;top:233px;z-index:255", EDAll, {
+        NewImg("imgSF", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/trophy.png", "left:417px;top:233px;z-index:255", EDAll, {
             onclick: function() {
                 SelectModal(25)
             }

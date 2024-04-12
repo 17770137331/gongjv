@@ -16,7 +16,7 @@ var $User = function() {
     }: function(l, k) {
         l.textContent = k
     };
-    e ? (document.execCommand("BackgroundImageCache", false, true), ShadowPNG = "") : ShadowPNG = "images/interface/plantshadow32.png";
+    e ? (document.execCommand("BackgroundImageCache", false, true), ShadowPNG = "") : ShadowPNG = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/plantshadow32.png";
     return {
         Browser: {
             IE: c,
@@ -173,7 +173,7 @@ oS = {
             src: $User.Server.DataURL + "asp/SaveUserPosition.asp?l=" + escape(oS.LevelName),
             type: "text/javascript"
         },
-        document.body)); ! this.PicArr && (this.PicArr = []); ! this.PName && (this.PName = []); ! this.ZName && (this.ZName = []); ! this.backgroundImage && (this.backgroundImage = "images/interface/background1.jpg"); ! this.LF && (this.LF = [0, 1, 1, 1, 1, 1]); ! this.ZF && (this.ZF = this.LF); ! this.LargeWaveFlag && (this.LargeWaveFlag = {}); ! this.StartGameMusic && (this.StartGameMusic = "UraniwaNi");
+        document.body)); ! this.PicArr && (this.PicArr = []); ! this.PName && (this.PName = []); ! this.ZName && (this.ZName = []); ! this.backgroundImage && (this.backgroundImage = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/background1.jpg"); ! this.LF && (this.LF = [0, 1, 1, 1, 1, 1]); ! this.ZF && (this.ZF = this.LF); ! this.LargeWaveFlag && (this.LargeWaveFlag = {}); ! this.StartGameMusic && (this.StartGameMusic = "UraniwaNi");
         this.ArCard = this.CardKind == d ? e.PName: e.ZName;
         this.SunNum == d && (this.SunNum = 50);
         this.CanSelectCard == d && (this.CanSelectCard = 1);
@@ -215,12 +215,12 @@ oS = {
         f = p.InitPn,
         m,
         q;
-        NewImg(0, "images/interface/brain.png", "", $Pn.oBrains = NewEle(0, "div", "position:absolute"));
+        NewImg(0, "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/brain.png", "", $Pn.oBrains = NewEle(0, "div", "position:absolute"));
         switch (p.Coord) {
         case 2:
-            NewImg(0, "images/interface/PoolCleaner.png", "", $Pn.oPoolCleaner = NewEle(0, "div", "position:absolute"));
+            NewImg(0, "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/PoolCleaner.png", "", $Pn.oPoolCleaner = NewEle(0, "div", "position:absolute"));
         case 1:
-            NewImg(0, "images/interface/LawnCleaner.png", "", $Pn.oLawnCleaner = NewEle(0, "div", "position:absolute"));
+            NewImg(0, "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/LawnCleaner.png", "", $Pn.oLawnCleaner = NewEle(0, "div", "position:absolute"));
             break
         }
         while (r--) {
@@ -378,8 +378,8 @@ oS = {
         var d = function(h) {
             var i = oS,
             g = $User.Visitor;
-            NewImg("imgGrowSoil", "images/interface/GrowSoil.gif", "visibility:hidden;z-index:50", EDAll);
-            NewImg("imgGrowSpray", "images/interface/GrowSpray.gif", "visibility:hidden;z-index:50", EDAll);
+            NewImg("imgGrowSoil", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/GrowSoil.gif", "visibility:hidden;z-index:50", EDAll);
+            NewImg("imgGrowSpray", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/GrowSpray.gif", "visibility:hidden;z-index:50", EDAll);
             NewEle("dTitle", "div", 0, 0, $("dBody"));
             innerText(ESSunNum, i.SunNum);
             InitPCard();
@@ -611,7 +611,7 @@ oP = {
                 T: oSym.Now - oS.StartTime
             }), !isNaN(Math.floor(s)) && (t = $("dAdventure"), $User.Visitor.Progress = ++s, t.firstChild.innerHTML = Math.ceil(s / 10), t.childNodes[1].innerHTML = (s = s - Math.floor(s / 10) * 10) ? s: s + 1), NewEle("DivA", "div", "position:absolute;width:900px;height:600px;background:#FFF;filter:alpha(opacity=0);opacity:0;z-index:255", 0, EDAll), PauseGame($("dMenu0"), 1)))
         }) : r.MonPrgs = function() {}; (!a || !a.FlagToEnd) && (r.FlagToEnd = function() {
-            NewImg("imgSF", "images/interface/trophy.png", "left:417px;top:233px;z-index:255", EDAll, {
+            NewImg("imgSF", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/trophy.png", "left:417px;top:233px;z-index:255", EDAll, {
                 onclick: function() {
                     PlayAudio("winmusic");
                     SelectModal(0);
@@ -903,7 +903,7 @@ oGd = {
         e = (function() {
             return function(f) {
                 var h = $User.Browser.IE && !$User.Browser.IE9;
-                d += '<img id="' + f + '" src="images/interface/fog' + Math.floor(Math.random() * 4) + "." + (h ? "gif": "png") + '" style="left:' + g + "px;top:" + tx + 'px">'
+                d += '<img id="' + f + '" src="https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/fog' + Math.floor(Math.random() * 4) + "." + (h ? "gif": "png") + '" style="left:' + g + "px;top:" + tx + 'px">'
             }
         })();
         for (ri = 1, tx = 0; ri < 7; g = 0, ri++) {
@@ -1626,7 +1626,7 @@ ShovelPlant = function(a) {
 },
 ChoseShovel = function(a) {
     PlayAudio("shovel");
-    WhichMouseButton(a) < 2 && (SetHidden($("imgShovel")), NewImg("tShovel", "images/interface/Shovel/0.gif", "left:" + (a.clientX - 10) + "px;top:" + (a.clientY + document.body.scrollTop - 17) + "px;z-index:1", EDAll), oS.Chose = -1, GroundOnmousemove = GroundOnmousemove2, StopBubble(a))
+    WhichMouseButton(a) < 2 && (SetHidden($("imgShovel")), NewImg("tShovel", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/Shovel/0.gif", "left:" + (a.clientX - 10) + "px;top:" + (a.clientY + document.body.scrollTop - 17) + "px;z-index:1", EDAll), oS.Chose = -1, GroundOnmousemove = GroundOnmousemove2, StopBubble(a))
 },
 CancelShovel = function(a) {
     var b = oS.MPID;
@@ -1699,7 +1699,7 @@ AppearSun = function(h, f, e, a) {
         left: h,
         top: d
     };
-    NewImg(g, "images/interface/Sun.gif", c, EDAll, {
+    NewImg(g, "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/Sun.gif", c, EDAll, {
         onclick: function() {
             ClickSun(this.id)
         }
@@ -1744,7 +1744,7 @@ AutoClickSun = function() {
 },
 ShowLargeWave = function(a) {
     PlayAudio("hugewave");
-    NewImg("LargeWave", "images/interface/LargeWave.gif", "left:71px;top:249px;width:400px;height:200px;z-index:50", EDAll);
+    NewImg("LargeWave", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/LargeWave.gif", "left:71px;top:249px;width:400px;height:200px;z-index:50", EDAll);
     oSym.addTask(4,
     function(b, c, d) {
         SetStyle($("LargeWave"), {
@@ -1764,7 +1764,7 @@ ShowLargeWave = function(a) {
 ShowFinalWave = function() {
     var a = function(b) {
         PlayAudio("finalwave");
-        NewImg("FinalWave", "images/interface/FinalWave.gif", "left:122px;top:194px;width:756px;height:213px;z-index:50", EDAll);
+        NewImg("FinalWave", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/FinalWave.gif", "left:122px;top:194px;width:756px;height:213px;z-index:50", EDAll);
         oSym.addTask(4,
         function(c, e, d) {
             SetStyle($("FinalWave"), {
@@ -1786,7 +1786,7 @@ ShowFinalWave = function() {
 },
 ShowBOSS = function(a) {
         PlayAudio("finalwave");
-    NewImg("ShowBOSS", "images/interface/BOSSWave.gif", "left:71px;top:249px;width:858px;height:102px;z-index:50", EDAll);
+    NewImg("ShowBOSS", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/BOSSWave.gif", "left:71px;top:249px;width:858px;height:102px;z-index:50", EDAll);
     oSym.addTask(4,
     function(b, c, d) {
         SetStyle($("LargeWave"), {
@@ -1805,7 +1805,7 @@ ShowBOSS = function(a) {
 },
 GameOver = function() {
     PlayAudio("scream");
-    NewImg("iGameOver", "images/interface/ZombiesWon.png", "width:900px;height:600px;z-index:255", EDAll, {
+    NewImg("iGameOver", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/ZombiesWon.png", "width:900px;height:600px;z-index:255", EDAll, {
         onclick: function() {
             SelectModal(oS.Lvl)
         }
@@ -1831,7 +1831,7 @@ PrepareGrowPlants = function(a) {
             },
             [d, e, c])
         },
-        [NewEle(0, "div", "position:absolute;overflow:hidden;background:url(images/interface/PrepareGrowPlants.png) no-repeat;width:255px;height:108px;z-index:50;left:" + (oS.W * 0.5 - 77) + "px;top:" + (oS.H * 0.5 - 54) + "px", 0, EDAll), a])
+        [NewEle(0, "div", "position:absolute;overflow:hidden;background:url(https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/PrepareGrowPlants.png) no-repeat;width:255px;height:108px;z-index:50;left:" + (oS.W * 0.5 - 77) + "px;top:" + (oS.H * 0.5 - 54) + "px", 0, EDAll), a])
     };
     oS.HaveFog ? oGd.MoveFogLeft(b) : b()
 },
@@ -2376,7 +2376,7 @@ StartAdventure = function(d) {
     }
     var c = $("ZombieHand"),
     b = $("dAdventure"),
-    a = NewImg("", "images/interface/ZombieHand.png", "position:absolute;left:0", c);
+    a = NewImg("", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/ZombieHand.png", "position:absolute;left:0", c);
     b.onclick = b.onmouseover = b.onmouseout = null;
     SetBlock(c);
     StopMusic();

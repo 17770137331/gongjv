@@ -1,8 +1,8 @@
 ﻿oS.Init({
     PName: [oNutBowling, oHugeNutBowling, oBoomNutBowling],
     ZName: [oZombie, oZombie2, oZombie3, oConeheadZombie, oDancingZombie, oBackupDancer, oScreenDoorZombie, oFootballZombie, oNewspaperZombie, oBucketheadZombie, oPoleVaultingZombie],
-    PicArr: ["images/interface/background1.jpg", "images/interface/Stripe.png"],
-    backgroundImage: "images/interface/background1.jpg",
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/background1.jpg", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/Stripe.png"],
+    backgroundImage: "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/background1.jpg",
     LF: [0, 1, 1, 1, 1, 1],
     CanSelectCard: 0,
     DKind: 0,
@@ -16,7 +16,7 @@
     StaticCard: 0,   
     StartGameMusic: "Watery Graves",
     StartGame: function() {
-        NewEle(0, "div", "width:22px;height:502px;margin:75px 0 0 485px;position:absolute;z-index:1;background:url(images/interface/Stripe.png)", 0, $("tGround"));
+        NewEle(0, "div", "width:22px;height:502px;margin:75px 0 0 485px;position:absolute;z-index:1;background:url(https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/Stripe.png)", 0, $("tGround"));
         StopMusic();
         PlayMusic(oS.LoadMusic = oS.StartGameMusic);
         SetHidden($("dSunNum"));
@@ -77,12 +77,12 @@
         29 : [ShowFinalWave, 0]
     },
     FlagToEnd: function() {
-        NewImg("imgSF", "images/interface/trophy.png", "left:260px;top:233px", EDAll, {
+        NewImg("imgSF", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/trophy.png", "left:260px;top:233px", EDAll, {
             onclick: function() {
                 SelectModal(0)
             }
         });
-        NewImg("PointerUD", "images/interface/PointerDown.gif", "top:198px;left:269px", EDAll)
+        NewImg("PointerUD", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/PointerDown.gif", "top:198px;left:269px", EDAll)
     }
 },
 {

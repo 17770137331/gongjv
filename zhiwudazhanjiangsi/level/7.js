@@ -4,9 +4,9 @@
     PicArr: function() {
         var a = oChomper.prototype,
         b = a.PicArr;
-        return ["images/interface/background1.jpg", b[a.CardGif], b[a.NormalGif]]
+        return ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/background1.jpg", b[a.CardGif], b[a.NormalGif]]
     } (),
-    backgroundImage: "images/interface/background1.jpg",
+    backgroundImage: "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/background1.jpg",
     CanSelectCard: 0,
     LevelName: "关卡 1-7",
     LvlEName: 7,
@@ -27,11 +27,11 @@
         19 : [ShowFinalWave, 0]
     },
     FlagToEnd: function() {
-        NewImg("imgSF", "images/Card/Plants/Chomper.png", "left:667px;top:220px;clip:rect(auto,auto,60px,auto)", EDAll, {
+        NewImg("imgSF", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Plants/Chomper.png", "left:667px;top:220px;clip:rect(auto,auto,60px,auto)", EDAll, {
             onclick: function() {
                 GetNewCard(this, oChomper, 8)
             }
         });
-        NewImg("PointerUD", "images/interface/PointerDown.gif", "top:185px;left:676px", EDAll)
+        NewImg("PointerUD", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/PointerDown.gif", "top:185px;left:676px", EDAll)
     }
 });

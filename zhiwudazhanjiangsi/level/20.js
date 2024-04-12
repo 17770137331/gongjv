@@ -1,8 +1,8 @@
 ﻿oS.Init({
     PName: [oFumeShroom, oHypnoShroom, oGraveBuster, oDoomShroom, oScaredyShroom, oPuffShroom, oIceShroom],
     ZName: [oZombie, oZombie2, oZombie3, oConeheadZombie, oDancingZombie, oScreenDoorZombie, oFootballZombie, oBackupDancer, oBucketheadZombie],
-    PicArr: ["images/interface/background2.jpg", "images/interface/trophy.png", "images/interface/Tombstones.png", "images/interface/Tombstone_mounds.png"],
-    backgroundImage: "images/interface/background2.jpg",
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/background2.jpg", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/trophy.png", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/Tombstones.png", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/Tombstone_mounds.png"],
+    backgroundImage: "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/background2.jpg",
     CanSelectCard: 0,
     DKind: 0,
     LevelName: "关卡 2-10",
@@ -78,7 +78,7 @@
         19 : [ShowFinalWave, 0]
     },
     FlagToEnd: function() {
-        NewImg("imgSF", "images/Card/Plants/LilyPad.png", "left:667px;top:330px;clip:rect(auto,auto,60px,auto)", EDAll, {
+        NewImg("imgSF", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Plants/LilyPad.png", "left:667px;top:330px;clip:rect(auto,auto,60px,auto)", EDAll, {
             onclick: function() {
                 GetNewCard(this, oLilyPad, 21)
             }

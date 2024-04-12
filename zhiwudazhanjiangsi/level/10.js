@@ -1,8 +1,8 @@
 ﻿oS.Init({
     PName: [oPeashooter, oCherryBomb, oWallNut, oPotatoMine, oSnowPea, oChomper, oRepeater],
     ZName: [oZombie, oZombie2, oZombie3, oConeheadZombie, oPoleVaultingZombie, oBucketheadZombie],
-    PicArr: ["images/interface/background1.jpg", "images/interface/trophy.png"],
-    backgroundImage: "images/interface/background1.jpg",
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/background1.jpg", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/trophy.png"],
+    backgroundImage: "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/background1.jpg",
     CanSelectCard: 0,
     LevelName: "关卡 1-10",
     LvlEName: 10,
@@ -73,7 +73,7 @@
         19 : [ShowFinalWave, 0]
     },
     FlagToEnd: function() {
-        NewImg("imgSF", "images/Card/Plants/PuffShroom.png", "left:667px;top:330px;clip:rect(auto,auto,60px,auto)", EDAll, {
+        NewImg("imgSF", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Plants/PuffShroom.png", "left:667px;top:330px;clip:rect(auto,auto,60px,auto)", EDAll, {
             onclick: function() {
                 GetNewCard(this, oPuffShroom, 11)
             }

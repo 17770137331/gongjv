@@ -4,9 +4,9 @@
     PicArr: function() {
         var a = oSnowPea.prototype,
         b = a.PicArr;
-        return ["images/interface/background1.jpg", "images/interface/crater1.png", b[a.CardGif], b[a.NormalGif]]
+        return ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/background1.jpg", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/crater1.png", b[a.CardGif], b[a.NormalGif]]
     } (),
-    backgroundImage: "images/interface/background1.jpg",
+    backgroundImage: "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/background1.jpg",
     CanSelectCard: 0,
     LevelName: "关卡 1-6",
     LvlEName: 6,
@@ -25,11 +25,11 @@
         8 : [ShowFinalWave, 0]
     },
     FlagToEnd: function() {
-        NewImg("imgSF", "images/Card/Plants/SnowPea.png", "left:827px;top:525px;clip:rect(auto,auto,60px,auto)", EDAll, {
+        NewImg("imgSF", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Plants/SnowPea.png", "left:827px;top:525px;clip:rect(auto,auto,60px,auto)", EDAll, {
             onclick: function() {
                 GetNewCard(this, oSnowPea, 7)
             }
         });
-        NewImg("PointerUD", "images/interface/PointerDown.gif", "top:490px;left:836px", EDAll)
+        NewImg("PointerUD", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/PointerDown.gif", "top:490px;left:836px", EDAll)
     }
 });

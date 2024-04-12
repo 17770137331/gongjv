@@ -4,10 +4,10 @@
     PicArr: function() {
         var a = oSunFlower.prototype,
         b = a.PicArr;
-        return ["images/interface/SodRollCap.png", "images/interface/SodRoll.png", "images/interface/background1unsodded_1.jpg", "images/interface/background1unsodded.jpg", b[a.CardGif], b[a.NormalGif]]
+        return ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/SodRollCap.png", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/SodRoll.png", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/background1unsodded_1.jpg", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/background1unsodded.jpg", b[a.CardGif], b[a.NormalGif]]
     } (),
     SunNum: 250,
-    backgroundImage: "images/interface/background1unsodded.jpg",
+    backgroundImage: "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/background1unsodded.jpg",
     LF: [0, 0, 0, 1, 0, 0],
     CanSelectCard: 0,
     LevelName: "新兵训练1",
@@ -20,22 +20,22 @@
         5 : $("imgFlag1")
     },
     LoadAccess: function(a) {
-        NewImg("imgSF", "images/interface/tiaoguo.png", "left:1px;top:75px", EDAll, {
+        NewImg("imgSF", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/tiaoguo.png", "left:1px;top:75px", EDAll, {
             onclick: function() {
                 SelectModal(3)
             }
         });
-        NewImg("dDave", "images/interface/Dave.gif", "left:0;top:81px", EDAll);
+        NewImg("dDave", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/Dave.gif", "left:0;top:81px", EDAll);
         NewEle("DivTeach", "div", 0, 0, EDAll); (function(d) {
             var b = arguments.callee,
             c = $("DivTeach");
             switch (d) {
             case 0:
                 PlayAudio("crazydaveshort1");
-                $("dDave").src = "images/interface/Dave3.gif";
+                $("dDave").src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/Dave3.gif";
                 oSym.addTask(1,
                 function() {
-                    $("dDave").src = "images/interface/Dave.gif";
+                    $("dDave").src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/Dave.gif";
                     c.onclick = function() {
                         oSym.addTask(10, b, [1])
                     }
@@ -46,10 +46,10 @@
             case 1:
                 PlayAudio("crazydavelong" + Math.floor(1 + Math.random() * 3));
                 c.onclick = null;
-                $("dDave").src = "images/interface/Dave3.gif";
+                $("dDave").src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/Dave3.gif";
                 oSym.addTask(1,
                 function() {
-                    $("dDave").src = "images/interface/Dave.gif";
+                    $("dDave").src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/Dave.gif";
                     c.onclick = function() {
                         oSym.addTask(10, b, [2])
                     }
@@ -60,10 +60,10 @@
             case 2:
                 PlayAudio("crazydavelong" + Math.floor(1 + Math.random() * 3));
                 c.onclick = null;
-                $("dDave").src = "images/interface/Dave3.gif";
+                $("dDave").src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/Dave3.gif";
                 oSym.addTask(1,
                 function() {
-                    $("dDave").src = "images/interface/Dave.gif";
+                    $("dDave").src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/Dave.gif";
                     c.onclick = function() {
                         oSym.addTask(10, b, [3])
                     }
@@ -74,10 +74,10 @@
             case 3:
                 PlayAudio("crazydavelong" + Math.floor(1 + Math.random() * 3));
                 c.onclick = null;
-                $("dDave").src = "images/interface/Dave3.gif";
+                $("dDave").src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/Dave3.gif";
                 oSym.addTask(1,
                 function() {
-                    $("dDave").src = "images/interface/Dave.gif";
+                    $("dDave").src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/Dave.gif";
                     c.onclick = function() {
                         oSym.addTask(10, b, [4])
                     }
@@ -88,10 +88,10 @@
             case 4:
                 PlayAudio("crazydavelong" + Math.floor(1 + Math.random() * 3));
                 c.onclick = null;
-                $("dDave").src = "images/interface/Dave3.gif";
+                $("dDave").src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/Dave3.gif";
                 oSym.addTask(1,
                 function() {
-                    $("dDave").src = "images/interface/Dave.gif";
+                    $("dDave").src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/Dave.gif";
                     c.onclick = function() {
                         oSym.addTask(10, b, [5])
                     }
@@ -100,7 +100,7 @@
                 innerText(c, "接下去会有教程指导你具体怎么消灭僵尸，祝你好运！(点击继续)");
                 break;
             case 5:
-                $("dDave").src = "images/interface/blank.png";
+                $("dDave").src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/blank.png";
                 ClearChild($("DivTeach"));
                 oSym.addTask(1,
                 function() {
@@ -112,16 +112,16 @@
         })(0)
     },
     StartGame: function() {
-        NewImg("imgSF", "images/interface/tiaoguo.png", "left:1px;top:75px", EDAll, {
+        NewImg("imgSF", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/tiaoguo.png", "left:1px;top:75px", EDAll, {
             onclick: function() {
                 SelectModal(3)
             }
         });
         StopMusic();
         PlayMusic(oS.LoadMusic = oS.StartGameMusic);
-        NewEle("sod3row", "div", "position:absolute;left:-115px;top:0;height:600px;width:264px;z-index:0;background:url(images/interface/background1unsodded_1.jpg);over-flow:hidden", 0, EDPZ);
-        NewImg("SodRoll_1", "images/interface/SodRoll.png", "left:112px;top:244px;z-index:1", EDPZ);
-        NewImg("SodRollCap_1", "images/interface/SodRollCap.png", "left:17px;top:322px;z-index:1", EDPZ);
+        NewEle("sod3row", "div", "position:absolute;left:-115px;top:0;height:600px;width:264px;z-index:0;background:url(https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/background1unsodded_1.jpg);over-flow:hidden", 0, EDPZ);
+        NewImg("SodRoll_1", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/SodRoll.png", "left:112px;top:244px;z-index:1", EDPZ);
+        NewImg("SodRollCap_1", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/SodRollCap.png", "left:17px;top:322px;z-index:1", EDPZ);
         PlayAudio("", true); (function(e, h, b, d, c, g, a, f) {
             e += 15;
             h += 16;
@@ -149,11 +149,11 @@
                         switch (k) {
                         case 0:
                             innerText($("DivTeach"), "请点击选择卡片！");
-                            NewImg("PointerUD", "images/interface/PointerUP.gif", "top:60px;left:50px", EDAll);
+                            NewImg("PointerUD", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/PointerUP.gif", "top:60px;left:50px", EDAll);
                             oSym.addTask(10, arguments.callee, [++k]);
                             break;
                         case 1:
-                            i > 0 && (innerText($("DivTeach"), "点击草地种下你的种子！"), EditImg($("PointerUD"), "", "images/interface/PointerDown.gif", {
+                            i > 0 && (innerText($("DivTeach"), "点击草地种下你的种子！"), EditImg($("PointerUD"), "", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/PointerDown.gif", {
                                 left: "170px",
                                 top: "270px"
                             }), ++k);
@@ -173,7 +173,7 @@
                             oSym.addTask(10, arguments.callee, [k]);
                             break;
                         case 3:
-                            oS.SunNum > 99 && (innerText($("DivTeach"), "点击豌豆射手，再种一棵！"), EditImg($("PointerUD"), "", "images/interface/PointerUP.gif", {
+                            oS.SunNum > 99 && (innerText($("DivTeach"), "点击豌豆射手，再种一棵！"), EditImg($("PointerUD"), "", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/PointerUP.gif", {
                                 left: "50px",
                                 top: "60px",
                                 visibility: "visible"
@@ -207,12 +207,12 @@
         4 : [ShowFinalWave, 0]
     },
     FlagToEnd: function() {
-        NewImg("imgSF", "images/Card/Plants/SunFlower.png", "left:667px;top:330px;clip:rect(auto,auto,60px,auto)", EDAll, {
+        NewImg("imgSF", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Plants/SunFlower.png", "left:667px;top:330px;clip:rect(auto,auto,60px,auto)", EDAll, {
             onclick: function() {
                 GetNewCard(this, oSunFlower, 2)
             }
         });
-        EditImg($("PointerUD"), 0, "images/interface/PointerDown.gif", {
+        EditImg($("PointerUD"), 0, "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/PointerDown.gif", {
             left: "676px",
             top: "295px",
             visibility: "visible"

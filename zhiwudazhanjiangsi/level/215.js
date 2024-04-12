@@ -2,9 +2,9 @@
     PName: [oPeashooter, oSunFlower, oCherryBomb, oWallNut, oPotatoMine, oSnowPea, oChomper, oRepeater, oPuffShroom, oSunShroom, oFumeShroom, oGraveBuster, oHypnoShroom, oScaredyShroom, oIceShroom, oDoomShroom, oLilyPad, oSquash, oThreepeater, oTangleKlep, oJalapeno, oSpikeweed, oTorchwood, oTallNut, oCactus, oPlantern, oSplitPea, oStarfruit, oPumpkinHead, oFlowerPot, oCoffeeBean, oGarlic, oSeaShroom, oOxygen, ostar, oTTS, oSeaAnemone, oGatlingPea, oGloomShroom, oTwinSunflower, oSpikerock, oTenManNut, oSnowRepeater, oLing, oLotusRoot, oMagneticmuShroom, oLaserBean, oBigChomper], 
     ZName: [oZombie, oConeheadZombie, oBucketheadZombie, oCXZombie, oJackinTheBoxZombie, oFootballZombie, oCConeheadZombie, oPoleVaultingZombie, oCPoleVaultingZombie, oHeiFootballZombie, oXBZombie, oCZombie, oCBucketheadZombie, oMustacheZombie, oTrashZombie, oJX, oNewspaperZombie, oCNewspaperZombie, oCJackinTheBoxZombie, oCFootballZombie, oDuckyTubeZombie2, oDuckyTubeZombie3, oDuckyTubeZombie4, oDuckyTubeZombie1, oWJY, oWJY1],
     PicArr: function() {
-        return ["images/interface/background3.jpg"]
+        return ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/background3.jpg"]
     } (),
-    backgroundImage: "images/interface/background3.jpg",
+    backgroundImage: "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/background3.jpg",
     CanSelectCard: 1,
     Coord: 2,
     DKind: 0,
@@ -35,12 +35,12 @@
         11 : [ShowFinalWave, 0]
     },
     FlagToEnd: function() {
-        NewImg("imgSF", "images/Card/Plants/FlamesMushroom.png", "left:667px;top:330px;clip:rect(auto,auto,60px,auto)", EDAll, {
+        NewImg("imgSF", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Plants/FlamesMushroom.png", "left:667px;top:330px;clip:rect(auto,auto,60px,auto)", EDAll, {
             onclick: function() {
                 GetNewCard(this, oFlamesMushroom, 216)
             }
         });
-        EditImg($("PointerUD"), 0, "images/interface/PointerDown.gif", {
+        EditImg($("PointerUD"), 0, "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/PointerDown.gif", {
             left: "676px",
             top: "295px",
             visibility: "visible"

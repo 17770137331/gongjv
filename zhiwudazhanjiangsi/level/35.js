@@ -1,8 +1,8 @@
 ﻿oS.Init({
     PName: [ostar1],
     ZName: [oZombie, oZombie2, oConeheadZombie, oCXZombie, oBucketheadZombie, oXBZombie, oJX, oJackinTheBoxZombie, oHeiFootballZombie],
-    PicArr: ["images/interface/backgroundLG.jpg", "images/interface/Stripe.png"],
-    backgroundImage: "images/interface/backgroundLG.jpg",
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/backgroundLG.jpg", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/Stripe.png"],
+    backgroundImage: "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/backgroundLG.jpg",
     LF: [0, 3, 3, 3, 3, 3],
     CanSelectCard: 0,
     DKind: 0,
@@ -15,17 +15,17 @@
     StartGameMusic: "Watery Graves",
     StaticCard: 0,
     LoadAccess: function(a) {
-        NewImg("dDave", "images/interface/Dave.gif", "left:0;top:81px", EDAll);
+        NewImg("dDave", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/Dave.gif", "left:0;top:81px", EDAll);
         NewEle("DivTeach", "div", 0, 0, EDAll); (function(d) {
             var b = arguments.callee,
             c = $("DivTeach");
             switch (d) {
             case 0:
                 PlayAudio("crazydaveshort1");
-                $("dDave").src = "images/interface/Dave3.gif";
+                $("dDave").src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/Dave3.gif";
                 oSym.addTask(1,
                 function() {
-                    $("dDave").src = "images/interface/Dave.gif";
+                    $("dDave").src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/Dave.gif";
                     c.onclick = function() {
                         oSym.addTask(10, b, [1])
                     }
@@ -36,10 +36,10 @@
             case 1:
                 PlayAudio("crazydavelong" + Math.floor(1 + Math.random() * 3));
                 c.onclick = null;
-                $("dDave").src = "images/interface/Dave3.gif";
+                $("dDave").src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/Dave3.gif";
                 oSym.addTask(2,
                 function() {
-                    $("dDave").src = "images/interface/Dave.gif";
+                    $("dDave").src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/Dave.gif";
                     c.onclick = function() {
                         oSym.addTask(10, b, [2])
                     }
@@ -50,10 +50,10 @@
             case 2:
                 PlayAudio("crazydavelong" + Math.floor(1 + Math.random() * 3));
                 c.onclick = null;
-                $("dDave").src = "images/interface/Dave3.gif";
+                $("dDave").src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/Dave3.gif";
                 oSym.addTask(2,
                 function() {
-                    $("dDave").src = "images/interface/Dave.gif";
+                    $("dDave").src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/Dave.gif";
                     c.onclick = function() {
                         oSym.addTask(10, b, [3])
                     }
@@ -64,10 +64,10 @@
             case 3:
                 PlayAudio("crazydavelong" + Math.floor(1 + Math.random() * 3));
                 c.onclick = null;
-                $("dDave").src = "images/interface/Dave3.gif";
+                $("dDave").src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/Dave3.gif";
                 oSym.addTask(2,
                 function() {
-                    $("dDave").src = "images/interface/Dave.gif";
+                    $("dDave").src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/Dave.gif";
                     c.onclick = function() {
                         oSym.addTask(10, b, [4])
                     }
@@ -76,7 +76,7 @@
                 innerText(c, "我相信这是一件非常好玩的事！(点击继续)");
                 break;
             case 4:
-                $("dDave").src = "images/interface/Dave2.gif";
+                $("dDave").src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/Dave2.gif";
                 ClearChild($("DivTeach"));
                 oSym.addTask(5,
                 function() {
@@ -88,7 +88,7 @@
         })(0)
     },
     StartGame: function() {
-        NewEle(0, "div", "width:22px;height:502px;margin:75px 0 0 485px;position:absolute;z-index:1;background:url(images/interface/Stripe.png)", 0, $("tGround"));
+        NewEle(0, "div", "width:22px;height:502px;margin:75px 0 0 485px;position:absolute;z-index:1;background:url(https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/Stripe.png)", 0, $("tGround"));
         StopMusic();
         PlayMusic(oS.LoadMusic = oS.StartGameMusic);
         SetHidden($("dSunNum"));
@@ -148,12 +148,12 @@
         19 : [ShowFinalWave, 0]
     },
     FlagToEnd: function() {
-        NewImg("imgSF", "images/Card/Plants/SeaAnemone.png", "left:627px;top:325px;clip:rect(auto,auto,60px,auto)", EDAll, {
+        NewImg("imgSF", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Plants/SeaAnemone.png", "left:627px;top:325px;clip:rect(auto,auto,60px,auto)", EDAll, {
             onclick: function() {
                 GetNewCard(this, oSeaAnemone, 36)
             }
         });
-        NewImg("PointerUD", "images/interface/PointerDown.gif", "top:290px;left:636px", EDAll)
+        NewImg("PointerUD", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/PointerDown.gif", "top:290px;left:636px", EDAll)
     }
 },
 {

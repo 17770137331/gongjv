@@ -4,12 +4,12 @@
     PicArr: function() {
         var a = oSpikeweed.prototype,
         b = a.PicArr;
-        return ["images/interface/background3.jpg", b[a.CardGif], b[a.NormalGif]]
+        return ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/background3.jpg", b[a.CardGif], b[a.NormalGif]]
     } (),
     Coord: 2,
     SunNum: 50,
     LF: [0, 1, 1, 2, 2, 1, 1],
-    backgroundImage: "images/interface/background3.jpg",
+    backgroundImage: "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/background3.jpg",
     CanSelectCard: 1,
     LevelName: "关卡 3-6",
     LvlEName: 26,
@@ -36,11 +36,11 @@
         29 : [ShowFinalWave, 0]
     },
     FlagToEnd: function() {
-        NewImg("imgSF", "images/Card/Plants/Spikeweed.png", "left:627px;top:325px;clip:rect(auto,auto,60px,auto)", EDAll, {
+        NewImg("imgSF", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Plants/Spikeweed.png", "left:627px;top:325px;clip:rect(auto,auto,60px,auto)", EDAll, {
             onclick: function() {
                 GetNewCard(this, oSpikeweed, 27)
             }
         });
-        NewImg("PointerUD", "images/interface/PointerDown.gif", "top:290px;left:636px", EDAll)
+        NewImg("PointerUD", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/PointerDown.gif", "top:290px;left:636px", EDAll)
     }
 });

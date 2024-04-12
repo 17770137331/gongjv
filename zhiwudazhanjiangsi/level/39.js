@@ -2,11 +2,11 @@
     PName: [oPeashooter, oSunFlower, oCherryBomb, oWallNut, oPotatoMine, oSnowPea, oChomper, oRepeater, oPuffShroom, oSunShroom, oFumeShroom, oGraveBuster, oHypnoShroom, oScaredyShroom, oIceShroom, oDoomShroom, oLilyPad, oSquash, oThreepeater, oTangleKlep, oJalapeno, oSpikeweed, oTorchwood, oTallNut, oOxygen, ostar, oTTS, oGun, oTenManNut, oSeaAnemone, oCactus, oGatlingPea, oTwinSunflower],
     ZName: [oZombie, oConeheadZombie, oJackinTheBoxZombie, oXBZombie, oJY, oCXZombie, oJX],
     PicArr: function() {
-        return ["images/interface/backgroundLG.jpg"]
+        return ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/backgroundLG.jpg"]
     } (),
     SunNum: 200,
     LF: [0, 3, 3, 3, 3, 3, 3], 
-    backgroundImage: "images/interface/backgroundLG.jpg",
+    backgroundImage: "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/backgroundLG.jpg",
     CanSelectCard: 1,
     DKind: 0,
     LevelName: "关卡 4-9",
@@ -33,7 +33,7 @@
         49 : [ShowFinalWave, 0]
     },
     FlagToEnd: function() {
-        NewImg("imgSF", "images/interface/ZombieNoteSmall.png", "left:667px;top:220px", EDAll, {
+        NewImg("imgSF", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/ZombieNoteSmall.png", "left:667px;top:220px", EDAll, {
             onclick: function() {
                 PlayAudio("winmusic");
                 SetHidden($("PointerUD")); (SetStyle(this, {
@@ -41,12 +41,12 @@
                     height: "399px",
                     left: "193px",
                     top: "100px"
-                })).src = "images/interface/ZombieNoteLG.png";
+                })).src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/ZombieNoteLG.png";
                 this.onclick = function() {
                     SelectModal(40)
                 }
             }
         });
-        NewImg("PointerUD", "images/interface/PointerDown.gif", "top:185px;left:676px", EDAll)
+        NewImg("PointerUD", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/PointerDown.gif", "top:185px;left:676px", EDAll)
     }
 });

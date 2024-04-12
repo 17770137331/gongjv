@@ -2,11 +2,11 @@
     PName: [oPeashooter, oSunFlower, oCherryBomb, oWallNut, oPotatoMine, oSnowPea, oChomper, oRepeater, oPuffShroom, oSunShroom, oFumeShroom, oGraveBuster, oHypnoShroom, oScaredyShroom, oIceShroom, oDoomShroom, oLilyPad, oSquash, oThreepeater, oTangleKlep, oJalapeno, oSpikeweed, oTorchwood, oTallNut, oOxygen, ostar, oTTS, oGun, oTenManNut, oSeaAnemone, oCactus, oGatlingPea, oTwinSunflower, oSnowRepeater, oSeaShroom, oLing, oPumpkinHead, oGarlic, oLotusRoot, oStarfruit, oCoffeeBean, oGloomShroom],
     ZName: [oDuckyTubeZombie1, oDuckyTubeZombie2, oDuckyTubeZombie3, oDuckyTubeZombie4, oDolphinRiderZombie, oSubZombie, oSnorkelZombie],
     PicArr: function() {
-        return ["images/interface/background5.jpg"]
+        return ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/background5.jpg"]
     } (),
     SunNum: 1300,
     LF: [0, 2, 2, 2, 2, 2],
-    backgroundImage: "images/interface/background5.jpg",
+    backgroundImage: "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/background5.jpg",
     CanSelectCard: 1,
     LevelName: "关卡 5-9",
     LvlEName: 29,
@@ -34,7 +34,7 @@
     FlagToMonitor: {
     },
     FlagToEnd: function() {
-        NewImg("imgSF", "images/interface/ZombieNoteSmall.png", "left:667px;top:220px", EDAll, {
+        NewImg("imgSF", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/ZombieNoteSmall.png", "left:667px;top:220px", EDAll, {
             onclick: function() {
                 PlayAudio("winmusic");
                 SetHidden($("PointerUD")); (SetStyle(this, {
@@ -42,12 +42,12 @@
                     height: "399px",
                     left: "193px",
                     top: "100px"
-                })).src = "images/interface/ZombieNote4.png";
+                })).src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/ZombieNote4.png";
                 this.onclick = function() {
                     SelectModal(50)
                 }
             }
         });
-        NewImg("PointerUD", "images/interface/PointerDown.gif", "top:185px;left:676px", EDAll)
+        NewImg("PointerUD", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/PointerDown.gif", "top:185px;left:676px", EDAll)
     }
 });

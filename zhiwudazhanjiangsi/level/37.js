@@ -2,11 +2,11 @@
     PName: [oPeashooter, oSunFlower, oCherryBomb, oWallNut, oPotatoMine, oSnowPea, oChomper, oRepeater, oPuffShroom, oSunShroom, oFumeShroom, oGraveBuster, oHypnoShroom, oScaredyShroom, oIceShroom, oDoomShroom, oLilyPad, oSquash, oThreepeater, oTangleKlep, oJalapeno, oSpikeweed, oTorchwood, oTallNut, oOxygen, ostar, oTTS, oGun, oTenManNut, oSeaAnemone, oCactus],
     ZName: [oZombie, oBucketheadZombie, oConeheadZombie, oCXZombie, oJackinTheBoxZombie, oXBZombie, oJY],
     PicArr: function() {
-        return ["images/interface/backgroundLG.jpg"]
+        return ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/backgroundLG.jpg"]
     } (),
     SunNum: 200,
     LF: [0, 3, 3, 3, 3, 3, 3], 
-    backgroundImage: "images/interface/backgroundLG.jpg",
+    backgroundImage: "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/backgroundLG.jpg",
     CanSelectCard: 1,
     DKind: 0,
     LevelName: "关卡 4-7",
@@ -33,11 +33,11 @@
         39 : [ShowFinalWave, 0]
     },
     FlagToEnd: function() {
-        NewImg("imgSF", "images/Card/Plants/GatlingPea.png", "left:627px;top:325px;clip:rect(auto,auto,60px,auto)", EDAll, {
+        NewImg("imgSF", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Plants/GatlingPea.png", "left:627px;top:325px;clip:rect(auto,auto,60px,auto)", EDAll, {
             onclick: function() {
                 GetNewCard(this, oGatlingPea, 38)
             }
         });
-        NewImg("PointerUD", "images/interface/PointerDown.gif", "top:290px;left:636px", EDAll)
+        NewImg("PointerUD", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/PointerDown.gif", "top:290px;left:636px", EDAll)
     }
 });

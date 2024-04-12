@@ -4,9 +4,9 @@
     PicArr: function() {
         var a = oWallNut.prototype,
         b = a.PicArr;
-        return ["images/interface/background1unsodded2.jpg", b[a.CardGif], b[a.NormalGif]]
+        return ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/background1unsodded2.jpg", b[a.CardGif], b[a.NormalGif]]
     } (),
-    backgroundImage: "images/interface/background1unsodded2.jpg",
+    backgroundImage: "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/background1unsodded2.jpg",
     LF: [0, 0, 1, 1, 1, 0],
     CanSelectCard: 0,
     LevelName: "关卡 1-3",
@@ -49,11 +49,11 @@
         7 : [ShowFinalWave, 0]
     },
     FlagToEnd: function() {
-        NewImg("imgSF", "images/Card/Plants/WallNut.png", "left:827px;top:330px;clip:rect(auto,auto,60px,auto)", EDAll, {
+        NewImg("imgSF", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Plants/WallNut.png", "left:827px;top:330px;clip:rect(auto,auto,60px,auto)", EDAll, {
             onclick: function() {
                 GetNewCard(this, oWallNut, 4)
             }
         });
-        NewImg("PointerUD", "images/interface/PointerDown.gif", "top:295px;left:836px", EDAll)
+        NewImg("PointerUD", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/PointerDown.gif", "top:295px;left:836px", EDAll)
     }
 });

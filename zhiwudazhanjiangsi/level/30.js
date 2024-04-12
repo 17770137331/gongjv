@@ -1,11 +1,11 @@
 ﻿oS.Init({
     PName: [oLilyPad, oThreepeater, oJalapeno, oSpikeweed, oTorchwood, oTangleKlep, oTallNut],
     ZName: [oZombie, oZombie2, oZombie3, oDuckyTubeZombie1, oDuckyTubeZombie2, oDuckyTubeZombie3, oConeheadZombie, oBucketheadZombie, oDolphinRiderZombie, oZomboni, oSnorkelZombie],
-    PicArr: ["images/interface/background3.jpg", "images/interface/trophy.png"],
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/background3.jpg", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/trophy.png"],
     Coord: 2,
     SunNum: 50,
     LF: [0, 1, 1, 2, 2, 1, 1],
-    backgroundImage: "images/interface/background3.jpg",
+    backgroundImage: "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/background3.jpg",
     CanSelectCard: 0,
     LevelName: "关卡 3-10",
     LvlEName: 15,
@@ -81,7 +81,7 @@
         14 : [ShowFinalWave, 0]
     },
     FlagToEnd: function() {
-        NewImg("imgSF", "images/Card/Plants/Oxygen.png", "left:667px;top:330px;clip:rect(auto,auto,60px,auto)", EDAll, {
+        NewImg("imgSF", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Plants/Oxygen.png", "left:667px;top:330px;clip:rect(auto,auto,60px,auto)", EDAll, {
             onclick: function() {
                 GetNewCard(this, oOxygen, 31)
             }

@@ -1,8 +1,8 @@
 ﻿oS.Init({
     PName: [oPeashooter, oSunFlower, oCherryBomb, oWallNut, oPotatoMine, oSnowPea, oChomper, oSplitPea, oJalapeno, oSpikeweed, oRepeater, oTallNut, oPumpkinHead, oSquash, oFlowerPot, oTorchwood, oThreepeater, oGatlingPea, oTwinSunflower, oSpikerock, oFumeShroom, oCoffeeBean, oGloomShroom, oSunShroom, oPuffShroom, oScaredyShroom, oStarfruit, oGarlic, oTenManNut, oSnowRepeater, oMagneticmuShroom, oLaserBean, oFlamesMushroom],
     ZName: [oZombie, oZombie2, oZombie3, oConeheadZombie, oPoleVaultingZombie, oBucketheadZombie],
-    PicArr: ["images/interface/background1unsodded2.jpg"],
-    backgroundImage: "images/interface/background1unsodded2.jpg",
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/background1unsodded2.jpg"],
+    backgroundImage: "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/background1unsodded2.jpg",
     CanSelectCard: 1,
     SunNum: 150,
     LF: [0, 0, 1, 1, 1, 0],
@@ -28,11 +28,11 @@
         29 : [ShowFinalWave, 0]
     },
     FlagToEnd: function() {
- NewImg("imgSF", "images/interface/trophy.png", "left:260px;top:233px", EDAll, {
+ NewImg("imgSF", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/trophy.png", "left:260px;top:233px", EDAll, {
             onclick: function() {
                 SelectModal(0)
             }
         });
-        NewImg("PointerUD", "images/interface/PointerDown.gif", "top:185px;left:676px", EDAll)
+        NewImg("PointerUD", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/PointerDown.gif", "top:185px;left:676px", EDAll)
     }
 });

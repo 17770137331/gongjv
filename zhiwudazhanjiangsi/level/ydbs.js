@@ -6,9 +6,9 @@
     LF: [0, 1, 1, 1, 1, 1],
     ZF: [0, 1, 0, 1, 0, 1],
     PicArr: function() {
-        return ["images/interface/background1.jpg"]
+        return ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/background1.jpg"]
     } (),
-    backgroundImage: "images/interface/background1.jpg",
+    backgroundImage: "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/background1.jpg",
     CanSelectCard: 0,
     LevelName: "一朵不少",
     LvlClearFunc: function() {
@@ -74,7 +74,7 @@
             for (v in $P) {
                 $P[v].EName == "oSunFlower" && ++a
             }
-            a > 9 ? NewImg("imgSF", "images/interface/trophy.png", "left:417px;top:233px;z-index:256", EDAll, {
+            a > 9 ? NewImg("imgSF", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/trophy.png", "left:417px;top:233px;z-index:256", EDAll, {
                 onclick: function() {
                     PlayAudio("winmusic");
                     SelectModal(0);

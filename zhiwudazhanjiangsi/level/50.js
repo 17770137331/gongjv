@@ -1,8 +1,8 @@
 ﻿oS.Init({
     PName: [oLilyPad, oSnowRepeater, oLing, oStarfruit, oLilyPad1],
     ZName: [oDuckyTubeZombie1, oDuckyTubeZombie2, oDuckyTubeZombie3, oDuckyTubeZombie4, oDolphinRiderZombie, oSubZombie, oSnorkelZombie, oWJY1],
-    PicArr: ["images/interface/background5.jpg"],
-    backgroundImage: "images/interface/background5.jpg",
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/background5.jpg"],
+    backgroundImage: "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/background5.jpg",
     LF: [0, 2, 2, 2, 2, 2],
     CanSelectCard: 0,
     DKind: 0,
@@ -15,7 +15,7 @@
     StartGameMusic: "Zombieboss",
     StaticCard: 0,
     LoadAccess: function(a) {
-        NewImg("dDave", "images/interface/Dave.gif", "left:0;top:81px", EDAll);
+        NewImg("dDave", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/Dave.gif", "left:0;top:81px", EDAll);
         NewEle("DivTeach", "div", 0, 0, EDAll); (function(d) {
             var b = arguments.callee,
             c = $("DivTeach");
@@ -23,10 +23,10 @@
             case 0:
                 PlayAudio("crazydavelong" + Math.floor(1 + Math.random() * 3));
                 c.onclick = null;
-                $("dDave").src = "images/interface/Dave3.gif";
+                $("dDave").src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/Dave3.gif";
                 oSym.addTask(2,
                 function() {
-                    $("dDave").src = "images/interface/Dave.gif";
+                    $("dDave").src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/Dave.gif";
                     c.onclick = function() {
                         oSym.addTask(10, b, [1])
                     }
@@ -37,10 +37,10 @@
             case 1:
                 PlayAudio("crazydavelong" + Math.floor(1 + Math.random() * 3));
                 c.onclick = null;
-                $("dDave").src = "images/interface/Dave3.gif";
+                $("dDave").src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/Dave3.gif";
                 oSym.addTask(2,
                 function() {
-                    $("dDave").src = "images/interface/Dave.gif";
+                    $("dDave").src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/Dave.gif";
                     c.onclick = function() {
                         oSym.addTask(10, b, [2])
                     }
@@ -51,10 +51,10 @@
             case 2:
                 PlayAudio("crazydavelong" + Math.floor(1 + Math.random() * 3));
                 c.onclick = null;
-                $("dDave").src = "images/interface/Dave3.gif";
+                $("dDave").src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/Dave3.gif";
                 oSym.addTask(2,
                 function() {
-                    $("dDave").src = "images/interface/Dave.gif";
+                    $("dDave").src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/Dave.gif";
                     c.onclick = function() {
                         oSym.addTask(10, b, [3])
                     }
@@ -65,10 +65,10 @@
             case 3:
                 PlayAudio("crazydaveshort2");
                 c.onclick = null;
-                $("dDave").src = "images/interface/Dave3.gif";
+                $("dDave").src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/Dave3.gif";
                 oSym.addTask(1,
                 function() {
-                    $("dDave").src = "images/interface/Dave.gif";
+                    $("dDave").src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/Dave.gif";
                     c.onclick = function() {
                         oSym.addTask(10, b, [4])
                     }
@@ -77,7 +77,7 @@
                 innerText(c, "打到他之后赶紧逃吧，我不想待在这个鬼地方了！(点击继续)");
                 break;
             case 4:
-                $("dDave").src = "images/interface/Dave2.gif";
+                $("dDave").src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/Dave2.gif";
                 ClearChild($("DivTeach"));
                 oSym.addTask(5,
                 function() {
@@ -150,7 +150,7 @@
     FlagToMonitor: {
     },
     FlagToEnd: function() {
-        NewImg("imgSF", "images/interface/0.gif", "left:667px;top:330px;clip:rect(auto,auto,237px,auto)", EDAll, {
+        NewImg("imgSF", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/0.gif", "left:667px;top:330px;clip:rect(auto,auto,237px,auto)", EDAll, {
             onclick: function() {
                 GetNewCard(this, oGoldenPrize, 0)
             }

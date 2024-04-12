@@ -1,8 +1,8 @@
 ﻿oS.Init({
     PName: [oTenManNut, oBigChomper, oSnowRepeater, oSpikeweed, oLaserBean, oFlamesMushroom],
     ZName: [oWJY, oEmperor, oLionDanceZombie],
-    PicArr: ["images/interface/background2.jpg", "images/interface/trophy.png"],
-    backgroundImage: "images/interface/background2.jpg",
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/background2.jpg", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/trophy.png"],
+    backgroundImage: "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/background2.jpg",
     CanSelectCard: 0,
     LevelName: "常青之塔 101层",
     LvlEName: "252",
@@ -75,7 +75,7 @@
         29 : [ShowFinalWave, 0]
     },
     FlagToEnd: function() {
-        NewImg("imgSF", "images/interface/0.gif", "left:667px;top:330px;clip:rect(auto,auto,237px,auto)", EDAll, {
+        NewImg("imgSF", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/0.gif", "left:667px;top:330px;clip:rect(auto,auto,237px,auto)", EDAll, {
             onclick: function() {
                 GetNewCard(this, oGoldenPrize, 150)
             }

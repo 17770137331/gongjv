@@ -1,9 +1,9 @@
 ﻿oS.Init({
     PName: [oPumpkinHead, oLing, oSnowRepeater, oTangleKlep, oSeaShroom, oLilyPad, oLilyPad1],
     ZName: [oDuckyTubeZombie2, oDuckyTubeZombie3, oDuckyTubeZombie4, oDuckyTubeZombie1, oDolphinRiderZombie, oSubZombie, oSnorkelZombie],
-    PicArr: ["images/interface/background5.jpg", "images/interface/trophy.png"],
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/background5.jpg", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/trophy.png"],
     LF: [0, 2, 2, 2, 2, 2],
-    backgroundImage: "images/interface/background5.jpg",
+    backgroundImage: "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/background5.jpg",
     CanSelectCard: 0,
     DKind: 0,
     LevelName: "关卡 5-5 传送带",
@@ -79,12 +79,12 @@
     FlagToMonitor: {
     },
     FlagToEnd: function() {
-        NewImg("imgSF", "images/Card/Plants/LotusRoot.png", "left:827px;top:525px;clip:rect(auto,auto,60px,auto)", EDAll, {
+        NewImg("imgSF", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Plants/LotusRoot.png", "left:827px;top:525px;clip:rect(auto,auto,60px,auto)", EDAll, {
             onclick: function() {
                 GetNewCard(this, oLotusRoot, 46)
             }
         });
-        NewImg("PointerUD", "images/interface/PointerDown.gif", "top:490px;left:836px", EDAll)
+        NewImg("PointerUD", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/PointerDown.gif", "top:490px;left:836px", EDAll)
     }
 },
 {

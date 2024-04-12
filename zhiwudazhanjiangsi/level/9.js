@@ -1,8 +1,8 @@
 ﻿oS.Init({
     PName: [oPeashooter, oSunFlower, oCherryBomb, oWallNut, oPotatoMine, oSnowPea, oChomper, oRepeater],
     ZName: [oZombie, oZombie2, oZombie3, oConeheadZombie, oPoleVaultingZombie, oBucketheadZombie],
-    PicArr: ["images/interface/background1.jpg", "images/interface/ZombieNoteSmall.png", "images/interface/ZombieNote1.png"],
-    backgroundImage: "images/interface/background1.jpg",
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/background1.jpg", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/ZombieNoteSmall.png", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/ZombieNote1.png"],
+    backgroundImage: "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/background1.jpg",
     CanSelectCard: 1,
     LevelName: "关卡 1-9",
     LvlEName: 9,
@@ -25,7 +25,7 @@
         29 : [ShowFinalWave, 0]
     },
     FlagToEnd: function() {
-        NewImg("imgSF", "images/interface/ZombieNoteSmall.png", "left:667px;top:220px", EDAll, {
+        NewImg("imgSF", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/ZombieNoteSmall.png", "left:667px;top:220px", EDAll, {
             onclick: function() {
                 PlayAudio("winmusic");
                 SetHidden($("PointerUD")); (SetStyle(this, {
@@ -33,12 +33,12 @@
                     height: "399px",
                     left: "193px",
                     top: "100px"
-                })).src = "images/interface/ZombieNote1.png";
+                })).src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/ZombieNote1.png";
                 this.onclick = function() {
                     SelectModal(10)
                 }
             }
         });
-        NewImg("PointerUD", "images/interface/PointerDown.gif", "top:185px;left:676px", EDAll)
+        NewImg("PointerUD", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/PointerDown.gif", "top:185px;left:676px", EDAll)
     }
 });

@@ -4,9 +4,9 @@
     PicArr: function() {
         var a = oFumeShroom.prototype,
         b = a.PicArr;
-        return ["images/interface/background2.jpg", "images/interface/Tombstones.png", "images/interface/Tombstone_mounds.png", b[a.CardGif], b[a.NormalGif]]
+        return ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/background2.jpg", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/Tombstones.png", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/Tombstone_mounds.png", b[a.CardGif], b[a.NormalGif]]
     } (),
-    backgroundImage: "images/interface/background2.jpg",
+    backgroundImage: "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/background2.jpg",
     CanSelectCard: 1,
     DKind: 0,
     SunNum: 50,
@@ -37,11 +37,11 @@
         19 : [ShowFinalWave, 0]
     },
     FlagToEnd: function() {
-        NewImg("imgSF", "images/Card/Plants/FumeShroom.png", "left:587px;top:270px;clip:rect(auto,auto,60px,auto)", EDAll, {
+        NewImg("imgSF", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Plants/FumeShroom.png", "left:587px;top:270px;clip:rect(auto,auto,60px,auto)", EDAll, {
             onclick: function() {
                 SelectModal(13)
             }
         });
-        NewImg("PointerUD", "images/interface/PointerDown.gif", "top:235px;left:596px", EDAll)
+        NewImg("PointerUD", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/PointerDown.gif", "top:235px;left:596px", EDAll)
     }
 });

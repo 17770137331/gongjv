@@ -2,9 +2,9 @@
     PName: [oPeashooter, oSunFlower, oCherryBomb, oWallNut, oPotatoMine, oSnowPea, oChomper, oRepeater, oPuffShroom, oSunShroom, oFumeShroom, oGraveBuster, oHypnoShroom, oScaredyShroom, oIceShroom, oDoomShroom, oLilyPad, oSquash, oThreepeater, oTangleKlep, oJalapeno, oSpikeweed, oTorchwood, oTallNut, oCactus, oPlantern, oSplitPea, oStarfruit, oPumpkinHead, oFlowerPot, oCoffeeBean, oGarlic, oSeaShroom, oOxygen, ostar, oTTS, oGun, oSeaAnemone, oGatlingPea, oGloomShroom, oTwinSunflower, oSpikerock, oTenManNut, oSnowRepeater, oLing, oLotusRoot, oMagneticmuShroom, oLaserBean], 
     ZName: [oZomboni, oZombie, oBucketheadZombie, oConeheadZombie, oCZombie, oCBucketheadZombie, oCConeheadZombie, oFootballZombie, oHeiFootballZombie, othugZombie, oCJackinTheBoxZombie, oZZ, oDancingZombie, oBackupDancer, oMustacheZombie, oXBZombie, oPoleVaultingZombie, oCPoleVaultingZombie, oEmperor],
     PicArr: function() {
-        return ["images/interface/backgroundwall2.jpg"]
+        return ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/backgroundwall2.jpg"]
     } (),
-    backgroundImage: "images/interface/backgroundwall2.jpg",
+    backgroundImage: "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/backgroundwall2.jpg",
     CanSelectCard: 1,
     LevelName: "常青之塔 40层",
     LvlEName: 190,
@@ -38,12 +38,12 @@
         14 : [ShowFinalWave, 0]
     },
     FlagToEnd: function() {
-        NewImg("imgSF", "images/Card/Plants/BigChomper.png", "left:667px;top:330px;clip:rect(auto,auto,60px,auto)", EDAll, {
+        NewImg("imgSF", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Plants/BigChomper.png", "left:667px;top:330px;clip:rect(auto,auto,60px,auto)", EDAll, {
             onclick: function() {
                 GetNewCard(this, oBigChomper, 191)
             }
         });
-        EditImg($("PointerUD"), 0, "images/interface/PointerDown.gif", {
+        EditImg($("PointerUD"), 0, "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/PointerDown.gif", {
             left: "676px",
             top: "295px",
             visibility: "visible"

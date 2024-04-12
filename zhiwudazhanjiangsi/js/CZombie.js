@@ -223,7 +223,7 @@
                 },
                 [g, h.FreeSlowTime = oSym.Now + 1500]))
             },
-            [c, d.FreeFreezeTime = oSym.Now + 400, NewImg("icetrap_" + Math.random(), "images/Plants/IceShroom/icetrap.gif", d.getShadow(d), d.Ele)])
+            [c, d.FreeFreezeTime = oSym.Now + 400, NewImg("icetrap_" + Math.random(), "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/IceShroom/icetrap.gif", d.getShadow(d), d.Ele)])
         },
         NormalDie: function() {
             var c = this;
@@ -461,8 +461,8 @@ oBackupDancer = InheritO(OrnNoneZombies, {
         return "display:none"
     },
     PicArr: (function() {
-        var a = "images/Zombies/BackupDancer/";
-        return ["images/Card/Zombies/BackupDancer.png", a + "0.gif", a + "BackupDancer.gif", a + "Attack.gif", a + "LostHead.gif", a + "LostHeadAttack.gif", a + "Head.gif" + $Random, a + "Die.gif" + $Random, "images/Zombies/BoomDie.gif" + $Random, a + "Dancing.gif" + $Random, a + "LostHeadDancing.gif" + $Random, a + "Mound.gif" + $Random]
+        var a = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/BackupDancer/";
+        return ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Zombies/BackupDancer.png", a + "0.gif", a + "BackupDancer.gif", a + "Attack.gif", a + "LostHead.gif", a + "LostHeadAttack.gif", a + "Head.gif" + $Random, a + "Die.gif" + $Random, "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/BoomDie.gif" + $Random, a + "Dancing.gif" + $Random, a + "LostHeadDancing.gif" + $Random, a + "Mound.gif" + $Random]
     })(),
     GetDY: function() {
         return 0
@@ -512,7 +512,7 @@ oBackupDancer = InheritO(OrnNoneZombies, {
             },
             [e, f.FreeSlowTime = oSym.Now + 1500]))
         },
-        [a, b.FreeFreezeTime = oSym.Now + 400, NewImg("icetrap_" + Math.random(), "images/Plants/IceShroom/icetrap.gif", b.getShadow(b), b.Ele)])
+        [a, b.FreeFreezeTime = oSym.Now + 400, NewImg("icetrap_" + Math.random(), "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/IceShroom/icetrap.gif", b.getShadow(b), b.Ele)])
     },
     CustomBirth: function(g, d, a, b, j) {
         var e = this,
@@ -622,18 +622,18 @@ oDancingZombie = InheritO(OrnNoneZombies, {
         return function(d, f, c) {
             var g = $Z[d],
             e;
-            NewEle(d + "_spotlightCon", "div", "position:absolute;left:-30px;top:-400px;width:184px;height:600px;overflow:hidden", 0, c).appendChild(g.spotlight = NewImg(d + "_spotlight", "images/Zombies/DancingZombie/spotlight" + a + ".png", "left:0;top:0;width:920px;height:600px;" + b));
+            NewEle(d + "_spotlightCon", "div", "position:absolute;left:-30px;top:-400px;width:184px;height:600px;overflow:hidden", 0, c).appendChild(g.spotlight = NewImg(d + "_spotlight", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/DancingZombie/spotlight" + a + ".png", "left:0;top:0;width:920px;height:600px;" + b));
             e = NewEle(d + "_spotlight2Con", "div", "position:absolute;left:-25px;top:135px;width:184px;height:60px;overflow:hidden", 0);
             c.insertBefore(e, f.EleShadow);
-            e.appendChild(g.spotlight2 = NewImg(d + "_spotlight2", "images/Zombies/DancingZombie/spotlight2" + a + ".png", "left:0;top:0;width:920px;height:60px;" + b))
+            e.appendChild(g.spotlight2 = NewImg(d + "_spotlight2", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/DancingZombie/spotlight2" + a + ".png", "left:0;top:0;width:920px;height:60px;" + b))
         }
     })(),
     PicArr: (function() {
-        var d = "images/Zombies/DancingZombie/",
+        var d = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/DancingZombie/",
         c = $User.Browser.IE6 ? "_8": "",
         a = d + "spotlight" + c + ".png" + $Random,
         b = d + "spotlight2" + c + ".png" + $Random;
-        return ["images/Card/Zombies/DancingZombie.png", d + "0.gif", d + "DancingZombie.gif", d + "Attack.gif", d + "LostHead.gif", d + "LostHeadAttack.gif", d + "Head.gif" + $Random, d + "Die.gif" + $Random, "images/Zombies/BoomDie.gif" + $Random, d + "SlidingStep.gif" + $Random, d + "Dancing.gif" + $Random, d + "Summon1.gif", d + "Summon2.gif", d + "Summon3.gif", d + "LostHeadSlidingStep.gif" + $Random, d + "LostHeadDancing.gif" + $Random, d + "LostHeadSummon.gif" + $Random, a, b]
+        return ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Zombies/DancingZombie.png", d + "0.gif", d + "DancingZombie.gif", d + "Attack.gif", d + "LostHead.gif", d + "LostHeadAttack.gif", d + "Head.gif" + $Random, d + "Die.gif" + $Random, "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/BoomDie.gif" + $Random, d + "SlidingStep.gif" + $Random, d + "Dancing.gif" + $Random, d + "Summon1.gif", d + "Summon2.gif", d + "Summon3.gif", d + "LostHeadSlidingStep.gif" + $Random, d + "LostHeadDancing.gif" + $Random, d + "LostHeadSummon.gif" + $Random, a, b]
     })(),
     Produce: '舞者僵尸和人类(在世或者死去的)如有雷同，纯属巧合。</p><p>韧性：<font color="#FF0000">中</font><br>特点：<font color="#FF0000">召唤伴舞僵尸</font></p>舞者僵尸的最新唱片“抓住脑子啃啊啃”在僵尸界的人气正急速飙升。',
     getSnowPea: function() {
@@ -931,18 +931,18 @@ oDancingZombie = InheritO(OrnNoneZombies, {
         b = d.ChkActs;
         d.ChkActs = d.ChkTmp;
         d.ChkTmp = b;
-        a.src = "images/Zombies/DancingZombie/Summon1.gif";
+        a.src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/DancingZombie/Summon1.gif";
         PlayAudio("dancer");
         oSym.addTask(10,
         function(f, e) {
             var g = $Z[f];
-            g && g.beAttacked && (e.src = "images/Zombies/DancingZombie/Summon2.gif", oSym.addTask(10,
+            g && g.beAttacked && (e.src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/DancingZombie/Summon2.gif", oSym.addTask(10,
             function(t, s, x) {
                 var h = $Z[t],
                 v = h.ZX,
                 m = h.ArDZ,
                 n = [],
-                k = "images/Zombies/BackupDancer/Mound.gif" + $Random + Math.random(),
+                k = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/BackupDancer/Mound.gif" + $Random + Math.random(),
                 r = 4,
                 w = [],
                 u = [],
@@ -950,7 +950,7 @@ oDancingZombie = InheritO(OrnNoneZombies, {
                 q,
                 l;
                 if (h && h.beAttacked) {
-                    s.src = "images/Zombies/DancingZombie/Summon3.gif";
+                    s.src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/DancingZombie/Summon3.gif";
                     while (r--) { (q = m[r]) && (!(l = q[0]) || !$Z[l]) && (u[o] = (w[o] = new oBackupDancer).CustomBirth(q[1], q[2](v), 100, q[0] = "Z_" + Math.random()), n.push(NewImg("", k, "z-index:" + q[3] + ";left:" + q[4](v) + "px;top:" + q[5] + "px", EDPZ)), ++o)
                     }
                     oSym.addTask(220,
@@ -997,8 +997,8 @@ oZombie = InheritO(OrnNoneZombies, {
     CName: "普通僵尸",
     StandGif: 9,
     PicArr: (function() {
-        var a = "images/Zombies/Zombie/";
-        return ["images/Card/Zombies/Zombie.png", a + "0.gif", a + "Zombie.gif", a + "ZombieAttack.gif", a + "ZombieLostHead.gif", a + "ZombieLostHeadAttack.gif", a + "ZombieHead.gif" + $Random, a + "ZombieDie.gif" + $Random, "images/Zombies/BoomDie.gif" + $Random, a + "1.gif"]
+        var a = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/Zombie/";
+        return ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Zombies/Zombie.png", a + "0.gif", a + "Zombie.gif", a + "ZombieAttack.gif", a + "ZombieLostHead.gif", a + "ZombieLostHeadAttack.gif", a + "ZombieHead.gif" + $Random, a + "ZombieDie.gif" + $Random, "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/BoomDie.gif" + $Random, a + "1.gif"]
     })(),
     Produce: '韧性：<font color="#FF0000">低</font></p>这种僵尸喜爱脑髓，贪婪而不知足。脑髓，脑髓，脑髓，夜以继日地追求着。老而臭的脑髓？腐烂的脑髓？都没关系。僵尸需要它们。'
 }),
@@ -1014,15 +1014,15 @@ oMustacheZombie = InheritO(oZombie, {
     HP: 540,
     Produce: '出没于常青之塔的神秘僵尸。<p>韧性：<font color="#FF0000">高</font></p>姜还是老的辣，僵尸界也有这种说法。于是，一些老僵尸也上战场了。',
     PicArr: (function() {
-        var a = "images/Zombies/Zombie/";
-        var b = "images/Zombies/MustacheZombie/";
-        return ["images/Card/Zombies/MustacheZombie.png", b + "0.gif", b + "Zombie.gif", b + "ZombieAttack.gif", a + "ZombieLostHead.gif", a + "ZombieLostHeadAttack.gif", a + "ZombieHead.gif" + $Random, a + "ZombieDie.gif" + $Random, "images/Zombies/BoomDie.gif" + $Random, b + "1.gif"]
+        var a = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/Zombie/";
+        var b = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/MustacheZombie/";
+        return ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Zombies/MustacheZombie.png", b + "0.gif", b + "Zombie.gif", b + "ZombieAttack.gif", a + "ZombieLostHead.gif", a + "ZombieLostHeadAttack.gif", a + "ZombieHead.gif" + $Random, a + "ZombieDie.gif" + $Random, "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/BoomDie.gif" + $Random, b + "1.gif"]
     })()
 }),
 oFlagZombie = InheritO(oZombie, {
     PicArr: (function() {
-        var a = "images/Zombies/FlagZombie/";
-        return ["images/Card/Zombies/FlagZombie.png", a + "0.gif", a + "FlagZombie.gif", a + "FlagZombieAttack.gif", a + "FlagZombieLostHead.gif", a + "FlagZombieLostHeadAttack.gif", "images/Zombies/Zombie/ZombieHead.gif" + $Random, "images/Zombies/Zombie/ZombieDie.gif" + $Random, "images/Zombies/BoomDie.gif" + $Random, a + "1.gif"]
+        var a = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/FlagZombie/";
+        return ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Zombies/FlagZombie.png", a + "0.gif", a + "FlagZombie.gif", a + "FlagZombieAttack.gif", a + "FlagZombieLostHead.gif", a + "FlagZombieLostHeadAttack.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/Zombie/ZombieHead.gif" + $Random, "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/Zombie/ZombieDie.gif" + $Random, "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/BoomDie.gif" + $Random, a + "1.gif"]
     })(),
     EName: "oFlagZombie",
     CName: "旗帜僵尸",
@@ -1061,9 +1061,9 @@ oConeheadZombie = InheritO(OrnIZombies, {
     SunNum: 75,
     StandGif: 11,
     PicArr: (function() {
-        var b = "images/Zombies/ConeheadZombie/",
-        a = "images/Zombies/Zombie/";
-        return ["images/Card/Zombies/ConeheadZombie.png", b + "0.gif", b + "ConeheadZombie.gif", b + "ConeheadZombieAttack.gif", a + "ZombieLostHead.gif", a + "ZombieLostHeadAttack.gif", a + "ZombieHead.gif" + $Random, a + "ZombieDie.gif" + $Random, "images/Zombies/BoomDie.gif" + $Random, a + "Zombie.gif", a + "ZombieAttack.gif", b + "1.gif"]
+        var b = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/ConeheadZombie/",
+        a = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/Zombie/";
+        return ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Zombies/ConeheadZombie.png", b + "0.gif", b + "ConeheadZombie.gif", b + "ConeheadZombieAttack.gif", a + "ZombieLostHead.gif", a + "ZombieLostHeadAttack.gif", a + "ZombieHead.gif" + $Random, a + "ZombieDie.gif" + $Random, "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/BoomDie.gif" + $Random, a + "Zombie.gif", a + "ZombieAttack.gif", b + "1.gif"]
     })(),
     AudioArr: ["plastichit"],
     PlayNormalballAudio: function() {
@@ -1083,9 +1083,9 @@ oLionDanceZombie = InheritO(oConeheadZombie, {
     beAttackedPointL: 60,
     beAttackedPointR: 130,
     PicArr: (function() {
-        var b = "images/Zombies/LionDanceZombie/",
-        a = "images/Zombies/LionDanceZombie/";
-        return ["images/Card/Zombies/LionDanceZombie.png", b + "0.gif", b + "ConeheadZombie.gif", b + "ConeheadZombieAttack.gif", a + "ZombieLostHead.gif", a + "ZombieLostHeadAttack.gif", a + "ZombieHead.gif" + $Random, a + "ZombieDie.gif" + $Random, "images/Zombies/BoomDie.gif" + $Random, a + "Zombie.gif", a + "ZombieAttack.gif", b + "1.gif"]
+        var b = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/LionDanceZombie/",
+        a = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/LionDanceZombie/";
+        return ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Zombies/LionDanceZombie.png", b + "0.gif", b + "ConeheadZombie.gif", b + "ConeheadZombieAttack.gif", a + "ZombieLostHead.gif", a + "ZombieLostHeadAttack.gif", a + "ZombieHead.gif" + $Random, a + "ZombieDie.gif" + $Random, "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/BoomDie.gif" + $Random, a + "Zombie.gif", a + "ZombieAttack.gif", b + "1.gif"]
     })(),
     Produce: '只出现于常青之塔101层。僵尸设计来自rdrz。<p>韧性：<font color="#FF0000">高</font></p>舞狮是优秀的民间艺术。每逢佳节庆典，民间都以舞狮来助兴，南方以广东的舞狮表演最为有名。狮子是由彩布条制作而成的。每头狮子有两个人合作表演，一人舞头，一人舞尾。表演者在锣鼓音乐下，装扮成狮子的样子，做出狮子的各种形态动作。在表演过程中，舞狮者要以各种招式来表现南派武功，非常富有阳刚之气。'
 }),
@@ -1102,12 +1102,12 @@ oBucketheadZombie = InheritO(oConeheadZombie, {
 },
 {
     PicArr: {
-        0 : "images/Card/Zombies/BucketheadZombie.png",
-        1 : "images/Zombies/BucketheadZombie/0.gif",
-        2 : "images/Zombies/BucketheadZombie/BucketheadZombie.gif",
-        3 : "images/Zombies/BucketheadZombie/BucketheadZombieAttack.gif",
-        9 : "images/Zombies/Zombie/Zombie.gif",
-        11 : "images/Zombies/BucketheadZombie/1.gif"
+        0 : "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Zombies/BucketheadZombie.png",
+        1 : "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/BucketheadZombie/0.gif",
+        2 : "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/BucketheadZombie/BucketheadZombie.gif",
+        3 : "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/BucketheadZombie/BucketheadZombieAttack.gif",
+        9 : "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/Zombie/Zombie.gif",
+        11 : "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/BucketheadZombie/1.gif"
     }
 }),
 oFootballZombie = InheritO(oConeheadZombie, {
@@ -1127,8 +1127,8 @@ oFootballZombie = InheritO(oConeheadZombie, {
         PlayAudio("plastichit")
     },
     PicArr: (function() {
-        var a = "images/Zombies/FootballZombie/";
-        return ["images/Card/Zombies/FootballZombie.png", a + "0.gif", a + "FootballZombie.gif", a + "Attack.gif", a + "LostHead.gif", a + "LostHeadAttack.gif", "images/Zombies/Zombie/ZombieHead.gif" + $Random, a + "Die.gif" + $Random, "images/Zombies/BoomDie.gif" + $Random, a + "OrnLost.gif", a + "OrnLostAttack.gif", a + "1.gif"]
+        var a = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/FootballZombie/";
+        return ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Zombies/FootballZombie.png", a + "0.gif", a + "FootballZombie.gif", a + "Attack.gif", a + "LostHead.gif", a + "LostHeadAttack.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/Zombie/ZombieHead.gif" + $Random, a + "Die.gif" + $Random, "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/BoomDie.gif" + $Random, a + "OrnLost.gif", a + "OrnLostAttack.gif", a + "1.gif"]
     })(),
     getShadow: function(a) {
         return "left:" + (a.beAttackedPointL + 15) + "px;top:" + (a.height - 22) + "px"
@@ -1148,8 +1148,8 @@ oHeiFootballZombie = InheritO(oFootballZombie, {
     beAttackedPointL: 40,
     beAttackedPointR: 134,
     PicArr: (function() {
-        var a = "images/Zombies/HeiFootballZombie/";
-        return ["images/Card/Zombies/HeiFootballZombie.png", a + "0.gif", a + "FootballZombie.gif", a + "Attack.gif", a + "LostHead.gif", a + "LostHeadAttack.gif", "images/Zombies/Zombie/ZombieHead.gif" + $Random, a + "Die.gif" + $Random, "images/Zombies/BoomDie.gif" + $Random, a + "OrnLost.gif", a + "OrnLostAttack.gif", a + "1.gif"]
+        var a = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/HeiFootballZombie/";
+        return ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Zombies/HeiFootballZombie.png", a + "0.gif", a + "FootballZombie.gif", a + "Attack.gif", a + "LostHead.gif", a + "LostHeadAttack.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/Zombie/ZombieHead.gif" + $Random, a + "Die.gif" + $Random, "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/BoomDie.gif" + $Random, a + "OrnLost.gif", a + "OrnLostAttack.gif", a + "1.gif"]
     })(),
     Produce: '黑暗橄榄球僵尸的表演秀。<p>韧性：<font color="#FF0000">极高</font><br>速度：<font color="#FF0000">快</font></p>他着装低调深沉，他是僵尸橄榄球界的领军人物，拥有更强的防御能力，虽然他也完全不知道橄榄球是什么。'
 }),
@@ -1157,8 +1157,8 @@ oCFootballZombie = InheritO(oFootballZombie, {
     EName: "oCFootballZombie",
     CName: "元帅僵尸",
     PicArr: (function() {
-        var a = "images/Zombies/wall/FootballZombie/";
-        return ["images/Card/Zombies/FootballZombie.png", a + "0.gif", a + "FootballZombie.gif", a + "Attack.gif", a + "LostHead.gif", a + "LostHeadAttack.gif", "images/Zombies/Zombie/ZombieHead.gif" + $Random, a + "Die.gif" + $Random, "images/Zombies/BoomDie.gif" + $Random, a + "OrnLost.gif", a + "OrnLostAttack.gif", a + "1.gif"]
+        var a = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/wall/FootballZombie/";
+        return ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Zombies/FootballZombie.png", a + "0.gif", a + "FootballZombie.gif", a + "Attack.gif", a + "LostHead.gif", a + "LostHeadAttack.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/Zombie/ZombieHead.gif" + $Random, a + "Die.gif" + $Random, "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/BoomDie.gif" + $Random, a + "OrnLost.gif", a + "OrnLostAttack.gif", a + "1.gif"]
     })(),
     Produce: ''
 }),
@@ -1182,8 +1182,8 @@ oPoleVaultingZombie = InheritO(OrnNoneZombies, {
     Lvl: 2,
     SunNum: 75,
     PicArr: (function() {
-        var a = "images/Zombies/PoleVaultingZombie/";
-        return ["images/Card/Zombies/PoleVaultingZombie.png", a + "0.gif", a + "PoleVaultingZombie.gif", a + "PoleVaultingZombieAttack.gif", a + "PoleVaultingZombieLostHead.gif", a + "PoleVaultingZombieLostHeadAttack.gif", a + "PoleVaultingZombieHead.gif" + $Random, a + "PoleVaultingZombieDie.gif" + $Random, a + "BoomDie.gif" + $Random, a + "PoleVaultingZombieWalk.gif", a + "PoleVaultingZombieLostHeadWalk.gif", a + "PoleVaultingZombieJump.gif", a + "PoleVaultingZombieJump2.gif", a + "1.gif"]
+        var a = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/PoleVaultingZombie/";
+        return ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Zombies/PoleVaultingZombie.png", a + "0.gif", a + "PoleVaultingZombie.gif", a + "PoleVaultingZombieAttack.gif", a + "PoleVaultingZombieLostHead.gif", a + "PoleVaultingZombieLostHeadAttack.gif", a + "PoleVaultingZombieHead.gif" + $Random, a + "PoleVaultingZombieDie.gif" + $Random, a + "BoomDie.gif" + $Random, a + "PoleVaultingZombieWalk.gif", a + "PoleVaultingZombieLostHeadWalk.gif", a + "PoleVaultingZombieJump.gif", a + "PoleVaultingZombieJump2.gif", a + "1.gif"]
     })(),
     AudioArr: ["polevault", "grassstep"],
     Produce: '撑杆僵尸运用标杆高高地跃过障碍物。<p>韧性：<font color="#FF0000">中</font><Br>速度：<font color="#FF0000">快,而后慢(跳跃后)</font><BR>特点：<font color="#FF0000">跃过他所碰到的第一筑植物</font></p>一些僵尸渴望走得更远、得到更多，这也促使他们由普通成为非凡。那就是撑杆僵尸。',
@@ -1231,7 +1231,7 @@ oPoleVaultingZombie = InheritO(OrnNoneZombies, {
         a = f.Ele,
         c = f.EleShadow,
         e = f.EleBody;
-        e.src = "images/Zombies/PoleVaultingZombie/PoleVaultingZombieJump.gif" + $Random + Math.random();
+        e.src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/PoleVaultingZombie/PoleVaultingZombieJump.gif" + $Random + Math.random();
         PlayAudio("grassstep");
         SetHidden(c);
         f.isAttacking = 1;
@@ -1252,13 +1252,13 @@ oPoleVaultingZombie = InheritO(OrnNoneZombies, {
             r;
             h && ((k = $P[j]) && k.Stature > 0 ? (h.AttackedRX = (h.X = (h.AttackedLX = h.ZX = q = k.AttackedRX) - h.beAttackedPointL) + h.beAttackedPointR, SetStyle(i, {
                 left: h.X + "px"
-            }), n.src = "images/Zombies/PoleVaultingZombie/PoleVaultingZombieWalk.gif", SetVisible(l), h.isAttacking = 0, h.Altitude = 1, h.OSpeed = h.Speed = 1.6, h.NormalGif = 9, h.LostHeadGif = 10, h.NormalAttack = (r = CZombies.prototype).NormalAttack, h.getCrushed = r.getCrushed, h.getFreeze = r.getFreeze, h.getRaven = r.getRaven) : (h.ZX = h.AttackedLX = (h.X = (h.AttackedRX = g) - h.beAttackedPointR) + h.beAttackedPointL, SetStyle(i, {
+            }), n.src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/PoleVaultingZombie/PoleVaultingZombieWalk.gif", SetVisible(l), h.isAttacking = 0, h.Altitude = 1, h.OSpeed = h.Speed = 1.6, h.NormalGif = 9, h.LostHeadGif = 10, h.NormalAttack = (r = CZombies.prototype).NormalAttack, h.getCrushed = r.getCrushed, h.getFreeze = r.getFreeze, h.getRaven = r.getRaven) : (h.ZX = h.AttackedLX = (h.X = (h.AttackedRX = g) - h.beAttackedPointR) + h.beAttackedPointL, SetStyle(i, {
                 left: h.X + "px"
-            }), n.src = "images/Zombies/PoleVaultingZombie/PoleVaultingZombieJump2.gif" + $Random + Math.random(), SetVisible(l), oSym.addTask(80,
+            }), n.src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/PoleVaultingZombie/PoleVaultingZombieJump2.gif" + $Random + Math.random(), SetVisible(l), oSym.addTask(80,
             function(s, v) {
                 var u = $Z[s],
                 t;
-                u && (v.src = "images/Zombies/PoleVaultingZombie/PoleVaultingZombieWalk.gif", u.isAttacking = 0, u.Altitude = 1, u.OSpeed = u.Speed = 1.6, u.NormalGif = 9, u.LostHeadGif = 10, u.NormalAttack = (t = CZombies.prototype).NormalAttack, u.getCrushed = t.getCrushed, u.getFreeze = t.getFreeze, u.getRaven = t.getRaven)
+                u && (v.src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/PoleVaultingZombie/PoleVaultingZombieWalk.gif", u.isAttacking = 0, u.Altitude = 1, u.OSpeed = u.Speed = 1.6, u.NormalGif = 9, u.LostHeadGif = 10, u.NormalAttack = (t = CZombies.prototype).NormalAttack, u.getCrushed = t.getCrushed, u.getFreeze = t.getFreeze, u.getRaven = t.getRaven)
             },
             [m, n])))
         },
@@ -1269,16 +1269,16 @@ oCPoleVaultingZombie = InheritO(oPoleVaultingZombie, {
     EName: "oCPoleVaultingZombie",
     CName: "棒子僵尸",
     PicArr: (function() {
-        var b = "images/Zombies/PoleVaultingZombie/";
-        var a = "images/Zombies/wall/PoleVaultingZombie/";
-        return ["images/Card/Zombies/PoleVaultingZombie.png", a + "0.gif", a + "PoleVaultingZombie.gif", a + "PoleVaultingZombieAttack.gif", a + "PoleVaultingZombieLostHead.gif", a + "PoleVaultingZombieLostHeadAttack.gif", a + "PoleVaultingZombieHead.gif" + $Random, a + "PoleVaultingZombieDie.gif" + $Random, b + "BoomDie.gif" + $Random, a + "PoleVaultingZombieWalk.gif", a + "PoleVaultingZombieLostHeadWalk.gif", a + "PoleVaultingZombieJump.gif", a + "PoleVaultingZombieJump2.gif", a + "1.gif"]
+        var b = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/PoleVaultingZombie/";
+        var a = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/wall/PoleVaultingZombie/";
+        return ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Zombies/PoleVaultingZombie.png", a + "0.gif", a + "PoleVaultingZombie.gif", a + "PoleVaultingZombieAttack.gif", a + "PoleVaultingZombieLostHead.gif", a + "PoleVaultingZombieLostHeadAttack.gif", a + "PoleVaultingZombieHead.gif" + $Random, a + "PoleVaultingZombieDie.gif" + $Random, b + "BoomDie.gif" + $Random, a + "PoleVaultingZombieWalk.gif", a + "PoleVaultingZombieLostHeadWalk.gif", a + "PoleVaultingZombieJump.gif", a + "PoleVaultingZombieJump2.gif", a + "1.gif"]
     })(),
     NormalAttack: function(d, b, g) {
         var f = $Z[d],
         a = f.Ele,
         c = f.EleShadow,
         e = f.EleBody;
-        e.src = "images/Zombies/wall/PoleVaultingZombie/PoleVaultingZombieJump.gif" + $Random + Math.random();
+        e.src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/wall/PoleVaultingZombie/PoleVaultingZombieJump.gif" + $Random + Math.random();
         PlayAudio("grassstep");
         SetHidden(c);
         f.isAttacking = 1;
@@ -1299,13 +1299,13 @@ oCPoleVaultingZombie = InheritO(oPoleVaultingZombie, {
             r;
             h && ((k = $P[j]) && k.Stature > 0 ? (h.AttackedRX = (h.X = (h.AttackedLX = h.ZX = q = k.AttackedRX) - h.beAttackedPointL) + h.beAttackedPointR, SetStyle(i, {
                 left: h.X + "px"
-            }), n.src = "images/Zombies/wall/PoleVaultingZombie/PoleVaultingZombieWalk.gif", SetVisible(l), h.isAttacking = 0, h.Altitude = 1, h.OSpeed = h.Speed = 1.6, h.NormalGif = 9, h.LostHeadGif = 10, h.NormalAttack = (r = CZombies.prototype).NormalAttack, h.getCrushed = r.getCrushed, h.getFreeze = r.getFreeze, h.getRaven = r.getRaven) : (h.ZX = h.AttackedLX = (h.X = (h.AttackedRX = g) - h.beAttackedPointR) + h.beAttackedPointL, SetStyle(i, {
+            }), n.src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/wall/PoleVaultingZombie/PoleVaultingZombieWalk.gif", SetVisible(l), h.isAttacking = 0, h.Altitude = 1, h.OSpeed = h.Speed = 1.6, h.NormalGif = 9, h.LostHeadGif = 10, h.NormalAttack = (r = CZombies.prototype).NormalAttack, h.getCrushed = r.getCrushed, h.getFreeze = r.getFreeze, h.getRaven = r.getRaven) : (h.ZX = h.AttackedLX = (h.X = (h.AttackedRX = g) - h.beAttackedPointR) + h.beAttackedPointL, SetStyle(i, {
                 left: h.X + "px"
-            }), n.src = "images/Zombies/wall/PoleVaultingZombie/PoleVaultingZombieJump2.gif" + $Random + Math.random(), SetVisible(l), oSym.addTask(80,
+            }), n.src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/wall/PoleVaultingZombie/PoleVaultingZombieJump2.gif" + $Random + Math.random(), SetVisible(l), oSym.addTask(80,
             function(s, v) {
                 var u = $Z[s],
                 t;
-                u && (v.src = "images/Zombies/wall/PoleVaultingZombie/PoleVaultingZombieWalk.gif", u.isAttacking = 0, u.Altitude = 1, u.OSpeed = u.Speed = 1.6, u.NormalGif = 9, u.LostHeadGif = 10, u.NormalAttack = (t = CZombies.prototype).NormalAttack, u.getCrushed = t.getCrushed, u.getFreeze = t.getFreeze, u.getRaven = t.getRaven)
+                u && (v.src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/wall/PoleVaultingZombie/PoleVaultingZombieWalk.gif", u.isAttacking = 0, u.Altitude = 1, u.OSpeed = u.Speed = 1.6, u.NormalGif = 9, u.LostHeadGif = 10, u.NormalAttack = (t = CZombies.prototype).NormalAttack, u.getCrushed = t.getCrushed, u.getFreeze = t.getFreeze, u.getRaven = t.getRaven)
             },
             [m, n])))
         },
@@ -1340,8 +1340,8 @@ oNewspaperZombie = InheritO(OrnIIZombies, {
     beAttackedPointR: 130,
     LostPaperSpeed: 4.8,
     PicArr: (function() {
-        var a = "images/Zombies/NewspaperZombie/";
-        return ["images/Card/Zombies/NewspaperZombie.png", a + "0.gif", a + "HeadWalk1.gif", a + "HeadAttack1.gif", a + "LostHeadWalk1.gif", a + "LostHeadAttack1.gif", a + "HeadWalk0.gif", a + "HeadAttack0.gif", a + "LostHeadWalk0.gif", a + "LostHeadAttack0.gif", a + "Head.gif" + $Random, a + "Die.gif" + $Random, "images/Zombies/BoomDie.gif" + $Random, a + "LostNewspaper.gif", a + "1.gif"]
+        var a = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/NewspaperZombie/";
+        return ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Zombies/NewspaperZombie.png", a + "0.gif", a + "HeadWalk1.gif", a + "HeadAttack1.gif", a + "LostHeadWalk1.gif", a + "LostHeadAttack1.gif", a + "HeadWalk0.gif", a + "HeadAttack0.gif", a + "LostHeadWalk0.gif", a + "LostHeadAttack0.gif", a + "Head.gif" + $Random, a + "Die.gif" + $Random, "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/BoomDie.gif" + $Random, a + "LostNewspaper.gif", a + "1.gif"]
     })(),
     AudioArr: ["newspaper_rarrgh2"],
     Produce: '他的报纸只能提供有限的防御。<p>韧性：<font color="#FF0000">低</font><br>报纸韧性：<font color="#FF0000">低</font><br>速度：正常，而后快(失去报纸后)</p>读报僵尸，他正痴迷于完成他的数独难题。难怪他这么反常。',
@@ -1475,9 +1475,9 @@ oScreenDoorZombie = InheritO(oNewspaperZombie, {
     beAttackedPointL: 60,
     beAttackedPointR: 116,
     PicArr: (function() {
-        var a = "images/Zombies/ScreenDoorZombie/",
-        b = "images/Zombies/Zombie/";
-        return ["images/Card/Zombies/ScreenDoorZombie.png", a + "0.gif", a + "HeadWalk1.gif", a + "HeadAttack1.gif", a + "LostHeadWalk1.gif", a + "LostHeadAttack1.gif", b + "Zombie.gif", b + "ZombieAttack.gif", b + "ZombieLostHead.gif", b + "ZombieLostHeadAttack.gif", b + "ZombieHead.gif" + $Random, b + "ZombieDie.gif" + $Random, "images/Zombies/BoomDie.gif" + $Random, a + "1.gif"]
+        var a = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/ScreenDoorZombie/",
+        b = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/Zombie/";
+        return ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Zombies/ScreenDoorZombie.png", a + "0.gif", a + "HeadWalk1.gif", a + "HeadAttack1.gif", a + "LostHeadWalk1.gif", a + "LostHeadAttack1.gif", b + "Zombie.gif", b + "ZombieAttack.gif", b + "ZombieLostHead.gif", b + "ZombieLostHeadAttack.gif", b + "ZombieHead.gif" + $Random, b + "ZombieDie.gif" + $Random, "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/BoomDie.gif" + $Random, a + "1.gif"]
     })(),
     PlayNormalballAudio: function() {
         PlayAudio("splat" + Math.floor(1 + Math.random() * 3))
@@ -1517,9 +1517,9 @@ oTrashZombie = InheritO(oScreenDoorZombie, {
     EName: "oTrashZombie",
     CName: "垃圾桶僵尸",
     PicArr: (function() {
-        var a = "images/Zombies/TrashZombie/",
-        b = "images/Zombies/Zombie/";
-        return ["images/Card/Zombies/TrashZombie.png", a + "0.gif", a + "HeadWalk1.gif", a + "HeadAttack1.gif", a + "LostHeadWalk1.gif", a + "LostHeadAttack1.gif", b + "Zombie.gif", b + "ZombieAttack.gif", b + "ZombieLostHead.gif", b + "ZombieLostHeadAttack.gif", b + "ZombieHead.gif" + $Random, b + "ZombieDie.gif" + $Random, "images/Zombies/BoomDie.gif" + $Random, a + "1.gif"]
+        var a = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/TrashZombie/",
+        b = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/Zombie/";
+        return ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Zombies/TrashZombie.png", a + "0.gif", a + "HeadWalk1.gif", a + "HeadAttack1.gif", a + "LostHeadWalk1.gif", a + "LostHeadAttack1.gif", b + "Zombie.gif", b + "ZombieAttack.gif", b + "ZombieLostHead.gif", b + "ZombieLostHeadAttack.gif", b + "ZombieHead.gif" + $Random, b + "ZombieDie.gif" + $Random, "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/BoomDie.gif" + $Random, a + "1.gif"]
     })(),
     Produce: '出没于常青之塔的神秘僵尸。</p>有这样一个故事：老人买了房子，不久便有、个年轻人在附近踢垃圾桶玩。 老人受不了这些噪音，于是和年轻人说“你每天都来踢垃圾桶，我给你一块钱。”年轻人很高兴，踹起了垃圾桶。三天后，老人说：“因为通货膨胀，明天起我只能给你5毛钱。“年轻人不大开心，但还是接受了。下午，他继续去踹垃圾桶。五天后，老人对他说：“最近没有收到养老金，只能给两毛了。”“两毛钱？”年轻人发起了火，之后便再没来踹垃圾桶了 '
 }),
@@ -1555,7 +1555,7 @@ oAquaticZombie = InheritO(OrnNoneZombies, {
             g.WalkStatus = 1;
             g.EleBody.src = g.PicArr[g.NormalGif = g.WalkGif1];
             SetHidden(f);
-            NewEle(a = c + "_splash", "div", "position:absolute;background:url(images/interface/splash.png);left:61px;top:" + (g.height - 88) + "px;width:97px;height:88px;over-flow:hidden", 0, b);
+            NewEle(a = c + "_splash", "div", "position:absolute;background:url(https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/splash.png);left:61px;top:" + (g.height - 88) + "px;width:97px;height:88px;over-flow:hidden", 0, b);
             ImgSpriter(a, c, [["0 0", 9, 1], ["-97px 0", 9, 2], ["-194px 0", 9, 3], ["-291px 0", 9, 4], ["-388px 0", 9, 5], ["-485px 0", 9, 6], ["-582px 0", 9, 7], ["-679px 0", 9, -1]], 0,
             function(i, j) {
                 ClearChild($(i))
@@ -1570,7 +1570,7 @@ oAquaticZombie = InheritO(OrnNoneZombies, {
     },
     ChkActsL1: function(f, e, g, d) {
         var c, a, b = f.id; ! (f.FreeFreezeTime || f.FreeSetbodyTime) && (f.AttackedRX -= (c = f.Speed), LX = f.ZX = f.AttackedLX -= c, f.Ele.style.left = Math.floor(f.X -= c) + "px");
-        f.AttackedLX < GetX(9) && (PlayAudio("zombie_entering_water"), f.WalkStatus = 1, f.EleBody.src = f.PicArr[f.NormalGif = f.WalkGif1], SetHidden(f.EleShadow), NewEle(a = b + "_splash", "div", "position:absolute;background:url(images/interface/splash.png);left:61px;top:" + (f.height - 88) + "px;width:97px;height:88px;over-flow:hidden", 0, f.Ele), f.ChkActs = f.ChkActsL2, ImgSpriter(a, b, [["0 0", 9, 1], ["-97px 0", 9, 2], ["-194px 0", 9, 3], ["-291px 0", 9, 4], ["-388px 0", 9, 5], ["-485px 0", 9, 6], ["-582px 0", 9, 7], ["-679px 0", 9, -1]], 0,
+        f.AttackedLX < GetX(9) && (PlayAudio("zombie_entering_water"), f.WalkStatus = 1, f.EleBody.src = f.PicArr[f.NormalGif = f.WalkGif1], SetHidden(f.EleShadow), NewEle(a = b + "_splash", "div", "position:absolute;background:url(https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/splash.png);left:61px;top:" + (f.height - 88) + "px;width:97px;height:88px;over-flow:hidden", 0, f.Ele), f.ChkActs = f.ChkActsL2, ImgSpriter(a, b, [["0 0", 9, 1], ["-97px 0", 9, 2], ["-194px 0", 9, 3], ["-291px 0", 9, 4], ["-388px 0", 9, 5], ["-485px 0", 9, 6], ["-582px 0", 9, 7], ["-679px 0", 9, -1]], 0,
         function(h, i) {
             ClearChild($(h))
         }));
@@ -1652,8 +1652,8 @@ oDuckyTubeZombie1 = InheritO(oAquaticZombie, {
     },
     Produce: '鸭子救生圈能让僵尸能浮在水面上。<p>韧性：<font color="#FF0000">低</font><br>只在水池关卡出现</font></p>只有特定的僵尸才能成为救生圈僵尸。并不是每个僵尸都能胜任的。有些救生圈有点漏气，但他们没能注意到，所以他们离开并放弃了对脑子的渴求。',
     PicArr: (function() {
-        var a = "images/Zombies/DuckyTubeZombie1/";
-        return ["images/Card/Zombies/DuckyTubeZombie1.png", a + "0.gif", a + "Walk1.gif", a + "Walk2.gif", a + "1.gif", a + "Attack.gif", a + "ZombieHead.gif" + $Random, a + "Die.gif" + $Random]
+        var a = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/DuckyTubeZombie1/";
+        return ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Zombies/DuckyTubeZombie1.png", a + "0.gif", a + "Walk1.gif", a + "Walk2.gif", a + "1.gif", a + "Attack.gif", a + "ZombieHead.gif" + $Random, a + "Die.gif" + $Random]
     })(),
     AudioArr: ["zombie_entering_water"]
 }),
@@ -1674,8 +1674,8 @@ oWarshipsZombie = InheritO(oDuckyTubeZombie1, {
     },
     Produce: '通常在最后一波时出现于池塘里。<p>韧性：<font color="#FF0000">极高</font><br>只在水池关卡出现</font></p>你一定很好奇军舰上的三只僵尸藏在水里是什么滋味，他们眼睁睁看着一只只同伴坠入海水生出，不过这些都不重要：“脑子！”。',
     PicArr: (function() {
-        var a = "images/Zombies/WarshipsZombie/";
-        return ["images/Card/Zombies/WarshipsZombie.png", a + "0.gif", a + "Walk1.gif", a + "Walk2.gif", a + "1.gif", a + "Attack.gif", a + "ZombieHead.gif" + $Random, a + "Die.gif" + $Random]
+        var a = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/WarshipsZombie/";
+        return ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Zombies/WarshipsZombie.png", a + "0.gif", a + "Walk1.gif", a + "Walk2.gif", a + "1.gif", a + "Attack.gif", a + "ZombieHead.gif" + $Random, a + "Die.gif" + $Random]
     })()
 }),
 oDuckyTubeZombie2 = InheritO(oDuckyTubeZombie1, {
@@ -1691,9 +1691,9 @@ oDuckyTubeZombie2 = InheritO(oDuckyTubeZombie1, {
         PlayAudio("plastichit")
     },
     PicArr: (function() {
-        var b = "images/Zombies/DuckyTubeZombie2/",
-        a = "images/Zombies/DuckyTubeZombie1/";
-        return ["images/Card/Zombies/DuckyTubeZombie1.png", b + "0.gif", b + "Walk1.gif", b + "Walk2.gif", b + "1.gif", b + "Attack.gif", "images/Zombies/Zombie/ZombieHead.gif" + $Random, a + "Die.gif" + $Random, a + "Walk1.gif", a + "Walk2.gif", a + "Attack.gif"]
+        var b = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/DuckyTubeZombie2/",
+        a = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/DuckyTubeZombie1/";
+        return ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Zombies/DuckyTubeZombie1.png", b + "0.gif", b + "Walk1.gif", b + "Walk2.gif", b + "1.gif", b + "Attack.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/Zombie/ZombieHead.gif" + $Random, a + "Die.gif" + $Random, a + "Walk1.gif", a + "Walk2.gif", a + "Attack.gif"]
     })(),
     AudioArr: ["plastichit", "zombie_entering_water"],
     getHit: OrnIZombies.prototype.getHit,
@@ -1713,18 +1713,18 @@ oDuckyTubeZombie3 = InheritO(oDuckyTubeZombie2, {
     },
     AudioArr: ["shieldhit", "shieldhit2", "zombie_entering_water"],
     PicArr: (function() {
-        var b = "images/Zombies/DuckyTubeZombie3/",
-        a = "images/Zombies/DuckyTubeZombie1/";
-        return ["images/Card/Zombies/DuckyTubeZombie1.png", b + "0.gif", b + "Walk1.gif", b + "Walk2.gif", b + "1.gif", b + "Attack.gif", "images/Zombies/Zombie/ZombieHead.gif" + $Random, a + "Die.gif" + $Random, a + "Walk1.gif", a + "Walk2.gif", a + "Attack.gif"]
+        var b = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/DuckyTubeZombie3/",
+        a = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/DuckyTubeZombie1/";
+        return ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Zombies/DuckyTubeZombie1.png", b + "0.gif", b + "Walk1.gif", b + "Walk2.gif", b + "1.gif", b + "Attack.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/Zombie/ZombieHead.gif" + $Random, a + "Die.gif" + $Random, a + "Walk1.gif", a + "Walk2.gif", a + "Attack.gif"]
     })()
 }),
 oDuckyTubeZombie4 = InheritO(oDuckyTubeZombie3, {
     EName: "oDuckyTubeZombie4",
     CName: "铁栅门僵尸骑鸭子",
     PicArr: (function() {
-        var b = "images/Zombies/DuckyTubeZombie4/",
-        a = "images/Zombies/DuckyTubeZombie1/";
-        return ["images/Card/Zombies/DuckyTubeZombie1.png", b + "0.gif", b + "Walk1.gif", b + "Walk2.gif", b + "1.gif", b + "Attack.gif", "images/Zombies/Zombie/ZombieHead.gif" + $Random, a + "Die.gif" + $Random, a + "Walk1.gif", a + "Walk2.gif", a + "Attack.gif"]
+        var b = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/DuckyTubeZombie4/",
+        a = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/DuckyTubeZombie1/";
+        return ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Zombies/DuckyTubeZombie1.png", b + "0.gif", b + "Walk1.gif", b + "Walk2.gif", b + "1.gif", b + "Attack.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/Zombie/ZombieHead.gif" + $Random, a + "Die.gif" + $Random, a + "Walk1.gif", a + "Walk2.gif", a + "Attack.gif"]
     })(),
     getHit: OrnIIZombies.prototype.getHit,
     getHit0: oScreenDoorZombie.prototype.getHit0,
@@ -1766,7 +1766,7 @@ oAquaticZombie = InheritO(OrnNoneZombies, {
             g.WalkStatus = 1;
             g.EleBody.src = g.PicArr[g.NormalGif = g.WalkGif1];
             SetHidden(f);
-            NewEle(a = c + "_splash", "div", "position:absolute;background:url(images/interface/splash.png);left:61px;top:" + (g.height - 88) + "px;width:97px;height:88px;over-flow:hidden", 0, b);
+            NewEle(a = c + "_splash", "div", "position:absolute;background:url(https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/splash.png);left:61px;top:" + (g.height - 88) + "px;width:97px;height:88px;over-flow:hidden", 0, b);
             ImgSpriter(a, c, [["0 0", 9, 1], ["-97px 0", 9, 2], ["-194px 0", 9, 3], ["-291px 0", 9, 4], ["-388px 0", 9, 5], ["-485px 0", 9, 6], ["-582px 0", 9, 7], ["-679px 0", 9, -1]], 0,
             function(i, j) {
                 ClearChild($(i))
@@ -1781,7 +1781,7 @@ oAquaticZombie = InheritO(OrnNoneZombies, {
     },
     ChkActsL1: function(f, e, g, d) {
         var c, a, b = f.id; ! (f.FreeFreezeTime || f.FreeSetbodyTime) && (f.AttackedRX -= (c = f.Speed), LX = f.ZX = f.AttackedLX -= c, f.Ele.style.left = Math.floor(f.X -= c) + "px");
-        f.AttackedLX < GetX(9) && (PlayAudio("zombie_entering_water"), f.WalkStatus = 1, f.EleBody.src = f.PicArr[f.NormalGif = f.WalkGif1], SetHidden(f.EleShadow), NewEle(a = b + "_splash", "div", "position:absolute;background:url(images/interface/splash.png);left:61px;top:" + (f.height - 88) + "px;width:97px;height:88px;over-flow:hidden", 0, f.Ele), f.ChkActs = f.ChkActsL2, ImgSpriter(a, b, [["0 0", 9, 1], ["-97px 0", 9, 2], ["-194px 0", 9, 3], ["-291px 0", 9, 4], ["-388px 0", 9, 5], ["-485px 0", 9, 6], ["-582px 0", 9, 7], ["-679px 0", 9, -1]], 0,
+        f.AttackedLX < GetX(9) && (PlayAudio("zombie_entering_water"), f.WalkStatus = 1, f.EleBody.src = f.PicArr[f.NormalGif = f.WalkGif1], SetHidden(f.EleShadow), NewEle(a = b + "_splash", "div", "position:absolute;background:url(https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/splash.png);left:61px;top:" + (f.height - 88) + "px;width:97px;height:88px;over-flow:hidden", 0, f.Ele), f.ChkActs = f.ChkActsL2, ImgSpriter(a, b, [["0 0", 9, 1], ["-97px 0", 9, 2], ["-194px 0", 9, 3], ["-291px 0", 9, 4], ["-388px 0", 9, 5], ["-485px 0", 9, 6], ["-582px 0", 9, 7], ["-679px 0", 9, -1]], 0,
         function(h, i) {
             ClearChild($(h))
         }));
@@ -1888,7 +1888,7 @@ oSnorkelZombie = InheritO(oDuckyTubeZombie1, {
             g.WalkStatus = 1;
             g.EleBody.src = g.PicArr[g.NormalGif = g.WalkGif1];
             SetHidden(f);
-            NewEle(a = c + "_splash", "div", "position:absolute;background:url(images/interface/splash.png);left:61px;top:" + (g.height - 88) + "px;width:97px;height:88px;over-flow:hidden", 0, b);
+            NewEle(a = c + "_splash", "div", "position:absolute;background:url(https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/splash.png);left:61px;top:" + (g.height - 88) + "px;width:97px;height:88px;over-flow:hidden", 0, b);
             ImgSpriter(a, c, [["0 0", 9, 1], ["-97px 0", 9, 2], ["-194px 0", 9, 3], ["-291px 0", 9, 4], ["-388px 0", 9, 5], ["-485px 0", 9, 6], ["-582px 0", 9, 7], ["-679px 0", 9, -1]], 0,
             function(i, j) {
                 ClearChild($(i))
@@ -1907,8 +1907,8 @@ oSnorkelZombie = InheritO(oDuckyTubeZombie1, {
         return "left:" + a.beAttackedPointL + "px;top:" + (a.height - 45) + "px"
     },
     PicArr: (function() {
-        var a = "images/Zombies/SnorkelZombie/";
-        return ["images/Card/Zombies/SnorkelZombie.png", a + "0.gif", a + "Walk1.gif", a + "Walk2.gif", a + "1.gif", a + "Attack.gif", a + "Head.gif" + $Random, a + "Die.gif" + $Random, a + "Jump.gif" + $Random, a + "Risk.gif" + $Random, a + "Sink.gif" + $Random]
+        var a = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/SnorkelZombie/";
+        return ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Zombies/SnorkelZombie.png", a + "0.gif", a + "Walk1.gif", a + "Walk2.gif", a + "1.gif", a + "Attack.gif", a + "Head.gif" + $Random, a + "Die.gif" + $Random, a + "Jump.gif" + $Random, a + "Risk.gif" + $Random, a + "Sink.gif" + $Random]
     } ()),
     AudioArr: ["zombie_entering_water"],
     Jump: function(a) {
@@ -2018,8 +2018,8 @@ oSubZombie = InheritO(oSnorkelZombie, {
     BookHandBack: 4.9,
     Produce: '强劲有力的机械潜水艇，可以在水中躲过大多数攻击。<p>韧性：<font color="#FF0000">极高</font><br>特点：<font color="#FF0000">潜入水底以避免遭到攻击<br>只在水池关卡出现</font></p>这是由作者僵尸亲自打造的无敌潜水艇,不要妄想击碎他，他的猛烈进攻，只会让你的植物死得更快！。',
     PicArr: (function() {
-        var a = "images/Zombies/SubZombie/";
-        return ["images/Card/Zombies/SubZombie.png", a + "0.gif", a + "Walk1.gif", a + "Walk2.gif", a + "1.gif", a + "Attack.gif", a + "Head.gif" + $Random, a + "Die.gif" + $Random, a + "Jump.gif" + $Random, a + "Risk.gif" + $Random, a + "Sink.gif" + $Random]
+        var a = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/SubZombie/";
+        return ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Zombies/SubZombie.png", a + "0.gif", a + "Walk1.gif", a + "Walk2.gif", a + "1.gif", a + "Attack.gif", a + "Head.gif" + $Random, a + "Die.gif" + $Random, a + "Jump.gif" + $Random, a + "Risk.gif" + $Random, a + "Sink.gif" + $Random]
     } ())
 }),
 oSmallZombie = InheritO(oZombie, {
@@ -2193,9 +2193,9 @@ oZomboni = function() {
         case(d.HP = c -= b) < 200 : d.GoingDie();
             d.getHit0 = d.getHit1 = d.getHit2 = d.getHit3 = function() {};
             return;
-        case c < 391 : d.EleBody.src = "images/Zombies/Zomboni/3.gif";
+        case c < 391 : d.EleBody.src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/Zomboni/3.gif";
             break;
-        case c < 871 : d.EleBody.src = "images/Zombies/Zomboni/2.gif"
+        case c < 871 : d.EleBody.src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/Zomboni/2.gif"
         }
         d.SetAlpha(d, d.EleBody, 50, 0.5);
         oSym.addTask(10,
@@ -2228,8 +2228,8 @@ oZomboni = function() {
         Attack: 50,
         Produce: '冰车僵尸运用冰雪，碾过你的植物。<p>韧性：<font color="#FF0000">高</font><br>特点：<font color="#FF0000">碾压植物，留下条冰道</font></p>经常被误以为是在驾驶着冰车的僵尸，但事实上冰车僵尸是种完全不同的生物形式，他与太空兽人联系更紧密而不是僵尸。',
         PicArr: (function() {
-            var b = "images/Zombies/Zomboni/";
-            return ["images/Card/Zombies/Zomboni.png", b + "0.gif", b + "1.gif", b + "2.gif", b + "3.gif", b + "4.gif", b + "5.gif" + $Random, b + "BoomDie.gif" + $Random, b + "ice.png", b + "ice_cap.png"]
+            var b = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/Zomboni/";
+            return ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Zombies/Zomboni.png", b + "0.gif", b + "1.gif", b + "2.gif", b + "3.gif", b + "4.gif", b + "5.gif" + $Random, b + "BoomDie.gif" + $Random, b + "ice.png", b + "ice_cap.png"]
         })(),
         AudioArr: ["zamboni", "explosion"],
         BirthCallBack: function(h) {
@@ -2240,7 +2240,7 @@ oZomboni = function() {
             f,
             b = oGd.$Ice;
             h.EleShadow = c.firstChild;
-            h.EleBody = c.childNodes[1]; ! b[d] ? (f = NewEle("dIceCar" + d, "div", "position:absolute;z-index:1;left:145px;top:" + (GetY(d) - 65) + "px;width:800px;height:72px", 0, EDPZ), NewImg("", "images/interface/blank.png", "position:absolute;clip:rect(0,auto,auto,800px);width:800px;height:72px;left:5px;background:url(images/Zombies/Zomboni/ice.png) repeat-x", f), NewImg("", "images/Zombies/Zomboni/ice_cap.png", "position:absolute;display:none;left:0", f), b[d] = [1, 11, h.AttackedLX]) : ++b[d][0];
+            h.EleBody = c.childNodes[1]; ! b[d] ? (f = NewEle("dIceCar" + d, "div", "position:absolute;z-index:1;left:145px;top:" + (GetY(d) - 65) + "px;width:800px;height:72px", 0, EDPZ), NewImg("", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/blank.png", "position:absolute;clip:rect(0,auto,auto,800px);width:800px;height:72px;left:5px;background:url(https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/Zomboni/ice.png) repeat-x", f), NewImg("", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/Zomboni/ice_cap.png", "position:absolute;display:none;left:0", f), b[d] = [1, 11, h.AttackedLX]) : ++b[d][0];
             g ? oSym.addTask(g,
             function(j, i) {
                 var k = $Z[j];
@@ -2356,7 +2356,7 @@ oZomboni = function() {
         },
         flatTire: function() {
             var b = this;
-            b.EleBody.src = "images/Zombies/Zomboni/4.gif";
+            b.EleBody.src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/Zomboni/4.gif";
             b.beAttacked = 0;
             b.HP = 0;
             b.getHit0 = b.getHit1 = b.getHit2 = b.getHit3 = function() {};
@@ -2416,9 +2416,9 @@ oCZomboni = function() {
         case(d.HP = c -= b) < 200 : d.GoingDie();
             d.getHit0 = d.getHit1 = d.getHit2 = d.getHit3 = function() {};
             return;
-        case c < 391 : d.EleBody.src = "images/Zombies/wall/Zomboni/3.gif";
+        case c < 391 : d.EleBody.src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/wall/Zomboni/3.gif";
             break;
-        case c < 871 : d.EleBody.src = "images/Zombies/wall/Zomboni/2.gif"
+        case c < 871 : d.EleBody.src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/wall/Zomboni/2.gif"
         }
         d.SetAlpha(d, d.EleBody, 50, 0.5);
         oSym.addTask(10,
@@ -2450,8 +2450,8 @@ oCZomboni = function() {
         AKind: 2,
         Attack: 50,
         PicArr: (function() {
-            var b = "images/Zombies/wall/Zomboni/";
-            return ["images/Card/Zombies/Zomboni.png", b + "0.gif", b + "1.gif", b + "2.gif", b + "3.gif", b + "4.gif", b + "5.gif" + $Random, b + "BoomDie.gif" + $Random, b + "ice.png", b + "ice_cap.png"]
+            var b = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/wall/Zomboni/";
+            return ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Zombies/Zomboni.png", b + "0.gif", b + "1.gif", b + "2.gif", b + "3.gif", b + "4.gif", b + "5.gif" + $Random, b + "BoomDie.gif" + $Random, b + "ice.png", b + "ice_cap.png"]
         })(),
         AudioArr: ["zamboni", "explosion"],
         BirthCallBack: function(h) {
@@ -2462,7 +2462,7 @@ oCZomboni = function() {
             f,
             b = oGd.$Ice;
             h.EleShadow = c.firstChild;
-            h.EleBody = c.childNodes[1]; ! b[d] ? (f = NewEle("dIceCar" + d, "div", "position:absolute;z-index:1;left:145px;top:" + (GetY(d) - 65) + "px;width:800px;height:72px", 0, EDPZ), NewImg("", "images/interface/blank.png", "position:absolute;clip:rect(0,auto,auto,800px);width:800px;height:72px;left:5px;background:url(images/Zombies/wall/Zomboni/ice.png) repeat-x", f), NewImg("", "images/Zombies/wall/Zomboni/ice_cap.png", "position:absolute;display:none;left:0", f), b[d] = [1, 11, h.AttackedLX]) : ++b[d][0];
+            h.EleBody = c.childNodes[1]; ! b[d] ? (f = NewEle("dIceCar" + d, "div", "position:absolute;z-index:1;left:145px;top:" + (GetY(d) - 65) + "px;width:800px;height:72px", 0, EDPZ), NewImg("", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/blank.png", "position:absolute;clip:rect(0,auto,auto,800px);width:800px;height:72px;left:5px;background:url(https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/wall/Zomboni/ice.png) repeat-x", f), NewImg("", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/wall/Zomboni/ice_cap.png", "position:absolute;display:none;left:0", f), b[d] = [1, 11, h.AttackedLX]) : ++b[d][0];
             g ? oSym.addTask(g,
             function(j, i) {
                 var k = $Z[j];
@@ -2578,7 +2578,7 @@ oCZomboni = function() {
         },
         flatTire: function() {
             var b = this;
-            b.EleBody.src = "images/Zombies/wall/Zomboni/4.gif";
+            b.EleBody.src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/wall/Zomboni/4.gif";
             b.beAttacked = 0;
             b.HP = 0;
             b.getHit0 = b.getHit1 = b.getHit2 = b.getHit3 = function() {};
@@ -2659,8 +2659,8 @@ oDolphinRiderZombie = InheritO(oAquaticZombie, {
     OSpeed: 3.2,
     Speed: 3.2,
     PicArr: (function() {
-        var a = "images/Zombies/DolphinRiderZombie/";
-        return ["images/Card/Zombies/DolphinRiderZombie.png", a + "0.gif", a + "Walk1.gif", a + "Walk2.gif", a + "1.gif", a + "Attack.gif", a + "Head.gif" + $Random, a + "Die.gif" + $Random, a + "Jump.gif" + $Random, a + "Jump2.gif" + $Random, a + "Walk3.gif", a + "Walk4.gif", a + "Die2.gif" + $Random, a + "Jump3.gif" + $Random]
+        var a = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/DolphinRiderZombie/";
+        return ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Zombies/DolphinRiderZombie.png", a + "0.gif", a + "Walk1.gif", a + "Walk2.gif", a + "1.gif", a + "Attack.gif", a + "Head.gif" + $Random, a + "Die.gif" + $Random, a + "Jump.gif" + $Random, a + "Jump2.gif" + $Random, a + "Walk3.gif", a + "Walk4.gif", a + "Die2.gif" + $Random, a + "Jump3.gif" + $Random]
     })(),
     AudioArr: ["dolphin_before_jumping", "dolphin_appears", "zombie_entering_water"],
     Produce: '海豚骑士僵尸善于利用你水池防御的弱点。<p>韧性：<font color="#FF0000">中</font><br>速度：<font color="#FF0000">快，慢（跳越后）</font><br>特点：<font color="#FF0000">跃过他所遇到的第一株植物</font><br>只在水池关卡出现</font></p>那海豚其实也是个僵尸。',
@@ -2793,8 +2793,8 @@ oImp = InheritO(OrnNoneZombies, {
     OSpeed: 1.4,
     Speed: 1.4,
     PicArr: (function() {
-        var a = "images/Zombies/Imp/";
-        return ["images/Card/Zombies/Imp.png", a + "0.gif", a + "Zombie.gif", a + "ZombieAttack.gif", a + "ZombieLostHead.gif", a + "ZombieLostHeadAttack.gif", a + "ZombieHead.gif" + $Random, a + "ZombieDie.gif" + $Random, "images/Zombies/BoomDie.gif" + $Random, a + "1.gif"]
+        var a = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/Imp/";
+        return ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Zombies/Imp.png", a + "0.gif", a + "Zombie.gif", a + "ZombieAttack.gif", a + "ZombieLostHead.gif", a + "ZombieLostHeadAttack.gif", a + "ZombieHead.gif" + $Random, a + "ZombieDie.gif" + $Random, "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/BoomDie.gif" + $Random, a + "1.gif"]
     })(),
     Produce: '小鬼僵尸会快速突破你的防线。</p><p>韧性：<font color="#FF0000">低</font><br>其实小鬼僵尸天生就能跑的很快，一些懒惰的小鬼僵尸喜欢粘着巨人僵尸，但是一些勤奋的，就会经常出门成群的跑马拉松。'
 }),
@@ -2808,8 +2808,8 @@ oJX = InheritO(OrnNoneZombies, {
     Speed: 1.4,
     Attack: 120,
     PicArr: (function() {
-        var a = "images/Zombies/JX/";
-        return ["images/Card/Zombies/JX.png", a + "0.gif", a + "Zombie.gif", a + "ZombieAttack.gif", a + "ZombieLostHead.gif", a + "ZombieLostHeadAttack.gif", a + "ZombieHead.gif" + $Random, a + "ZombieDie.gif" + $Random, "images/Zombies/BoomDie.gif" + $Random, a + "1.gif"]
+        var a = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/JX/";
+        return ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Zombies/JX.png", a + "0.gif", a + "Zombie.gif", a + "ZombieAttack.gif", a + "ZombieLostHead.gif", a + "ZombieLostHeadAttack.gif", a + "ZombieHead.gif" + $Random, a + "ZombieDie.gif" + $Random, "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/BoomDie.gif" + $Random, a + "1.gif"]
     })(),
     Produce: '小鬼僵尸的亲戚，攻击似乎提升了不少。</p><p>韧性：<font color="#FF0000">中</font><br>矮小的他喜欢这副捡来的蟹壳，V字型的蟹钳更是让他感到兴奋，以至忘掉了身高上的劣势。'
 }),
@@ -2839,8 +2839,8 @@ oJackinTheBoxZombie = InheritO(OrnNoneZombies, {
     Produce: '这种僵尸带着个会爆炸的潘多拉盒子。</p><p>韧性：<font color="#FF0000">中</font><br>速度：<font color="#FF0000">快</font><br>特点：<font color="#FF0000">打开玩偶匣会爆炸</font><br>弱点：<font color="#FF0000">磁力菇</font><br>这种僵尸令人不寒而栗，不是因为他的冰冷身躯而是因为他的疯狂。',
     AudioArr: ["jackinthebox", "explosion"],
     PicArr: (function() {
-        var a = "images/Zombies/JackinTheBoxZombie/";
-        return ["images/Card/Zombies/JackboxZombie.png", a + "0.gif", a + "Attack.gif", a + "Die.gif" + $Random, a + "BoomDie.gif" + $Random, a + "1.gif", a + "Walk.gif", a + "OpenBox.gif", a + "Boom.gif" + $Random, a + "LostHead.gif", a + "LostHeadAttack.gif", "images/Zombies/Zombie/ZombieHead.gif" + $Random]
+        var a = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/JackinTheBoxZombie/";
+        return ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Zombies/JackboxZombie.png", a + "0.gif", a + "Attack.gif", a + "Die.gif" + $Random, a + "BoomDie.gif" + $Random, a + "1.gif", a + "Walk.gif", a + "OpenBox.gif", a + "Boom.gif" + $Random, a + "LostHead.gif", a + "LostHeadAttack.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/Zombie/ZombieHead.gif" + $Random]
     })(),
     RandomOpenBox: function(a) {
         oSym.addTask(Math.floor(Math.random() * 100) > 4 ? Math.floor(1325 + Math.random() * 976) : Math.floor(450 + Math.random() * 301),
@@ -2990,8 +2990,8 @@ oBalloonZombie = InheritO(OrnIZombies, {
     AudioArr: ["ballooninflate", "balloon_pop"],
     BookHandPosition: "80% 80%",
     PicArr: (function() {
-        var a = "images/Zombies/BalloonZombie/";
-        return ["images/Card/Zombies/Balloonzombie.png", a + "0.gif", a + "1.gif", a + "Attack.gif", a + "Walk2.gif", a + "Attack2.gif", a + "Head.gif" + $Random, a + "Die.gif" + $Random, a + "Boom.gif", a + "Walk.gif", a + "Drop.gif", a + "Boom2.gif", a + "BalloonZombie.gif"]
+        var a = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/BalloonZombie/";
+        return ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Zombies/Balloonzombie.png", a + "0.gif", a + "1.gif", a + "Attack.gif", a + "Walk2.gif", a + "Attack2.gif", a + "Head.gif" + $Random, a + "Die.gif" + $Random, a + "Boom.gif", a + "Walk.gif", a + "Drop.gif", a + "Boom2.gif", a + "BalloonZombie.gif"]
     })(),
     Produce: '气球僵尸漂浮在空中，躲过大多数攻击。<p>韧性：<font color="#FF0000">低</font><br>特点：<font color="#FF0000">飞行</font><br>弱点：<font color="#FF0000">仙人掌和三叶草</font></p>气球僵尸真幸运。气球有很多功效，而其他僵尸都不曾捡到过。',
     GetDX: function() {
@@ -3027,7 +3027,7 @@ oBalloonZombie = InheritO(OrnIZombies, {
     Drop: function() {
         var a = this;
         PlayAudio("balloon_pop");
-        a.EleBody.src = "images/Zombies/BalloonZombie/Drop.gif" + $Random + Math.random();
+        a.EleBody.src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/BalloonZombie/Drop.gif" + $Random + Math.random();
         a.ChkActs = function() {
             return 1
         };
@@ -3040,7 +3040,7 @@ oBalloonZombie = InheritO(OrnIZombies, {
                 c.Altitude = 1;
                 c.OSpeed = c.Speed = 1.6;
                 c.getFreeze = OrnIZombies.prototype.getFreeze;
-                c.EleBody.src = "images/Zombies/BalloonZombie/Walk.gif";
+                c.EleBody.src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/BalloonZombie/Walk.gif";
                 c.ChkActs = OrnIZombies.prototype.ChkActs;
                 c.ExplosionDie = function() {
                     var d = this;
@@ -3110,8 +3110,8 @@ oJY = InheritO(oBalloonZombie, {
     OrnHP: 1,
     HP: 1,
     PicArr: (function() {
-        var a = "images/Zombies/JY/";
-        return ["images/Card/Zombies/JY.png", a + "0.gif", a + "1.gif", a + "Attack.gif", a + "Walk2.gif", a + "Attack2.gif", a + "Head.gif" + $Random, a + "Die.gif" + $Random, a + "Boom.gif", a + "Walk.gif", a + "Drop.gif", a + "Boom2.gif", a + "BalloonZombie.gif"]
+        var a = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/JY/";
+        return ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Zombies/JY.png", a + "0.gif", a + "1.gif", a + "Attack.gif", a + "Walk2.gif", a + "Attack2.gif", a + "Head.gif" + $Random, a + "Die.gif" + $Random, a + "Boom.gif", a + "Walk.gif", a + "Drop.gif", a + "Boom2.gif", a + "BalloonZombie.gif"]
     })(),
     Produce: '贱鱼僵尸利用鱼形飞行器，躲过了陆地上的攻击。<p>速度：<font color="#FF0000">快</font><br>特点：<font color="#FF0000">飞行</font><br>弱点：<font color="#FF0000">仙人掌</font></p>曾经站在巨人肩膀上的他也想要体验做巨人的感觉，他把鱼形飞行器系在背上，可让他万万没想到，这玩意居然让自己飞了起来！',
     GetDX: function() {
@@ -3147,7 +3147,7 @@ oJY = InheritO(oBalloonZombie, {
     Drop: function() {
         var a = this;
         PlayAudio("balloon_pop");
-        a.EleBody.src = "images/Zombies/JY/Drop.gif" + $Random + Math.random();
+        a.EleBody.src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/JY/Drop.gif" + $Random + Math.random();
         a.ChkActs = function() {
             return 1
         };
@@ -3160,7 +3160,7 @@ oJY = InheritO(oBalloonZombie, {
                 c.Altitude = 1;
                 c.OSpeed = c.Speed = 1.6;
                 c.getFreeze = OrnIZombies.prototype.getFreeze;
-                c.EleBody.src = "images/Zombies/JY/Walk.gif";
+                c.EleBody.src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/JY/Walk.gif";
                 c.ChkActs = OrnIZombies.prototype.ChkActs;
                 c.ExplosionDie = function() {
                     var d = this;
@@ -3229,8 +3229,8 @@ oCZombie = InheritO(OrnNoneZombies, {
     CName: "庶民僵尸",
     StandGif: 9,
     PicArr: (function() {
-        var a = "images/Zombies/wall/Zombie/";
-        return ["images/Card/Zombies/CZombie.png", a + "0.gif", a + "Zombie.gif", a + "ZombieAttack.gif", a + "ZombieLostHead.gif", a + "ZombieLostHeadAttack.gif", a + "ZombieHead.gif" + $Random, a + "ZombieDie.gif" + $Random, "images/Zombies/BoomDie.gif" + $Random, a + "1.gif"]
+        var a = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/wall/Zombie/";
+        return ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Zombies/CZombie.png", a + "0.gif", a + "Zombie.gif", a + "ZombieAttack.gif", a + "ZombieLostHead.gif", a + "ZombieLostHeadAttack.gif", a + "ZombieHead.gif" + $Random, a + "ZombieDie.gif" + $Random, "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/BoomDie.gif" + $Random, a + "1.gif"]
     })(),
     Produce: '身着古装的僵尸。<p>韧性：<font color="#FF0000">低</font></p>这样的庶民气质是不是让你想到了普通僵尸？是的，他是普通僵尸在中国的远房表亲。这一族都是忠实的脑髓追求者。',
 }),
@@ -3239,8 +3239,8 @@ oCZombie2 = InheritO(oCZombie, {
 },
 {
     PicArr: {
-        2 : "images/Zombies/wall/Zombie/Zombie.gif",
-        9 : "images/Zombies/wall/Zombie/1.gif"
+        2 : "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/wall/Zombie/Zombie.gif",
+        9 : "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/wall/Zombie/1.gif"
     }
 }),
 oCZombie3 = InheritO(oCZombie, {
@@ -3248,8 +3248,8 @@ oCZombie3 = InheritO(oCZombie, {
 },
 {
     PicArr: {
-        2 : "images/Zombies/wall/Zombie/Zombie.gif",
-        9 : "images/Zombies/wall/Zombie/1.gif"
+        2 : "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/wall/Zombie/Zombie.gif",
+        9 : "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/wall/Zombie/1.gif"
     }
 });
 oCConeheadZombie = InheritO(OrnIZombies, {
@@ -3260,9 +3260,9 @@ oCConeheadZombie = InheritO(OrnIZombies, {
     SunNum: 75,
     StandGif: 11,
     PicArr: (function() {
-        var b = "images/Zombies/wall/ConeheadZombie/",
-        a = "images/Zombies/wall/Zombie/";
-        return ["images/Card/Zombies/CConeheadZombie.png", b + "0.gif", b + "ConeheadZombie.gif", b + "ConeheadZombieAttack.gif", a + "ZombieLostHead.gif", a + "ZombieLostHeadAttack.gif", a + "ZombieHead.gif" + $Random, a + "ZombieDie.gif" + $Random, "images/Zombies/BoomDie.gif" + $Random, a + "Zombie.gif", a + "ZombieAttack.gif", b + "1.gif"]
+        var b = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/wall/ConeheadZombie/",
+        a = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/wall/Zombie/";
+        return ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Zombies/CConeheadZombie.png", b + "0.gif", b + "ConeheadZombie.gif", b + "ConeheadZombieAttack.gif", a + "ZombieLostHead.gif", a + "ZombieLostHeadAttack.gif", a + "ZombieHead.gif" + $Random, a + "ZombieDie.gif" + $Random, "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/BoomDie.gif" + $Random, a + "Zombie.gif", a + "ZombieAttack.gif", b + "1.gif"]
     })(),
     AudioArr: ["plastichit"],
     PlayNormalballAudio: function() {
@@ -3283,12 +3283,12 @@ oCBucketheadZombie = InheritO(oCConeheadZombie, {
 },
 {
     PicArr: {
-        0 : "images/Card/Zombies/CBucketheadZombie.png",
-        1 : "images/Zombies/wall/BucketheadZombie/0.gif",
-        2 : "images/Zombies/wall/BucketheadZombie/BucketheadZombie.gif",
-        3 : "images/Zombies/wall/BucketheadZombie/BucketheadZombieAttack.gif",
-        9 : "images/Zombies/wall/Zombie/Zombie.gif",
-        11 : "images/Zombies/wall/BucketheadZombie/1.gif"
+        0 : "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Zombies/CBucketheadZombie.png",
+        1 : "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/wall/BucketheadZombie/0.gif",
+        2 : "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/wall/BucketheadZombie/BucketheadZombie.gif",
+        3 : "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/wall/BucketheadZombie/BucketheadZombieAttack.gif",
+        9 : "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/wall/Zombie/Zombie.gif",
+        11 : "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/wall/BucketheadZombie/1.gif"
     }
 });
 othugZombie = InheritO(OrnNoneZombies, {
@@ -3311,8 +3311,8 @@ othugZombie = InheritO(OrnNoneZombies, {
     Lvl: 2,
     SunNum: 75,
     PicArr: (function() {
-        var a = "images/Zombies/wall/thugZombie/";
-        return ["images/Card/Zombies/thugZombie.png", a + "0.gif", a + "PoleVaultingZombie.gif", a + "PoleVaultingZombieAttack.gif", a + "PoleVaultingZombieLostHead.gif", a + "PoleVaultingZombieLostHeadAttack.gif", a + "PoleVaultingZombieHead.gif" + $Random, a + "PoleVaultingZombieDie.gif" + $Random, "images/Zombies/PoleVaultingZombie/BoomDie.gif" + $Random, a + "PoleVaultingZombieWalk.gif", a + "PoleVaultingZombieLostHeadWalk.gif", a + "PoleVaultingZombieJump.gif", a + "PoleVaultingZombieJump2.gif", a + "1.gif"]
+        var a = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/wall/thugZombie/";
+        return ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Zombies/thugZombie.png", a + "0.gif", a + "PoleVaultingZombie.gif", a + "PoleVaultingZombieAttack.gif", a + "PoleVaultingZombieLostHead.gif", a + "PoleVaultingZombieLostHeadAttack.gif", a + "PoleVaultingZombieHead.gif" + $Random, a + "PoleVaultingZombieDie.gif" + $Random, "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/PoleVaultingZombie/BoomDie.gif" + $Random, a + "PoleVaultingZombieWalk.gif", a + "PoleVaultingZombieLostHeadWalk.gif", a + "PoleVaultingZombieJump.gif", a + "PoleVaultingZombieJump2.gif", a + "1.gif"]
     })(),
     Produce: '刺客僵尸出其不意地突破你的阵型<p>韧性：<font color="#FF0000">高</font></p>刺客，生前经受着残酷的训练；死后，他们虽然已经忘记了刺杀的使命，但是反复训练过的轻功奇术却还熟记于心，当然还有那忘不了的美味脑子。',
     getShadow: function(a) {
@@ -3359,7 +3359,7 @@ othugZombie = InheritO(OrnNoneZombies, {
         a = f.Ele,
         c = f.EleShadow,
         e = f.EleBody;
-        e.src = "images/Zombies/wall/thugZombie/PoleVaultingZombieJump.gif" + $Random + Math.random();
+        e.src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/wall/thugZombie/PoleVaultingZombieJump.gif" + $Random + Math.random();
         SetHidden(c);
         f.isAttacking = 2;
         f.Altitude = 2;
@@ -3379,13 +3379,13 @@ othugZombie = InheritO(OrnNoneZombies, {
             r;
             h && ((k = $P[j]) && k.Stature > 0 ? (h.AttackedRX = (h.X = (h.AttackedLX = h.ZX = q = k.AttackedRX) - h.beAttackedPointL) + h.beAttackedPointR, SetStyle(i, {
                 left: h.X + "px"
-            }), n.src = "images/Zombies/wall/thugZombie/PoleVaultingZombieWalk.gif", SetVisible(l), h.isAttacking = 0, h.Altitude = 1, h.OSpeed = h.Speed = 1.6, h.NormalGif = 9, h.LostHeadGif = 10, h.NormalAttack = (r = CZombies.prototype).NormalAttack, h.getCrushed = r.getCrushed, h.getFreeze = r.getFreeze, h.getRaven = r.getRaven) : (h.ZX = h.AttackedLX = (h.X = (h.AttackedRX = g) - h.beAttackedPointR) + h.beAttackedPointL, SetStyle(i, {
+            }), n.src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/wall/thugZombie/PoleVaultingZombieWalk.gif", SetVisible(l), h.isAttacking = 0, h.Altitude = 1, h.OSpeed = h.Speed = 1.6, h.NormalGif = 9, h.LostHeadGif = 10, h.NormalAttack = (r = CZombies.prototype).NormalAttack, h.getCrushed = r.getCrushed, h.getFreeze = r.getFreeze, h.getRaven = r.getRaven) : (h.ZX = h.AttackedLX = (h.X = (h.AttackedRX = g) - h.beAttackedPointR) + h.beAttackedPointL, SetStyle(i, {
                 left: h.X + "px"
-            }), n.src = "images/Zombies/wall/thugZombie/PoleVaultingZombieJump2.gif" + $Random + Math.random(), SetVisible(l), oSym.addTask(80,
+            }), n.src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/wall/thugZombie/PoleVaultingZombieJump2.gif" + $Random + Math.random(), SetVisible(l), oSym.addTask(80,
             function(s, v) {
                 var u = $Z[s],
                 t;
-                u && (v.src = "images/Zombies/wall/thugZombie/PoleVaultingZombieWalk.gif", u.isAttacking = 0, u.Altitude = 1, u.OSpeed = u.Speed = 1.2, u.NormalGif = 9, u.LostHeadGif = 10, u.NormalAttack = (t = CZombies.prototype).NormalAttack, u.getCrushed = t.getCrushed, u.getFreeze = t.getFreeze, u.getRaven = t.getRaven)
+                u && (v.src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/wall/thugZombie/PoleVaultingZombieWalk.gif", u.isAttacking = 0, u.Altitude = 1, u.OSpeed = u.Speed = 1.2, u.NormalGif = 9, u.LostHeadGif = 10, u.NormalAttack = (t = CZombies.prototype).NormalAttack, u.getCrushed = t.getCrushed, u.getFreeze = t.getFreeze, u.getRaven = t.getRaven)
             },
             [m, n])))
         },
@@ -3407,8 +3407,8 @@ oEunZombie = InheritO(OrnIIZombies, {
     Speed: 1.5,
     LostPaperSpeed: 1.5,
     PicArr: (function() {
-        var a = "images/Zombies/wall/EunZombie/";
-        return ["images/Card/Zombies/EunZombie.png", a + "0.gif", a + "HeadWalk1.gif", a + "HeadAttack1.gif", a + "LostHeadWalk1.gif", a + "LostHeadAttack1.gif", a + "HeadWalk0.gif", a + "HeadAttack0.gif", a + "LostHeadWalk0.gif", a + "LostHeadAttack0.gif", a + "Head.gif" + $Random, a + "Die.gif" + $Random, "images/Zombies/NewspaperZombie/BoomDie.gif" + $Random, a + "LostNewspaper.gif", a + "1.gif"]
+        var a = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/wall/EunZombie/";
+        return ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Zombies/EunZombie.png", a + "0.gif", a + "HeadWalk1.gif", a + "HeadAttack1.gif", a + "LostHeadWalk1.gif", a + "LostHeadAttack1.gif", a + "HeadWalk0.gif", a + "HeadAttack0.gif", a + "LostHeadWalk0.gif", a + "LostHeadAttack0.gif", a + "Head.gif" + $Random, a + "Die.gif" + $Random, "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/NewspaperZombie/BoomDie.gif" + $Random, a + "LostNewspaper.gif", a + "1.gif"]
     })(),
     Produce: '同样是尸变，这位老兄不大一样<p>韧性：<font color="#FF0000">高</font><br>特点：<font color="#FF0000">灵符被打掉后会进入爆发状态</font></p>灵符僵尸生前官至一品，所以尽管他已经不能好好走路了，他还是时刻提醒自己：穿好袍子、戴好顶戴…。',
     getShadow: function(a) {
@@ -3542,8 +3542,8 @@ oZZ = InheritO(OrnNoneZombies, {
         return "display:none"
     },
     PicArr: (function() {
-        var a = "images/Zombies/wall/ZZ/";
-        return ["images/Card/Zombies/ZZ.png", a + "0.gif", a + "Zombie.gif", a + "ZombieAttack.gif", a + "ZombieLostHead.gif", a + "ZombieLostHeadAttack.gif", a + "ZombieHead.gif" + $Random, a + "ZombieDie.gif" + $Random, "images/Zombies/NewspaperZombie/BoomDie.gif" + $Random, a + "1.gif"]
+        var a = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/wall/ZZ/";
+        return ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Zombies/ZZ.png", a + "0.gif", a + "Zombie.gif", a + "ZombieAttack.gif", a + "ZombieLostHead.gif", a + "ZombieLostHeadAttack.gif", a + "ZombieHead.gif" + $Random, a + "ZombieDie.gif" + $Random, "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/NewspaperZombie/BoomDie.gif" + $Random, a + "1.gif"]
     })(),
     Produce: '怨灵僵尸神出鬼没，很多时候，她甚至是隐形的。<p>韧性：<font color="#FF0000">中</font><br>特点：<font color="#FF0000">有可能抵消子弹攻击</font></p>有些鬼魂设法被超度，去不了天堂，只能在人间恶作剧。自从僵尸出现后，怨灵也兴奋了起来，如同找到了自家人。不过她还是像以前一样怕光。'
 }),
@@ -3562,8 +3562,8 @@ oEmperor = InheritO(oCZombie, {
         PlayAudio(["shieldhit", "shieldhit2"][Math.floor(Math.random() * 2)])
     },
     PicArr: (function() {
-        var a = "images/Zombies/wall/Emperor/";
-        return ["images/Card/Zombies/Emperor.png", a + "0.gif", a + "Zombie.gif", a + "ZombieAttack.gif", a + "ZombieLostHead.gif", a + "ZombieLostHeadAttack.gif", "images/Zombies/Imp/ZombieHead.gif" + $Random, a + "ZombieDie.gif" + $Random, "images/Zombies/BoomDie.gif" + $Random, a + "1.gif"]
+        var a = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/wall/Emperor/";
+        return ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Zombies/Emperor.png", a + "0.gif", a + "Zombie.gif", a + "ZombieAttack.gif", a + "ZombieLostHead.gif", a + "ZombieLostHeadAttack.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/Imp/ZombieHead.gif" + $Random, a + "ZombieDie.gif" + $Random, "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/BoomDie.gif" + $Random, a + "1.gif"]
     })(),
     Produce: '秦始皇僵尸好霸气，还威风，有木有？<p>韧性：<font color="#FF0000">非常高</font><br>速度：<font color="#FF0000">慢</font></p>秦始皇做梦都想长生不老！自从变成僵尸，一日三餐吃脑子，果然长生不老！每天在无尽的长城中，追寻脑子......'
 }),
@@ -3578,8 +3578,8 @@ oWJY = InheritO(oEunZombie, {
     Attack: 550,
     LostPaperSpeed: 1.5,
     PicArr: (function() {
-        var a = "images/Zombies/WJY/";
-        return ["images/Card/Zombies/WJY.png", a + "0.gif", a + "HeadWalk1.gif", a + "HeadAttack1.gif", a + "LostHeadWalk1.gif", a + "LostHeadAttack1.gif", a + "HeadWalk0.gif", a + "HeadAttack0.gif", a + "LostHeadWalk0.gif", a + "LostHeadAttack0.gif", a + "Head.gif" + $Random, a + "Die.gif" + $Random, "images/Zombies/BoomDie.gif" + $Random, a + "LostNewspaper.gif", a + "1.gif"]
+        var a = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/WJY/";
+        return ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Zombies/WJY.png", a + "0.gif", a + "HeadWalk1.gif", a + "HeadAttack1.gif", a + "LostHeadWalk1.gif", a + "LostHeadAttack1.gif", a + "HeadWalk0.gif", a + "HeadAttack0.gif", a + "LostHeadWalk0.gif", a + "LostHeadAttack0.gif", a + "Head.gif" + $Random, a + "Die.gif" + $Random, "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/BoomDie.gif" + $Random, a + "LostNewspaper.gif", a + "1.gif"]
     })(),
     Produce: '新一代僵王博士登场。<p>体力：<font color="#FF0000">不死之身</font></p>喂！你怎么会在出现在游戏里？我总会听到有玩家这么问。嗯，这都要怪一个叫严启伦的家伙。'
 });
@@ -3597,8 +3597,8 @@ oWJY1 = InheritO(oDuckyTubeZombie1, {
         return "display:none"
     },
     PicArr: (function() {
-        var a = "images/Zombies/WJY/water/";
-        return ["images/Card/Zombies/DuckyTubeZombie1.png", a + "0.gif", a + "Walk1.gif", a + "Walk2.gif", a + "1.gif", a + "Attack.gif", a + "ZombieHead.gif" + $Random, a + "Die.gif" + $Random]
+        var a = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/WJY/water/";
+        return ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Zombies/DuckyTubeZombie1.png", a + "0.gif", a + "Walk1.gif", a + "Walk2.gif", a + "1.gif", a + "Attack.gif", a + "ZombieHead.gif" + $Random, a + "Die.gif" + $Random]
     })(),
     AudioArr: ["zombie_entering_water"]
 }),
@@ -3610,8 +3610,8 @@ oXBZombie = InheritO(OrnNoneZombies, {
     OSpeed: 3.2,
     Speed: 3.2,
     PicArr: (function() {
-        var a = "images/Zombies/XB/";
-        return ["images/Card/Zombies/XB.png", a + "0.gif", a + "Zombie.gif", a + "ZombieAttack.gif", a + "ZombieLostHead.gif", a + "ZombieLostHeadAttack.gif", a + "ZombieHead.gif" + $Random, a + "ZombieDie.gif" + $Random, "images/Zombies/BoomDie.gif" + $Random, a + "1.gif"]
+        var a = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/XB/";
+        return ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Zombies/XB.png", a + "0.gif", a + "Zombie.gif", a + "ZombieAttack.gif", a + "ZombieLostHead.gif", a + "ZombieLostHeadAttack.gif", a + "ZombieHead.gif" + $Random, a + "ZombieDie.gif" + $Random, "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/BoomDie.gif" + $Random, a + "1.gif"]
     })(),
     Produce: '流线型的虾头为他带来了比其他僵尸快一倍的速度。<p>韧性：<font color="#FF0000">低</font><br>弱点：<font color="#FF0000">寒冰射手</font></p>长期漂浮在海底令他产生了自己在飞的错觉，他坚信把虾戴在头上可以令自己飞得更高更远。'
 }),
@@ -3627,8 +3627,8 @@ oCXZombie = InheritO(oZombie, {
     beAttackedPointL: 60,
     beAttackedPointR: 130,
     PicArr: (function() {
-        var a = "images/Zombies/CX/";
-        return ["images/Card/Zombies/CX.png", a + "0.gif", a + "Zombie.gif", a + "ZombieAttack.gif", a + "ZombieLostHead.gif", a + "ZombieLostHeadAttack.gif", a + "ZombieHead.gif" + $Random, a + "ZombieDie.gif" + $Random, "images/Zombies/NewspaperZombie/BoomDie.gif" + $Random, a + "1.gif"]
+        var a = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/CX/";
+        return ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Zombies/CX.png", a + "0.gif", a + "Zombie.gif", a + "ZombieAttack.gif", a + "ZombieLostHead.gif", a + "ZombieLostHeadAttack.gif", a + "ZombieHead.gif" + $Random, a + "ZombieDie.gif" + $Random, "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/NewspaperZombie/BoomDie.gif" + $Random, a + "1.gif"]
     })(),
     Produce: '他坚硬的龟壳能减小大部分伤害。<p>韧性：<font color="#FF0000">很高</font><br>弱点：<font color="#FF0000">海星果</font></p>为了爬进与自己身形不符的龟壳，他不惜舍弃作为僵尸的尊严，最终在第一百次尝试之后成功把自己挤进了龟壳，再也出不来啦。'
 }),
@@ -3639,9 +3639,9 @@ oLGBOSS = function() {
         case(d.HP = c -= b) < 1000 : d.GoingDie();
             d.getHit0 = d.getHit1 = d.getHit2 = d.getHit3 = function() {};
             return;
-        case c < 3000 : d.EleBody.src = "images/Zombies/LGBOSS/3.gif";
+        case c < 3000 : d.EleBody.src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/LGBOSS/3.gif";
             break;
-        case c < 5000 : d.EleBody.src = "images/Zombies/LGBOSS/2.gif"
+        case c < 5000 : d.EleBody.src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/LGBOSS/2.gif"
         }
         d.SetAlpha(d, d.EleBody, 50, 0.5);
         oSym.addTask(10,
@@ -3659,8 +3659,8 @@ oLGBOSS = function() {
         beAttackedPointR: 300,
         Produce: '东海龙王拥有无限延长的身躯，带领僵尸大军突破你的阵型。<p>韧性：<font color="#FF0000">不死之身</font><br>技能：<font color="#FF0000">无限身躯，碾压植物</font></p>僵王博士所研制的新一代水下作战机器。博士花了近一年的功夫，从龙王的排水系统到每一个菱角，都进行了细致的打磨加强。此刻这位僵尸天才正沉浸于机器完成的喜悦中。',
         PicArr: (function() {
-            var b = "images/Zombies/LGBOSS/";
-            return ["images/Card/Zombies/LGBOSS.png", b + "0.gif", b + "1.gif", b + "2.gif", b + "3.gif", b + "5.gif" + $Random, b + "BoomDie.gif" + $Random, b + "ice.png", b + "ice_cap.png"]
+            var b = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/LGBOSS/";
+            return ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Zombies/LGBOSS.png", b + "0.gif", b + "1.gif", b + "2.gif", b + "3.gif", b + "5.gif" + $Random, b + "BoomDie.gif" + $Random, b + "ice.png", b + "ice_cap.png"]
         })(),
         AudioArr: ["zamboni", "explosion"],
         BirthCallBack: function(h) {
@@ -3671,7 +3671,7 @@ oLGBOSS = function() {
             f,
             b = oGd.$Ice;
             h.EleShadow = c.firstChild;
-            h.EleBody = c.childNodes[1]; ! b[d] ? (f = NewEle("dIceCar" + d, "div", "position:absolute;z-index:1;left:145px;top:" + (GetY(d) - 65) + "px;width:800px;height:205px", 0, EDPZ), NewImg("", "images/interface/blank.png", "position:absolute;clip:rect(0,auto,auto,800px);width:800px;height:205px;left:0px;background:url(images/Zombies/LGBOSS/ice.png) repeat-x", f), NewImg("", "images/Zombies/LGBOSS/ice_cap.png", "position:absolute;display:none;left:0", f), b[d] = [1, 11, h.AttackedLX]) : ++b[d][0];
+            h.EleBody = c.childNodes[1]; ! b[d] ? (f = NewEle("dIceCar" + d, "div", "position:absolute;z-index:1;left:145px;top:" + (GetY(d) - 65) + "px;width:800px;height:205px", 0, EDPZ), NewImg("", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/blank.png", "position:absolute;clip:rect(0,auto,auto,800px);width:800px;height:205px;left:0px;background:url(https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/LGBOSS/ice.png) repeat-x", f), NewImg("", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/LGBOSS/ice_cap.png", "position:absolute;display:none;left:0", f), b[d] = [1, 11, h.AttackedLX]) : ++b[d][0];
             g ? oSym.addTask(g,
             function(j, i) {
                 var k = $Z[j];
@@ -3787,7 +3787,7 @@ oLGBOSS = function() {
         },
         flatTire: function() {
             var b = this;
-            b.EleBody.src = "images/Zombies/LGBOSS/5.gif";
+            b.EleBody.src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Zombies/LGBOSS/5.gif";
             b.beAttacked = 0;
             b.HP = 0;
             b.getHit0 = b.getHit1 = b.getHit2 = b.getHit3 = function() {};

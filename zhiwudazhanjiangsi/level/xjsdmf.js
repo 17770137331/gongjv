@@ -1,10 +1,10 @@
 ﻿oS.Init({
     PName: [oLilyPad, oRepeater, oCherryBomb, oTorchwood, oTangleKlep, oWallNut],
     ZName: [oSmallZombie, oSmallFlagZombie, oSmallDuckyTubeZombie1, oSmallConeheadZombie, oSmallFootballZombie, oSmallSnorkelZombie],
-    PicArr: ["images/interface/background3.jpg", "images/interface/trophy.png"],
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/background3.jpg", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/trophy.png"],
     Coord: 2,
     LF: [0, 1, 1, 2, 2, 1, 1],
-    backgroundImage: "images/interface/background3.jpg",
+    backgroundImage: "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/background3.jpg",
     CanSelectCard: 0,
     LevelName: "小僵尸大麻烦",
     LvlEName: 30,
@@ -80,12 +80,12 @@
         14 : [ShowFinalWave, 0]
     },
     FlagToEnd: function() {
-        NewImg("imgSF", "images/interface/trophy.png", "left:667px;top:220px", EDAll, {
+        NewImg("imgSF", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/trophy.png", "left:667px;top:220px", EDAll, {
             onclick: function() {
                 SelectModal(0)
             }
         });
-        NewImg("PointerUD", "images/interface/PointerDown.gif", "top:185px;left:676px", EDAll)
+        NewImg("PointerUD", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/PointerDown.gif", "top:185px;left:676px", EDAll)
     }
 },
 {

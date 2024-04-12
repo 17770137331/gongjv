@@ -1,8 +1,8 @@
 ﻿oS.Init({
     PName: [oPeashooter, oSunFlower, oCherryBomb, oWallNut],
     ZName: [oZombie, oZombie2, oZombie3, oConeheadZombie],
-    PicArr: ["images/interface/background1unsodded2.jpg", "images/interface/background1.jpg"],
-    backgroundImage: "images/interface/background1unsodded2.jpg",
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/background1unsodded2.jpg", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/background1.jpg"],
+    backgroundImage: "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/background1unsodded2.jpg",
     CanSelectCard: 0,
     LevelName: "关卡 1-4",
     LvlEName: 4,
@@ -10,11 +10,11 @@
         9 : $("imgFlag1")
     },
     StartGame: function() {
-        NewEle("sod3row", "div", "position:absolute;left:-115px;top:0;height:600px;width:264px;z-index:0;background:url(images/interface/background1.jpg);over-flow:hidden", 0, EDPZ);
-        NewImg("SodRoll_1", "images/interface/SodRoll.png", "left:122px;top:48px;z-index:1", EDPZ);
-        NewImg("SodRollCap_1", "images/interface/SodRollCap.png", "left:117px;top:131px;z-index:1", EDPZ);
-        NewImg("SodRoll_2", "images/interface/SodRoll.png", "left:122px;top:428px;z-index:1", EDPZ);
-        NewImg("SodRollCap_2", "images/interface/SodRollCap.png", "left:117px;top:511px;z-index:1", EDPZ);
+        NewEle("sod3row", "div", "position:absolute;left:-115px;top:0;height:600px;width:264px;z-index:0;background:url(https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/background1.jpg);over-flow:hidden", 0, EDPZ);
+        NewImg("SodRoll_1", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/SodRoll.png", "left:122px;top:48px;z-index:1", EDPZ);
+        NewImg("SodRollCap_1", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/SodRollCap.png", "left:117px;top:131px;z-index:1", EDPZ);
+        NewImg("SodRoll_2", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/SodRoll.png", "left:122px;top:428px;z-index:1", EDPZ);
+        NewImg("SodRollCap_2", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/SodRollCap.png", "left:117px;top:511px;z-index:1", EDPZ);
         PlayAudio("", true); (function(e, h, b, d, c, g, a, f) {
             e += 15;
             h += 16;
@@ -73,11 +73,11 @@
         8 : [ShowFinalWave, 0]
     },
     FlagToEnd: function() {
-        NewImg("imgSF", "images/interface/Shovel/0.gif", "left:827px;top:330px;clip:rect(auto,auto,60px,auto)", EDAll, {
+        NewImg("imgSF", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/Shovel/0.gif", "left:827px;top:330px;clip:rect(auto,auto,60px,auto)", EDAll, {
             onclick: function() {
                 GetNewCard(this, oShovel, 5)
             }
         });
-        NewImg("PointerUD", "images/interface/PointerDown.gif", "top:295px;left:836px", EDAll)
+        NewImg("PointerUD", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/PointerDown.gif", "top:295px;left:836px", EDAll)
     }
 });

@@ -4,11 +4,11 @@
     PicArr: function() {
         var a = oLing.prototype,
         b = a.PicArr;
-        return ["images/interface/background5.jpg", "images/interface/Dave.gif", "images/interface/Dave2.gif", "images/interface/Dave3.gif", b[a.CardGif], b[a.NormalGif]]
+        return ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/background5.jpg", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/Dave.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/Dave2.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/Dave3.gif", b[a.CardGif], b[a.NormalGif]]
     } (),
     SunNum: 500,
     LF: [0, 2, 2, 2, 2, 2],
-    backgroundImage: "images/interface/background5.jpg",
+    backgroundImage: "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/background5.jpg",
     CanSelectCard: 1,
     LevelName: "关卡 5-2",
     LvlEName: 22,
@@ -36,11 +36,11 @@
     FlagToMonitor: {
     },
     FlagToEnd: function() {
-        NewImg("imgSF", "images/Card/Plants/Ling.png", "left:827px;top:525px;clip:rect(auto,auto,60px,auto)", EDAll, {
+        NewImg("imgSF", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Plants/Ling.png", "left:827px;top:525px;clip:rect(auto,auto,60px,auto)", EDAll, {
             onclick: function() {
                 GetNewCard(this, oLing, 43)
             }
         });
-        NewImg("PointerUD", "images/interface/PointerDown.gif", "top:490px;left:836px", EDAll)
+        NewImg("PointerUD", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/PointerDown.gif", "top:490px;left:836px", EDAll)
     }
 });

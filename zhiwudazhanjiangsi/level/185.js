@@ -2,9 +2,9 @@
     PName: [oPeashooter, oSunFlower, oCherryBomb, oWallNut, oPotatoMine, oSnowPea, oChomper, oRepeater, oPuffShroom, oSunShroom, oFumeShroom, oGraveBuster, oHypnoShroom, oScaredyShroom, oIceShroom, oDoomShroom, oLilyPad, oSquash, oThreepeater, oTangleKlep, oJalapeno, oSpikeweed, oTorchwood, oTallNut, oCactus, oPlantern, oSplitPea, oStarfruit, oPumpkinHead, oFlowerPot, oCoffeeBean, oGarlic, oSeaShroom, oOxygen, ostar, oTTS, oGun, oSeaAnemone, oGatlingPea, oGloomShroom, oTwinSunflower, oSpikerock, oTenManNut, oSnowRepeater, oLing, oLotusRoot, oMagneticmuShroom, oLaserBean], 
     ZName: [oBalloonZombie, oZombie, oBucketheadZombie, oConeheadZombie, oCZombie, oCBucketheadZombie, oCConeheadZombie, oFootballZombie, oHeiFootballZombie, oJackinTheBoxZombie, oCJackinTheBoxZombie, oImp, oDancingZombie, oBackupDancer, oMustacheZombie, oXBZombie, oNewspaperZombie, oCNewspaperZombie, oLGBOSS],
     PicArr: function() {
-        return ["images/interface/backgroundwall.jpg"]
+        return ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/backgroundwall.jpg"]
     } (),
-    backgroundImage: "images/interface/backgroundwall.jpg",
+    backgroundImage: "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/backgroundwall.jpg",
     CanSelectCard: 1,
     LevelName: "常青之塔 35层",
     LvlEName: 185,
@@ -37,11 +37,11 @@
         14 : [ShowFinalWave, 0]
     },
     FlagToEnd: function() {
- NewImg("imgSF", "images/interface/trophy.png", "left:260px;top:233px", EDAll, {
+ NewImg("imgSF", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/trophy.png", "left:260px;top:233px", EDAll, {
             onclick: function() {
                 SelectModal(186)
             }
         });
-        NewImg("PointerUD", "images/interface/PointerDown.gif", "top:185px;left:676px", EDAll)
+        NewImg("PointerUD", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/PointerDown.gif", "top:185px;left:676px", EDAll)
     }
 });

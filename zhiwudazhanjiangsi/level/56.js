@@ -1,8 +1,8 @@
 ﻿oS.Init({
     PName: [oThreepeater, oCherryBomb,oTenManNute, oJalapeno,oSquash, oGatlingPea, oSnowRepeater,oPumpkinHead, oChomper, oRepeater],
     ZName: [oZombie, oZombie2, oZombie3, oConeheadZombie, oPoleVaultingZombie, oBucketheadZombie],
-    PicArr: ["images/interface/grr.jpg", "images/interface/trophy.png"],
-    backgroundImage: "images/interface/grr.jpg",
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/grr.jpg", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/trophy.png"],
+    backgroundImage: "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/grr.jpg",
     CanSelectCard: 0,
     LevelName: "魔音之旅--第6天",
     LvlEName: 0,
@@ -74,7 +74,7 @@
         19 : [ShowFinalWave, 0]
     },
  FlagToEnd: function() {
-  NewImg("imgSF", "images/interface/trophy.png", "left:260px;top:233px", EDAll, {
+  NewImg("imgSF", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/trophy.png", "left:260px;top:233px", EDAll, {
               onclick: function() {
                   SelectModal(0)
               }

@@ -1,8 +1,8 @@
 ﻿oS.Init({
     PName: [oCherryBomb, oJalapeno],
     ZName: [oZombie, oZombie2, oZombie3, oPoleVaultingZombie, oFootballZombie, oImp],
-    PicArr: ["images/interface/background1.jpg", "images/interface/trophy.png"],
-    backgroundImage: "images/interface/background1.jpg",
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/background1.jpg", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/trophy.png"],
+    backgroundImage: "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/background1.jpg",
     CanSelectCard: 0,
     LevelName: "小游戏：一次性消费",
     LvlEName: "DisposableProducts",
@@ -70,12 +70,12 @@
         19 : [ShowFinalWave, 0]
     },
     FlagToEnd: function() {
-        NewImg("imgSF", "images/interface/trophy.png", "left:260px;top:233px", EDAll, {
+        NewImg("imgSF", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/trophy.png", "left:260px;top:233px", EDAll, {
             onclick: function() {
                 SelectModal(0)
             }
         });
-        NewImg("PointerUD", "images/interface/PointerDown.gif", "top:198px;left:269px", EDAll)
+        NewImg("PointerUD", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/PointerDown.gif", "top:198px;left:269px", EDAll)
     }
 },
 {

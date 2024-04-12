@@ -1,9 +1,9 @@
 ﻿oS.Init({
     PName: [oPeashooter, oSunFlower, oWallNut, oSnowPea, oSplitPea, oSpikeweed, oRepeater, oTallNut, oPumpkinHead, oFlowerPot, oTorchwood, oThreepeater, oGatlingPea, oTwinSunflower, oSpikerock, oFumeShroom, oCoffeeBean, oGloomShroom, oSunShroom, oPuffShroom, oScaredyShroom, oGarlic, oGraveBuster, oStarfruit, oLilyPad, oIceShroom, oSeaShroom, oPlantern, oCactus, oTenManNut, oSnowRepeater, oLing, oLotusRoot, oMagneticmuShroom, oLaserBean], 
     ZName: [oCZombie, oCZombie2, oCZombie3, oCBucketheadZombie, oDuckyTubeZombie1, oCSnorkelZombie, oScreenDoorZombie, oDuckyTubeZombie2, oWJY, oWJY1],
-    PicArr: ["images/interface/backgroundX1.jpg"], 
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/backgroundX1.jpg"], 
     LF: [0, 2, 3, 3, 2, 2, 0], 
-    backgroundImage: "images/interface/backgroundX1.jpg",
+    backgroundImage: "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/backgroundX1.jpg",
     CanSelectCard: 1, 
     LevelName: "副本-江轶同学会晤",  
     LvlEName: 9,  
@@ -31,7 +31,7 @@
         29 : [ShowFinalWave, 0] 
     },
     FlagToEnd: function() {
-        NewImg("imgSF", "images/interface/0.gif", "left:667px;top:330px;clip:rect(auto,auto,237px,auto)", EDAll, {
+        NewImg("imgSF", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/0.gif", "left:667px;top:330px;clip:rect(auto,auto,237px,auto)", EDAll, {
             onclick: function() {
                 GetNewCard(this, oGoldenPrize, 0)
             }

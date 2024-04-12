@@ -1,8 +1,8 @@
 ﻿oS.Init({
     PName: [oFlowerPot, oCFlowerPot, oJalapeno, oRepeater, oThreepeater, oTenManNut, oBigChomper], 
     ZName: [oCZombie, oCZombie2, oCZombie3, oCConeheadZombie, oCBucketheadZombie, othugZombie, oEunZombie, oZZ],
-    PicArr: ["images/interface/backgroundwall.jpg"], 
-    backgroundImage: "images/interface/backgroundwall.jpg",
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/backgroundwall.jpg"], 
+    backgroundImage: "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/backgroundwall.jpg",
     LF: [0, 3, 3, 3, 3, 3, 3], 
     CanSelectCard: 0,
     DKind: 0,
@@ -86,7 +86,7 @@
         39 : [ShowFinalWave, 0]
     },
     FlagToEnd: function() {
-        NewImg("imgSF", "images/interface/0.gif", "left:667px;top:330px;clip:rect(auto,auto,237px,auto)", EDAll, {
+        NewImg("imgSF", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/0.gif", "left:667px;top:330px;clip:rect(auto,auto,237px,auto)", EDAll, {
             onclick: function() {
                 GetNewCard(this, oGoldenPrize, 0)
             }

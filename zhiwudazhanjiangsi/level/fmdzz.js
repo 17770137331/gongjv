@@ -1,8 +1,8 @@
 ﻿oS.Init({
     PName: [oRepeater, oFumeShroom],
     ZName: [oZombie, oPoleVaultingZombie],
-    PicArr: ["images/interface/background2.jpg", "images/interface/trophy.png"],
-    backgroundImage: "images/interface/background2.jpg",
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/background2.jpg", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/trophy.png"],
+    backgroundImage: "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/background2.jpg",
     CanSelectCard: 0,
     DKind: 0,
     LevelName: "三列防部",
@@ -15,7 +15,7 @@
     },
     StartGameMusic: "Watery Graves",
     StartGame: function() {
-        NewEle(0, "div", "width:22px;height:502px;margin:75px 0 0 485px;position:absolute;z-index:1;background:url(images/interface/Stripe.png)", 0, $("tGround"));
+        NewEle(0, "div", "width:22px;height:502px;margin:75px 0 0 485px;position:absolute;z-index:1;background:url(https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/Stripe.png)", 0, $("tGround"));
         StopMusic();
         PlayMusic(oS.LoadMusic = oS.StartGameMusic);
         SetVisible($("tdShovel"), $("dFlagMeter"), $("dTop"));
@@ -75,12 +75,12 @@
         9 : [ShowLargeWave, 0]
     },
     FlagToEnd: function() {
-        NewImg("imgSF", "images/interface/trophy.png", "left:667px;top:220px", EDAll, {
+        NewImg("imgSF", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/trophy.png", "left:667px;top:220px", EDAll, {
             onclick: function() {
                 SelectModal(0)
             }
         });
-        NewImg("PointerUD", "images/interface/PointerDown.gif", "top:185px;left:676px", EDAll)
+        NewImg("PointerUD", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/PointerDown.gif", "top:185px;left:676px", EDAll)
     }
 },
 {

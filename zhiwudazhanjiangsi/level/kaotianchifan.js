@@ -2,12 +2,12 @@
     PName: [oPeashooter, oCherryBomb, oWallNut, oPotatoMine, oSnowPea, oChomper, oJalapeno, oSpikeweed, oRepeater, oSquash, oTorchwood, oLilyPad, oTangleKlep, oTallNut, oTenManNut, oSnowRepeater, oLing, oLotusRoot, oMagneticmuShroom, oLaserBean, oBigChomper, oFlamesMushroom], 
     ZName: [oZombie, oZombie2, oZombie3, oDuckyTubeZombie1, oScreenDoorZombie, oNewspaperZombie, oDolphinRiderZombie, oPoleVaultingZombie, oSnorkelZombie],
     PicArr: function() {
-        return ["images/interface/background3.jpg", "images/interface/trophy.png"]
+        return ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/background3.jpg", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/trophy.png"]
     } (),
     Coord: 2,
     SunNum: 2500,
     LF: [0, 1, 1, 2, 2, 1, 1],
-    backgroundImage: "images/interface/background3.jpg",
+    backgroundImage: "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/background3.jpg",
     CanSelectCard: 1,
     LevelName: "靠天吃饭",
     LvlEName: "yy",
@@ -58,11 +58,11 @@
         39 : [ShowFinalWave, 0]
     },
     FlagToEnd: function() {
- NewImg("imgSF", "images/interface/trophy.png", "left:260px;top:233px", EDAll, {
+ NewImg("imgSF", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/trophy.png", "left:260px;top:233px", EDAll, {
             onclick: function() {
                 SelectModal(0)
             }
         });
-        NewImg("PointerUD", "images/interface/PointerDown.gif", "top:185px;left:676px", EDAll)
+        NewImg("PointerUD", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/PointerDown.gif", "top:185px;left:676px", EDAll)
     }
 });

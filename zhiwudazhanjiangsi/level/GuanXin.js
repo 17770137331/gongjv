@@ -1,9 +1,9 @@
 ﻿oS.Init({
     PName: [oStarfruit],
     ZName: [oZombie, oZombie2, oZombie3, oConeheadZombie, oBucketheadZombie, oScreenDoorZombie, oHeiFootballZombie , oDancingZombie],
-    PicArr: ["images/interface/backgroundX2.jpg", "images/interface/trophy.png"],
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/backgroundX2.jpg", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/trophy.png"],
     LF: [0, 1, 1, 3, 1, 1, 0], 
-    backgroundImage: "images/interface/backgroundX2.jpg",
+    backgroundImage: "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/backgroundX2.jpg",
     CanSelectCard: 0,
     LevelName: "小游戏：观星",
     LvlEName: "GUANXIN",
@@ -72,12 +72,12 @@
         19 : [ShowFinalWave, 0]
     },
     FlagToEnd: function() {
-        NewImg("imgSF", "images/interface/trophy.png", "left:260px;top:233px", EDAll, {
+        NewImg("imgSF", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/trophy.png", "left:260px;top:233px", EDAll, {
             onclick: function() {
                 SelectModal(0)
             }
         });
-        NewImg("PointerUD", "images/interface/PointerDown.gif", "top:198px;left:269px", EDAll)
+        NewImg("PointerUD", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/PointerDown.gif", "top:198px;left:269px", EDAll)
     }
 },
 {

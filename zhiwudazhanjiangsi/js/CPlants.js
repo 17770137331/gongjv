@@ -155,7 +155,7 @@ oGraveBuster = InheritO(CPlants, {
     SunNum: 75,
     BookHandBack: 2.5,
     canEat: 0,
-    PicArr: ["images/Card/Plants/GraveBuster.png", "images/Plants/GraveBuster/0.gif", "images/Plants/GraveBuster/GraveBuster.gif" + $Random + Math.random()],
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Plants/GraveBuster.png", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/GraveBuster/0.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/GraveBuster/GraveBuster.gif" + $Random + Math.random()],
     AudioArr: ["gravebusterchomp"],
     CanGrow: function(b, a, d) {
         var c = oS.ArP;
@@ -198,7 +198,7 @@ oLawnCleaner = InheritO(CPlants, {
     beAttackedPointL: 0,
     beAttackedPointR: 71,
     SunNum: 0,
-    PicArr: ["images/interface/LawnCleaner.png", "images/interface/LawnCleaner1.png"],
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/LawnCleaner.png", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/LawnCleaner1.png"],
     AudioArr: ["lawnmower"],
     NormalGif: 0,
     canEat: 0,
@@ -219,7 +219,7 @@ oLawnCleaner = InheritO(CPlants, {
             var d = oZ.getArZ(k, j, e),
             f = d.length,
             h;
-            $(a.id).childNodes[1].src="images/interface/LawnCleaner1.png";
+            $(a.id).childNodes[1].src="https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/LawnCleaner1.png";
             while (f--) { (h = d[f]).getCrushed(b) && h.CrushDie()
             }
             k > c ? b.Die() : (b.pixelRight += 10, b.AttackedLX = k += 10, b.AttackedRX = j += 10, g.style.left = (b.pixelLeft += 10) + "px", 
@@ -238,7 +238,7 @@ oCleaner1 = InheritO(oLawnCleaner, {
     beAttackedPointL: 0,
     beAttackedPointR: 57,
     SunNum: 0,
-    PicArr: ["images/interface/BZ.png", "images/Plants/Jalapeno/JalapenoAttack.gif"],
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/BZ.png", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/Jalapeno/JalapenoAttack.gif"],
     Tooltip: "爆竹",
     AudioArr: ["jalapeno"]
 }),
@@ -261,7 +261,7 @@ oCleaner = InheritO(oCleaner1, {
                 }
                 h.Die(1);
                 EditEle(b.childNodes[1], {
-                    src: "images/Plants/Jalapeno/JalapenoAttack.gif"
+                    src: "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/Jalapeno/JalapenoAttack.gif"
                 },
                 {
                     width: "755px",
@@ -289,7 +289,7 @@ oPoolCleaner = InheritO(oLawnCleaner, {
     beAttackedPointL: 0,
     beAttackedPointR: 47,
     SunNum: 0,
-    PicArr: ["images/interface/PoolCleaner.png", "images/interface/PoolCleaner1.png"],
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/PoolCleaner.png", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/PoolCleaner1.png"],
     Tooltip: "池塘清扫车",
     AudioArr: ["pool_cleaner"],
     NormalAttack: function(a) {
@@ -297,7 +297,7 @@ oPoolCleaner = InheritO(oLawnCleaner, {
             var d = oZ.getArZ(k, j, e),
             f = d.length,
             h;
-            $(a.id).childNodes[1].src="images/interface/PoolCleaner1.png";
+            $(a.id).childNodes[1].src="https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/PoolCleaner1.png";
             while (f--) { (h = d[f]).getCrushed(b) && h.CrushDie()
             }
             k > c ? b.Die() : (b.pixelRight += 10, b.AttackedLX = k += 10, b.AttackedRX = j += 10, g.style.left = (b.pixelLeft += 10) + "px", 
@@ -317,7 +317,7 @@ oBrains = InheritO(CPlants, {
     beAttackedPointR: 32,
     SunNum: 0,
     HP: 1,
-    PicArr: ["images/interface/brain.png"],
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/brain.png"],
     Tooltip: "美味的脑子",
     NormalGif: 0,
     InitTrigger: function() {},
@@ -344,7 +344,7 @@ oStarfruit = InheritO(CPlants, {
     GetDY: function(b, c, a) {
         return a[0] ? -17 : -10
     },
-    PicArr: ["images/Card/Plants/Starfruit.png", "images/Plants/Starfruit/0.gif", "images/Plants/Starfruit/Starfruit.gif", "images/Plants/Starfruit/Star.gif"],
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Plants/Starfruit.png", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/Starfruit/0.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/Starfruit/Starfruit.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/Starfruit/Star.gif"],
     Tooltip: "向五个方向发射小杨桃",
     Produce: '杨桃可以向五个方向发射小杨桃。<p>伤害：<font color="#FF0000">中等</font><br>范围：<font color="#FF0000">五个方向</font></p>杨桃：“嘿，哥们，有一天我去看牙医，他说</font><br>我有四个牙洞。我一数，我就只有一颗牙齿！一</font><br>颗牙齿长了四个牙洞？怎么会这样啊？”',
     getTriggerRange: function(e, g, f) {
@@ -406,7 +406,7 @@ oStarfruit = InheritO(CPlants, {
         var c = d.pixelLeft + 38,
         b = c - 15,
         a = d.pixelTop + 20;
-        d.BulletEle = NewImg(0, "images/Plants/Starfruit/Star.gif", "left:" + b + "px;top:" + a + "px;z-index:" + (d.zIndex + 2))
+        d.BulletEle = NewImg(0, "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/Starfruit/Star.gif", "left:" + b + "px;top:" + a + "px;z-index:" + (d.zIndex + 2))
     },
     PrivateDie: function(a) {
         a.BulletEle = null
@@ -517,7 +517,7 @@ oPeashooter = InheritO(CPlants, {
     SunNum: 100,
     BKind: 0,
     AudioArr: ["splat1", "splat2", "splat3", "plastichit", "shieldhit", "shieldhit2"],
-    PicArr: ["images/Card/Plants/Peashooter.png", "images/Plants/Peashooter/0.gif", "images/Plants/Peashooter/Peashooter.gif", "images/Plants/PB00.gif", "images/Plants/PeaBulletHit.gif"],
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Plants/Peashooter.png", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/Peashooter/0.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/Peashooter/Peashooter.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/PB00.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/PeaBulletHit.gif"],
     Tooltip: "向敌人射出豌豆",
     Produce: '豌豆射手，你的第一道防线。它们通过发射豌</font><br>豆来攻击僵尸。<p>伤害：<font color="#FF0000">中等</font></p>一棵植物，怎么能如此快地生长，并发射如此</font><br>多的豌豆呢？豌豆射手：“努力工作，奉献自</font><br>己，再加上一份阳光，高纤维和氧化碳均衡搭</font><br>配，这种健康早餐让一切成为可能。”',
     PrivateBirth: function(a) {
@@ -544,14 +544,14 @@ oPeashooter = InheritO(CPlants, {
         function(f, j, h, c, n, i, m, k, o, g) {
             var l, e = GetC(n),
             d = oZ["getZ" + c](n, i);
-            m == 0 && g[i + "_" + e] && k != e && (PlayAudio("firepea"), m = 1, h = 40, k = e, j.src = "images/Plants/PB" + m + c + ".gif");
+            m == 0 && g[i + "_" + e] && k != e && (PlayAudio("firepea"), m = 1, h = 40, k = e, j.src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/PB" + m + c + ".gif");
             d && d.Altitude == 1 ? (d[{
                 "-1": "getSnowPea",
                 0 : "getPea",
                 1 : "getFirePea"
             } [m]](d, h, c), (SetStyle(j, {
                 left: o + 28 + "px"
-            })).src=['images/Plants/PeaBulletHit.gif','images/Plants/PeaBulletHit2.gif'][m],oSym.addTask(10, ClearChild, [j])) : (n += (l = !c ? 5 : -5)) < oS.W && n > 100 ? (j.style.left = (o += l) + "px", oSym.addTask(1, arguments.callee, [f, j, h, c, n, i, m, k, o, g])) : ClearChild(j)
+            })).src=['https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/PeaBulletHit.gif','https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/PeaBulletHit2.gif'][m],oSym.addTask(10, ClearChild, [j])) : (n += (l = !c ? 5 : -5)) < oS.W && n > 100 ? (j.style.left = (o += l) + "px", oSym.addTask(1, arguments.callee, [f, j, h, c, n, i, m, k, o, g])) : ClearChild(j)
         //"(n += (l = !c ? 5 : -5)) < oS.W && n > 100"表示如果方向c是正向则l为5,如果c是反向则l为-
         //正负5表示子弹往右或者往左飞行5的距离
         //n+=正负5表示计算出子弹新的x坐标
@@ -574,7 +574,7 @@ oLotusRoot = InheritO(oPeashooter, {
     getShadow: function(a) {
         return "display:none"
     },
-    PicArr: ["images/Card/Plants/LotusRoot.png", "images/Plants/LotusRoot/0.gif", "images/Plants/LotusRoot/Peashooter.gif", "images/Plants/LotusRoot/Missile.png", "images/Plants/LotusRoot/BulletHit.png"],
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Plants/LotusRoot.png", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/LotusRoot/0.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/LotusRoot/Peashooter.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/LotusRoot/Missile.png", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/LotusRoot/BulletHit.png"],
     Tooltip: "发射高火力火箭炮，对军舰和潜水艇造成重创",
     Produce: '莲藕火箭炮可以发射高火力火箭炮，对军舰和</font><br>潜水艇造成重创。<p>伤害：<font color="#FF0000">极高</font></p>要问莲藕火箭炮除了发射炮弹还能干啥。嗯，</font><br>对于这个问题，你应该去问问密集恐惧症患者</font><br>。”',
     CanGrow: function(c, b, d) {
@@ -596,7 +596,7 @@ oLotusRoot = InheritO(oPeashooter, {
         0, EDPZ);
         oSym.addTask(15,
         function(o) {
-        $(a.id).childNodes[1].src="images/Plants/LotusRoot/Peashooter.gif";
+        $(a.id).childNodes[1].src="https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/LotusRoot/Peashooter.gif";
         },[this])
         oSym.addTask(15,
         function(d) {
@@ -608,14 +608,14 @@ oLotusRoot = InheritO(oPeashooter, {
         function(f, j, h, c, n, i, m, k, o, g) {
             var l, e = GetC(n),
             d = oZ["getZ" + c](n, i);
-            m == 0 && g[i + "_" + e] && k != e && (PlayAudio("firepea"), m = 1, h = 40, k = e, j.src = "images/Plants/LotusRoot/Missile.png");
+            m == 0 && g[i + "_" + e] && k != e && (PlayAudio("firepea"), m = 1, h = 40, k = e, j.src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/LotusRoot/Missile.png");
             d && d.Altitude == 1 ? (d[{
                 "-1": "getSnowPea",
                 0 : "getPea",
                 1 : "getFirePea"
             } [m]](d, h, c), (SetStyle(j, {
                 left: o + 28 + "px"
-            })).src = "images/Plants/LotusRoot/BulletHit.png", oSym.addTask(10, ClearChild, [j])) : (n += (l = !c ? 5 : -5)) < oS.W && n > 100 ? (j.style.left = (o += l) + "px", oSym.addTask(1, arguments.callee, [f, j, h, c, n, i, m, k, o, g])) : ClearChild(j)
+            })).src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/LotusRoot/BulletHit.png", oSym.addTask(10, ClearChild, [j])) : (n += (l = !c ? 5 : -5)) < oS.W && n > 100 ? (j.style.left = (o += l) + "px", oSym.addTask(1, arguments.callee, [f, j, h, c, n, i, m, k, o, g])) : ClearChild(j)
         },
         [b, $(b), 500, 0, a.AttackedLX, a.R, 0, 0, a.AttackedLX - 40, oGd.$Torch])
     }
@@ -625,7 +625,7 @@ oSnowPea = InheritO(oPeashooter, {
     CName: "寒冰射手",
     SunNum: 175,
     BKind: -1,
-    PicArr: ["images/Card/Plants/SnowPea.png", "images/Plants/SnowPea/0.gif", "images/Plants/SnowPea/SnowPea.gif", "images/Plants/PB-10.gif", "images/Plants/PeaBulletHit1.gif"],
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Plants/SnowPea.png", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/SnowPea/0.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/SnowPea/SnowPea.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/PB-10.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/PeaBulletHit1.gif"],
     AudioArr: ["frozen", "splat1", "splat2", "splat3", "shieldhit", "shieldhit2", "plastichit"],
     Tooltip: "寒冰射手可造成伤害, 同时又有减速效果",
     Produce: '寒冰射手会发射寒冰豌豆来攻击敌人，并具有</font><br>减速效果。<p>伤害：<font color="#FF0000">中等，带有减速效果</font></p>人们经常告诉寒冰射手他是多么“冷酷”，或者</font><br>告诫他要“冷静”。他们叫他要“保持镇静”。寒</font><br>冰射手只是转转他的眼睛。其实他都听见了。',
@@ -646,14 +646,14 @@ oSnowPea = InheritO(oPeashooter, {
         function(f, j, h, c, n, i, m, k, o, g) {
             var l, e = GetC(n),
             d = oZ["getZ" + c](n, i);
-            m < 1 && g[i + "_" + e] && k != e && (PlayAudio("firepea"), ++m && (h = 40), k = e, j.src = "images/Plants/PB" + m + c + ".gif");
+            m < 1 && g[i + "_" + e] && k != e && (PlayAudio("firepea"), ++m && (h = 40), k = e, j.src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/PB" + m + c + ".gif");
             d && d.Altitude == 1 ? (d[{
                 "-1": "getSnowPea",
                 0 : "getPea",
                 1 : "getFirePea"
             } [m]](d, h, c), (SetStyle(j, {
                 left: o + 28 + "px"
-            })).src = "images/Plants/PeaBulletHit1.gif", oSym.addTask(10, ClearChild, [j])) : (n += (l = !c ? 5 : -5)) < oS.W && n > 100 ? (j.style.left = (o += l) + "px", oSym.addTask(1, arguments.callee, [f, j, h, c, n, i, m, k, o, g])) : ClearChild(j)
+            })).src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/PeaBulletHit1.gif", oSym.addTask(10, ClearChild, [j])) : (n += (l = !c ? 5 : -5)) < oS.W && n > 100 ? (j.style.left = (o += l) + "px", oSym.addTask(1, arguments.callee, [f, j, h, c, n, i, m, k, o, g])) : ClearChild(j)
         },
         [b, $(b), 30, 0, a.AttackedLX, a.R, -1, 0, a.AttackedLX - 40, oGd.$Torch])
     }
@@ -662,7 +662,7 @@ oSnowRepeater = InheritO(oSnowPea, {
     EName: "oSnowRepeater",
     CName: "寒冰双发射手",
     SunNum: 250,
-    PicArr: ["images/Card/Plants/SnowRepeater.png", "images/Plants/SnowRepeater/0.gif", "images/Plants/SnowRepeater/SnowPea.gif", "images/Plants/PB-10.gif", "images/Plants/PeaBulletHit1.gif"],
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Plants/SnowRepeater.png", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/SnowRepeater/0.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/SnowRepeater/SnowPea.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/PB-10.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/PeaBulletHit1.gif"],
     Tooltip: "双发寒冰射手可以发射两枚带有减速效果的子弹",
     Produce: '双发寒冰射手可以发射两枚带有减速效果的子弹。<p>伤害：<font color="#FF0000">中等(每颗)</font><br>发射速度：<font color="#FF0000">两倍</font></p>双发寒冰射手是个射击爱好者，他常常会对别</font><br>人提起自己的射击精准度有多高。嗯，虽然事</font><br>实并不是这样。',
     NormalAttack1: oSnowPea.prototype.NormalAttack,
@@ -683,7 +683,7 @@ oRepeater = InheritO(oPeashooter, {
     height: 71,
     beAttackedPointR: 53,
     SunNum: 200,
-    PicArr: ["images/Card/Plants/Repeater.png", "images/Plants/Repeater/0.gif", "images/Plants/Repeater/Repeater.gif", "images/Plants/PB00.gif", "images/Plants/PeaBulletHit.gif"],
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Plants/Repeater.png", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/Repeater/0.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/Repeater/Repeater.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/PB00.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/PeaBulletHit.gif"],
     AudioArr: ["splat1", "splat2", "splat3", "plastichit", "shieldhit", "shieldhit2"],
     Tooltip: "一次发射两颗豌豆",
     Produce: '双发射手可以一次发射两颗豌豆<p>伤害：<font color="#FF0000">中等(每颗)</font><br>发射速度：<font color="#FF0000">两倍</font></p>双发射手很凶悍，他是在街头混大的。他不在</font><br>乎任何人的看法，无论是植物还是僵尸，他打</font><br>出豌豆，是为了让别人离他远点。其实呢，双</font><br>发射手一直暗暗地渴望着爱情。',
@@ -705,7 +705,7 @@ oThreepeater = InheritO(oPeashooter, {
     height: 80,
     beAttackedPointR: 53,
     SunNum: 325,
-    PicArr: ["images/Card/Plants/Threepeater.png", "images/Plants/Threepeater/0.gif", "images/Plants/Threepeater/Threepeater.gif", "images/Plants/PB00.gif", "images/Plants/PeaBulletHit.gif", "images/Plants/PeaBulletHit2.gif"],
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Plants/Threepeater.png", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/Threepeater/0.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/Threepeater/Threepeater.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/PB00.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/PeaBulletHit.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/PeaBulletHit2.gif"],
     AudioArr: ["splat1", "splat2", "splat3", "plastichit", "shieldhit", "shieldhit2"],
     Tooltip: "一次射出三行的豌豆",
     Produce: '三线射手可以在三条线上同时射出豌豆。<p>伤害：<font color="#FF0000">普通(每颗)</font><br>范围：<font color="#FF0000">三线</font></p>三线射手喜欢读书，下棋和在公园里呆坐。他</font><br>也喜欢演出，特别是现代爵士乐。“我正在寻找</font><br>我生命中的另一半，”他说。三线射手最爱的数</font><br>字是5。',
@@ -730,7 +730,7 @@ oThreepeater = InheritO(oPeashooter, {
                 pixelLeft: d,
                 F: oGd.MB1
             }));
-            f.BulletEle.push(NewImg(0, "images/Plants/PB00.gif", "left:" + d + "px;top:" + (GetY(b) - 50) + "px;visibility:hidden;z-index:" + (3 * b + 2)))
+            f.BulletEle.push(NewImg(0, "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/PB00.gif", "left:" + d + "px;top:" + (GetY(b) - 50) + "px;visibility:hidden;z-index:" + (3 * b + 2)))
         }
     },
     PrivateDie: function(a) {
@@ -754,14 +754,14 @@ oThreepeater = InheritO(oPeashooter, {
             function(h, l, j, e, p, k, o, m, q, i) {
                 var n, g = GetC(p),
                 f = oZ["getZ" + e](p, k);
-                o == 0 && i[k + "_" + g] && m != g && (PlayAudio("firepea"), o = 1, j = 40, m = g, l.src = "images/Plants/PB" + o + e + ".gif");
+                o == 0 && i[k + "_" + g] && m != g && (PlayAudio("firepea"), o = 1, j = 40, m = g, l.src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/PB" + o + e + ".gif");
                 f && f.Altitude == 1 ? (f[{
                     "-1": "getSnowPea",
                     0 : "getPea",
                     1 : "getFirePea"
                 } [o]](f, j, e), (SetStyle(l, {
                     left: q + 28 + "px"
-            })).src=['images/Plants/PeaBulletHit.gif','images/Plants/PeaBulletHit2.gif'][o],oSym.addTask(10, ClearChild, [l])) : (p += (n = !e ? 5 : -5)) < oS.W && p > 100 ? (l.style.left = (q += n) + "px", oSym.addTask(1, arguments.callee, [h, l, j, e, p, k, o, m, q, i])) : ClearChild(l)
+            })).src=['https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/PeaBulletHit.gif','https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/PeaBulletHit2.gif'][o],oSym.addTask(10, ClearChild, [l])) : (p += (n = !e ? 5 : -5)) < oS.W && p > 100 ? (l.style.left = (q += n) + "px", oSym.addTask(1, arguments.callee, [h, l, j, e, p, k, o, m, q, i])) : ClearChild(l)
             },
             [d, $(d), 20, 0, c.AttackedLX, a, 0, 0, c.AttackedLX - 40, oGd.$Torch])
         }
@@ -774,7 +774,7 @@ oGatlingPea = InheritO(oPeashooter, {
     height: 84,
     beAttackedPointR: 68,
     SunNum: 275,
-    PicArr: ["images/Card/Plants/GatlingPea.png", "images/Plants/GatlingPea/0.gif", "images/Plants/GatlingPea/GatlingPea.gif", "images/Plants/PB00.gif", "images/Plants/PeaBulletHit.gif"],
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Plants/GatlingPea.png", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/GatlingPea/0.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/GatlingPea/GatlingPea.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/PB00.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/PeaBulletHit.gif"],
     AudioArr: ["splat1", "splat2", "splat3", "plastichit", "shieldhit", "shieldhit2"],
     Tooltip: "一次发射四颗豌豆<br>",
     Produce: '机枪射手可以一次发射四颗豌豆<p>伤害：<font color="#FF0000">中等(每颗)</font><br>发射速度：<font color="#FF0000">四倍<br>可以种在双发射手上</font></p>当加特林宣布他要参军的时候，他的父母很为</font><br>他担心，他们异口同声地对他说：“亲爱的，</font><br>这太危险了。”加特林拒绝让步，“生活就危</font><br>险，”他这样回答着，此时他的眼睛里，正</font><br>闪烁着钢铁般的信念。',
@@ -818,7 +818,7 @@ oSplitPea = InheritO(oPeashooter, {
     height: 72,
     beAttackedPointR: 72,
     SunNum: 125,
-    PicArr: ["images/Card/Plants/SplitPea.png", "images/Plants/SplitPea/0.gif", "images/Plants/SplitPea/SplitPea.gif", "images/Plants/PB00.gif", "images/Plants/PB01.gif", "images/Plants/PeaBulletHit.gif"],
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Plants/SplitPea.png", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/SplitPea/0.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/SplitPea/SplitPea.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/PB00.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/PB01.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/PeaBulletHit.gif"],
     AudioArr: ["splat1", "splat2", "splat3", "plastichit", "shieldhit", "shieldhit2"],
     Tooltip: "前后双向发射豌豆",
     Produce: '分裂射手，可以向前后两个方向发射豌豆。<p>伤害：<font color="#FF0000">中等</font><br>范围：<font color="#FF0000">前面和后面</font><br>发射速度：<font color="#FF0000">前面为正常速度，后面为两倍速度</font></p>分裂射手：“没错，我就是双子座。我知道，</font><br>这的确很令人惊奇。不过，有两个头，或者实际</font><br>上，长着一个头和一个类似头的东西，在背上，</font><br>对我这条线上的防守帮助很大。',
@@ -890,14 +890,14 @@ oSplitPea = InheritO(oPeashooter, {
             function(i, m, k, f, q, l, p, n, r, j) {
                 var o, h = GetC(q),
                 g = oZ["getZ" + f](q, l);
-                p == 0 && j[l + "_" + h] && n != h && (PlayAudio("firepea"), p = 1, k = 40, n = h, m.src = "images/Plants/PB" + p + f + ".gif");
+                p == 0 && j[l + "_" + h] && n != h && (PlayAudio("firepea"), p = 1, k = 40, n = h, m.src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/PB" + p + f + ".gif");
                 g && g.Altitude == 1 ? (g[{
                     "-1": "getSnowPea",
                     0 : "getPea",
                     1 : "getFirePea"
                 } [p]](g, k, f), (SetStyle(m, {
                     left: r + 28 + "px"
-                })).src=['images/Plants/PeaBulletHit.gif','images/Plants/PeaBulletHit2.gif'][m],oSym.addTask(10, ClearChild, [m])) : (q += (o = !f ? 5 : -5)) < oS.W && q > 100 ? (m.style.left = (r += o) + "px", oSym.addTask(1, arguments.callee, [i, m, k, f, q, l, p, n, r, j])) : ClearChild(m)
+                })).src=['https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/PeaBulletHit.gif','https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/PeaBulletHit2.gif'][m],oSym.addTask(10, ClearChild, [m])) : (q += (o = !f ? 5 : -5)) < oS.W && q > 100 ? (m.style.left = (r += o) + "px", oSym.addTask(1, arguments.callee, [i, m, k, f, q, l, p, n, r, j])) : ClearChild(m)
             },
             [e, $(e), 20, c, d.AttackedLX, d.R, 0, 0, a, oGd.$Torch])
         };
@@ -911,12 +911,12 @@ oSunFlower = InheritO(CPlants, {
     height: 74,
     beAttackedPointR: 53,
     SunNum: 50,
-    PicArr: ["images/Card/Plants/SunFlower.png", "images/Plants/SunFlower/0.gif", "images/Plants/SunFlower/SunFlower1.gif", "images/Plants/SunFlower/SunFlower.gif"],
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Plants/SunFlower.png", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/SunFlower/0.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/SunFlower/SunFlower1.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/SunFlower/SunFlower.gif"],
     Tooltip: "向日葵，为你生产更多阳光的基础作物。尽可能多地种植吧！",
     Produce: '向日葵，为你生产额外阳光的经济作物。尝试</font><br>尽可能多种植吧！<p>阳光产量：<font color="#FF0000">中等</font></p>向日葵情不自禁地和着节拍起舞。是什么节拍</font><br>呢？嗨，是大地自己用来提神的爵士节拍，这</font><br>种频率的节拍，只有向日葵才能听到。',
     BirthStyle: function(c, e, b, a) {
         var d = b.childNodes[1];
-        d.src = "images/Plants/SunFlower/SunFlower.gif";
+        d.src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/SunFlower/SunFlower.gif";
         d.style.clip = "rect(0,auto,74px,0)";
         d.style.height = "148px";
         EditEle(b, {
@@ -978,7 +978,7 @@ oTwinSunflower = InheritO(oSunFlower, {
     height: 84,
     beAttackedPointR: 63,
     SunNum: 150,
-    PicArr: ["images/Card/Plants/TwinSunflower.png", "images/Plants/TwinSunflower/0.gif", "images/Plants/TwinSunflower/TwinSunflower1.gif", "images/Plants/TwinSunflower/TwinSunflower.gif"],
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Plants/TwinSunflower.png", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/TwinSunflower/0.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/TwinSunflower/TwinSunflower1.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/TwinSunflower/TwinSunflower.gif"],
     Tooltip: "双胞向日葵的阳光产量是普通向日葵的两倍<br>",
     Produce: '双胞向日葵的阳光产量是普通向日葵的两倍。<p>阳光产量：<font color="#FF0000">双倍<br>可以种在普通向日葵上</font></p>这是一个疯狂的夜晚，禁忌的科学技术，让双</font><br>胞向日葵来到了这个世界。电闪雷鸣狂风怒吼</font><br>，都在表示着这个世界对他的拒绝。但是一切</font><br>无济于事，双子向日葵他却仍然活着！',
     CanGrow: function(c, b, f) {
@@ -989,7 +989,7 @@ oTwinSunflower = InheritO(oSunFlower, {
     },
     BirthStyle: function(c, e, b, a) {
         var d = b.childNodes[1];
-        d.src = "images/Plants/TwinSunflower/TwinSunflower.gif";
+        d.src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/TwinSunflower/TwinSunflower.gif";
         d.style.clip = "rect(0,auto,84px,0)";
         d.style.height = "168px";
         EditEle(b, {
@@ -1035,7 +1035,7 @@ oTwinSunflower2 = InheritO(oSunFlower, {
     beAttackedPointR: 63,
     SunNum: 0,
     
-    PicArr: ["images/Card/Plants/TwinSunflower2.png", "images/Plants/TwinSunflower/0.gif", "images/Plants/TwinSunflower/TwinSunflower1.gif", "images/Plants/TwinSunflower/TwinSunflower.gif"],
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Plants/TwinSunflower2.png", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/TwinSunflower/0.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/TwinSunflower/TwinSunflower1.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/TwinSunflower/TwinSunflower.gif"],
     Tooltip: "双胞向日葵的阳光产量是普通向日葵的两倍<br>",
     Produce: '双胞向日葵的阳光产量是普通向日葵的两倍。<p>阳光产量：<font color="#FF0000">双倍<br>可以种在普通向日葵上</font></p>这是一个疯狂的夜晚，禁忌的科学技术，让双</font><br>胞向日葵来到了这个世界。电闪雷鸣狂风怒吼</font><br>，都在表示着这个世界对他的拒绝。但是一切</font><br>无济于事，双子向日葵他却仍然活着！',
     CanGrow: function(c, b, f) {
@@ -1046,7 +1046,7 @@ oTwinSunflower2 = InheritO(oSunFlower, {
     },
     BirthStyle: function(c, e, b, a) {
         var d = b.childNodes[1];
-        d.src = "images/Plants/TwinSunflower/TwinSunflower.gif";
+        d.src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/TwinSunflower/TwinSunflower.gif";
         d.style.clip = "rect(0,auto,84px,0)";
         d.style.height = "168px";
         EditEle(b, {
@@ -1097,7 +1097,7 @@ oPumpkinHead = InheritO(CPlants, {
     HP: 4000,
     coolTime: 30,
     zIndex: 1,
-    PicArr: ["images/Card/Plants/PumpkinHead.png", "images/Plants/PumpkinHead/0.gif", "images/Plants/PumpkinHead/PumpkinHead.gif", "images/Plants/PumpkinHead/PumpkinHead1.gif", "images/Plants/PumpkinHead/PumpkinHead2.gif", "images/Plants/PumpkinHead/pumpkin_damage1.gif", "images/Plants/PumpkinHead/pumpkin_damage2.gif", "images/Plants/PumpkinHead/Pumpkin_back.gif"],
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Plants/PumpkinHead.png", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/PumpkinHead/0.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/PumpkinHead/PumpkinHead.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/PumpkinHead/PumpkinHead1.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/PumpkinHead/PumpkinHead2.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/PumpkinHead/pumpkin_damage1.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/PumpkinHead/pumpkin_damage2.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/PumpkinHead/Pumpkin_back.gif"],
     Tooltip: "南瓜头，可以用他的外壳保护其他植物。",
     Produce: '南瓜头，可以用他的外壳保护其他植物。<p>韧性：<font color="#FF0000">高</font><br>特点：<font color="#FF0000">可以种在其他植物上</font></p>南瓜头最近都没收到，关于他表哥刃菲尔德的</font><br>消息。很明显，刃菲尔德是个大明星，是一种……</font><br>叫什么运动来着……的体育明星？佩格跳跳球大</font><br>师？南瓜头反正搞不懂是什么运动，他只想做好</font><br>他自己的工作。',
     CanGrow: function(c, b, d) {
@@ -1117,19 +1117,19 @@ oPumpkinHead = InheritO(CPlants, {
             break;
         case (d.HP -= b) < 1 : d.Die();
             break;
-        case d.HP < 1334 : d.HurtStatus < 2 && (d.HurtStatus = 2, a.childNodes[1].src = "images/Plants/PumpkinHead/pumpkin_damage2.gif");
+        case d.HP < 1334 : d.HurtStatus < 2 && (d.HurtStatus = 2, a.childNodes[1].src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/PumpkinHead/pumpkin_damage2.gif");
             break;
-        case d.HP < 2667 : d.HurtStatus < 1 && (d.HurtStatus = 1, a.childNodes[1].src = "images/Plants/PumpkinHead/pumpkin_damage1.gif", $(f + "_2").src = "images/Plants/PumpkinHead/Pumpkin_back.gif")
+        case d.HP < 2667 : d.HurtStatus < 1 && (d.HurtStatus = 1, a.childNodes[1].src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/PumpkinHead/pumpkin_damage1.gif", $(f + "_2").src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/PumpkinHead/Pumpkin_back.gif")
         }
     },
     InitTrigger: function() {},
     BirthStyle: function(c, d, b, a) {
-        b.childNodes[1].src = "images/Plants/PumpkinHead/PumpkinHead1.gif";
+        b.childNodes[1].src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/PumpkinHead/PumpkinHead1.gif";
         EditEle(b, {
             id: d
         },
         a, EDPZ);
-        NewImg(d + "_2", "images/Plants/PumpkinHead/PumpkinHead2.gif", "left:" + c.pixelLeft + "px;top:" + c.pixelTop + "px;z-index:" + (c.zIndex - 2), EDPZ)
+        NewImg(d + "_2", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/PumpkinHead/PumpkinHead2.gif", "left:" + c.pixelLeft + "px;top:" + c.pixelTop + "px;z-index:" + (c.zIndex - 2), EDPZ)
     },
     PrivateDie: function(a) {
         ClearChild($(a.id + "_2"))
@@ -1144,7 +1144,7 @@ oFlowerPot = InheritO(CPlants, {
     SunNum: 25,
     BookHandBack: 6,
     HP: 1000,
-    PicArr: ["images/Card/Plants/FlowerPot.png", "images/Plants/FlowerPot/0.gif", "images/Plants/FlowerPot/FlowerPot.gif"],
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Plants/FlowerPot.png", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/FlowerPot/0.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/FlowerPot/FlowerPot.gif"],
     PKind: 0,
     Stature: -1,
     GetDY: function(b, c, a) {
@@ -1162,7 +1162,7 @@ oFlowerPot = InheritO(CPlants, {
 }),
 oCFlowerPot = InheritO(oFlowerPot, {
     EName: "oCFlowerPot",
-   PicArr: ["images/Card/Plants/CFlowerPot.png", "images/Plants/FlowerPot/C/0.gif", "images/Plants/FlowerPot/C/CFlowerPot.gif"],
+   PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Plants/CFlowerPot.png", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/FlowerPot/C/0.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/FlowerPot/C/CFlowerPot.gif"],
     Produce: '可以让植物栽种在瓷砖地形上。</font></p>青瓷花盆，不需要介绍'
 }),
 oLilyPad = InheritO(oFlowerPot, {
@@ -1174,7 +1174,7 @@ oLilyPad = InheritO(oFlowerPot, {
     height: 58,
     beAttackedPointR: 59,
     HP: 1000,
-    PicArr: ["images/Card/Plants/LilyPad.png", "images/Plants/LilyPad/0.gif", "images/Plants/LilyPad/LilyPad.gif"],
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Plants/LilyPad.png", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/LilyPad/0.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/LilyPad/LilyPad.gif"],
     getShadow: function(a) {
         return "left:-8px;top:25px"
     },
@@ -1203,19 +1203,19 @@ oPotatoMine = InheritO(CPlants, {
         d = oS.ArP;
         return d ? oGd.$LF[b] == 1 ? (e > 0 && e < d.ArC[1] && !(oGd.$Crater[a] || oGd.$Tombstones[a] || c[1])) : c[0] && !c[1] : oGd.$LF[b] == 1 ? !(e < 1 || e > 9 || oGd.$Crater[a] || oGd.$Tombstones[a] || c[1]) : c[0] && !c[1]
     },
-    PicArr: ["images/Card/Plants/PotatoMine.png", "images/Plants/PotatoMine/0.gif", "images/Plants/PotatoMine/PotatoMine.gif", "images/Plants/PotatoMine/PotatoMineNotReady.gif", "images/Plants/PotatoMine/PotatoMine_mashed.gif", "images/Plants/PotatoMine/ExplosionSpudow.gif"],
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Plants/PotatoMine.png", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/PotatoMine/0.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/PotatoMine/PotatoMine.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/PotatoMine/PotatoMineNotReady.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/PotatoMine/PotatoMine_mashed.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/PotatoMine/ExplosionSpudow.gif"],
     Tooltip: "敌人接触后爆炸<br>需要时间安放",
     Produce: '土豆雷具有强大的威力，但是他们需要点时间</font><br>来武装自己。你应把他们种在僵尸前进的路上</font><br>，当他们一被接触就会发生爆炸。<p>伤害：<font color="FF0000">巨大</font><br>范围：<font color="#FF0000">一个小区域内的所有僵尸</font><br>使用方法：<font color="#FF0000">单独使用，需要一定准备时间。</font></p>一些人说土豆雷很懒，因为他总是把所有事情</font><br>留到最后。土豆雷才没空理他们，他正忙着考</font><br>虑他的投资战略呢。',
     Status: 0,
     AudioArr: ["potato_mine"],
     canTrigger: 0,
     BirthStyle: function(d, e, c, b, a) {
-        c.childNodes[1].src = !a ? "images/Plants/PotatoMine/PotatoMineNotReady.gif": (~
+        c.childNodes[1].src = !a ? "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/PotatoMine/PotatoMineNotReady.gif": (~
         function() {
             d.Status = 1;
             d.canTrigger = 1;
             d.getHurt = d.getHurt2
-        } (), "images/Plants/PotatoMine/PotatoMine.gif");
+        } (), "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/PotatoMine/PotatoMine.gif");
         EditEle(c, {
             id: e
         },
@@ -1228,7 +1228,7 @@ oPotatoMine = InheritO(CPlants, {
     PrivateBirth: function(b, a) { ! a && oSym.addTask(1500,
         function(d) {
             var c = $P[d];
-            c && ($(d).childNodes[1].src = "images/Plants/PotatoMine/PotatoMine.gif", c.Status = 1, c.canTrigger = 1, c.getHurt = c.getHurt2)
+            c && ($(d).childNodes[1].src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/PotatoMine/PotatoMine.gif", c.Status = 1, c.canTrigger = 1, c.getHurt = c.getHurt2)
         },
         [b.id])
     },
@@ -1252,7 +1252,7 @@ oPotatoMine = InheritO(CPlants, {
         g.Die(1);
         PlayAudio("potato_mine");
         EditEle(d.childNodes[1], {
-            src: "images/Plants/PotatoMine/PotatoMine_mashed.gif"
+            src: "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/PotatoMine/PotatoMine_mashed.gif"
         },
         {
             width: "132px",
@@ -1260,7 +1260,7 @@ oPotatoMine = InheritO(CPlants, {
             left: "-40px",
             top: "-20px"
         });
-        NewImg(0, "images/Plants/PotatoMine/ExplosionSpudow.gif", "left:-90px;top:-40px", d);
+        NewImg(0, "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/PotatoMine/ExplosionSpudow.gif", "left:-90px;top:-40px", d);
         oSym.addTask(200,
         function(i) {
             ClearChild(i.lastChild);
@@ -1276,7 +1276,7 @@ oTorchwood = InheritO(CPlants, {
     height: 83,
     beAttackedPointR: 53,
     SunNum: 175,
-    PicArr: ["images/Card/Plants/Torchwood.png", "images/Plants/Torchwood/0.gif", "images/Plants/Torchwood/Torchwood.gif", "images/Plants/PB00.gif", "images/Plants/PB01.gif", "images/Plants/PB10.gif", "images/Plants/PB11.gif", "images/Plants/Torchwood/SputteringFire.gif"],
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Plants/Torchwood.png", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/Torchwood/0.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/Torchwood/Torchwood.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/PB00.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/PB01.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/PB10.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/PB11.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/Torchwood/SputteringFire.gif"],
     AudioArr: ["firepea", "ignite", "ignite2"],
     Tooltip: "火炬树桩可以把穿过他的豌豆变成火球，让豌豆造成两倍伤害。",
     Produce: '火炬树桩可以把穿过他的豌豆变成火球，造成</font><br>两倍伤害。<p>特点：<font color="#FF0000">让穿过他的火球造成两倍伤害。火球也</font><br>会对附近僵尸</font><br>造成溅射伤害</font></p>每个人都喜欢并敬重火炬树桩。他们喜欢他的</font><br>诚实和坚贞的友谊，以及增强豌豆伤害的能力。</font><br>但他也有自己的秘密：他不识字！',
@@ -1310,14 +1310,14 @@ oTorchwood = InheritO(CPlants, {
         function(f, j, h, c, n, i, m, k, o, g) {
             var l, e = GetC(n),
             d = oZ["getZ" + c](n, i);
-            m == 0 && g[i + "_" + e] && k != e && (PlayAudio("firepea"), m = 1, h = 40, k = e, j.src = "images/Plants/PB" + m + c + ".gif");
+            m == 0 && g[i + "_" + e] && k != e && (PlayAudio("firepea"), m = 1, h = 40, k = e, j.src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/PB" + m + c + ".gif");
             d && d.Altitude == 1 ? (d[{
                 "-1": "getSnowPea",
                 0 : "getPea",
                 1 : "getFirePea"
             } [m]](d, h, c), (SetStyle(j, {
                 left: o + 28 + "px"
-            })).src = "images/Plants/PeaBulletHit2.gif", oSym.addTask(75, ClearChild, [j])) : (n += (l = !c ? 5 : -5)) < oS.W && n > 100 ? (j.style.left = (o += l) + "px", oSym.addTask(1, arguments.callee, [f, j, h, c, n, i, m, k, o, g])) : ClearChild(j)
+            })).src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/PeaBulletHit2.gif", oSym.addTask(75, ClearChild, [j])) : (n += (l = !c ? 5 : -5)) < oS.W && n > 100 ? (j.style.left = (o += l) + "px", oSym.addTask(1, arguments.callee, [f, j, h, c, n, i, m, k, o, g])) : ClearChild(j)
         },
         [b, $(b), 20, 0, a.AttackedLX, a.R, 0, 0, a.AttackedLX - 40, oGd.$Torch]);
     }
@@ -1331,7 +1331,7 @@ oWallNut = InheritO(CPlants, {
     SunNum: 50,
     coolTime: 15.5,
     HP: 4000,
-    PicArr: ["images/Card/Plants/WallNut.png", "images/Plants/WallNut/0.gif", "images/Plants/WallNut/WallNut.gif", "images/Plants/WallNut/Wallnut_cracked1.gif", "images/Plants/WallNut/Wallnut_cracked2.gif"],
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Plants/WallNut.png", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/WallNut/0.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/WallNut/WallNut.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/WallNut/Wallnut_cracked1.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/WallNut/Wallnut_cracked2.gif"],
     Tooltip: "坚果墙拥有足以保护其它植物的坚硬外壳。",
     Produce: '坚果墙拥有足以让你用来保护其它植物的坚硬</font><br>外壳。<p>韧性：<font color="FF0000">高</font></p>坚果墙：“人们想知道，经常被僵尸啃的感觉</font><br>怎样？他们不知道，我有限的感官，只能让我</font><br>感到一种麻麻的感觉，像是，令人放松的背部按摩。”',
     CanGrow: function(c, b, f) {
@@ -1344,7 +1344,7 @@ oWallNut = InheritO(CPlants, {
     HurtStatus: 0,
     getHurt: function(e, b, a) {
         var c = this,
-        d = $(c.id).childNodes[1]; ! (b % 3) ? (c.HP -= a) < 1 ? c.Die() : c.HP < 1334 ? c.HurtStatus < 2 && (c.HurtStatus = 2, d.src = "images/Plants/WallNut/Wallnut_cracked2.gif") : c.HP < 2667 && c.HurtStatus < 1 && (c.HurtStatus = 1, d.src = "images/Plants/WallNut/Wallnut_cracked1.gif") : c.Die(1)
+        d = $(c.id).childNodes[1]; ! (b % 3) ? (c.HP -= a) < 1 ? c.Die() : c.HP < 1334 ? c.HurtStatus < 2 && (c.HurtStatus = 2, d.src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/WallNut/Wallnut_cracked2.gif") : c.HP < 2667 && c.HurtStatus < 1 && (c.HurtStatus = 1, d.src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/WallNut/Wallnut_cracked1.gif") : c.Die(1)
     }
 }),
 oLing = InheritO(oWallNut, {
@@ -1359,7 +1359,7 @@ oLing = InheritO(oWallNut, {
     getShadow: function(a) {
         return "display:none"
     },
-    PicArr: ["images/Card/Plants/Ling.png", "images/Plants/Ling/0.gif", "images/Plants/Ling/Ling.gif"],
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Plants/Ling.png", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/Ling/0.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/Ling/Ling.gif"],
     Tooltip: "南湖菱是水中的第一道障碍物",
     Produce: '南湖菱是水中的第一道障碍物。<p>韧性：<font color="FF0000">高</font></p>瞧，多大一个腰果呀，今天又有人对南湖菱这</font><br>么说道，可他并不在乎。南湖菱脑袋里每天只</font><br>想一件事"如果当年乾隆没开金口，我不就能用</font><br>角去刺僵尸了？！"',
     CanGrow: function(c, b, d) {
@@ -1368,7 +1368,7 @@ oLing = InheritO(oWallNut, {
     },
     getHurt: function(e, b, a) {
         var c = this,
-        d = $(c.id).childNodes[1]; ! (b % 3) ? (c.HP -= a) < 1 ? c.Die() : c.HP < 1334 ? c.HurtStatus < 2 && (c.HurtStatus = 2, d.src = "images/Plants/Ling/Ling.gif") : c.HP < 2667 && c.HurtStatus < 1 && (c.HurtStatus = 1, d.src = "images/Plants/Ling/Ling.gif") : c.Die(1)
+        d = $(c.id).childNodes[1]; ! (b % 3) ? (c.HP -= a) < 1 ? c.Die() : c.HP < 1334 ? c.HurtStatus < 2 && (c.HurtStatus = 2, d.src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/Ling/Ling.gif") : c.HP < 2667 && c.HurtStatus < 1 && (c.HurtStatus = 1, d.src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/Ling/Ling.gif") : c.Die(1)
     }
 }),
 oNutBowling = InheritO(CPlants, {
@@ -1383,7 +1383,7 @@ oNutBowling = InheritO(CPlants, {
     coolTime: 0,
     canEat: 0,
     Tooltip: "",
-    PicArr: ["images/Card/Plants/WallNut.png", "images/Plants/WallNut/0.gif", "images/Plants/WallNut/WallNutRoll.gif"],
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Plants/WallNut.png", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/WallNut/0.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/WallNut/WallNutRoll.gif"],
     AudioArr: ["bowling", "bowlingimpact", "bowlingimpact2"],
     Produce: "",
     CanAttack: 1,
@@ -1462,7 +1462,7 @@ oHugeNutBowling = InheritO(oNutBowling, {
     beAttackedPointR: 137,
     HP: 8000,
     Stature: 1,
-    PicArr: ["images/Card/Plants/HugeWallNut.png", "images/Plants/WallNut/2.gif", "images/Plants/WallNut/HugeWallNutRoll.gif"],
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Plants/HugeWallNut.png", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/WallNut/2.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/WallNut/HugeWallNutRoll.gif"],
     PrivateBirth: function(a) {
         PlayAudio("bowling"); (function(b, c, n, m, e, g) {
             var d = oZ.getArZ(n, m, e),
@@ -1484,7 +1484,7 @@ oHugeNutBowling = InheritO(oNutBowling, {
 oBoomNutBowling = InheritO(oNutBowling, {
     EName: "oBoomNutBowling",
     CName: "爆炸坚果",
-    PicArr: ["images/Card/Plants/BoomWallNut.png", "images/Plants/WallNut/1.gif", "images/Plants/WallNut/BoomWallNutRoll.gif", "images/Plants/CherryBomb/Boom.gif"],
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Plants/BoomWallNut.png", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/WallNut/1.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/WallNut/BoomWallNutRoll.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/CherryBomb/Boom.gif"],
     AudioArr: ["cherrybomb", "bowling"],
     PrivateBirth: function(a) {
         PlayAudio("bowling"); (function(s, q, b, c, m) {
@@ -1507,7 +1507,7 @@ oBoomNutBowling = InheritO(oNutBowling, {
                 } while ( j ++< g );
                 s.Die(1);
                 EditEle(m.childNodes[1], {
-                    src: "images/Plants/CherryBomb/Boom.gif"
+                    src: "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/CherryBomb/Boom.gif"
                 },
                 {
                     width: "213px",
@@ -1537,7 +1537,7 @@ oTallNut = InheritO(oWallNut, {
     SunNum: 125,
     HP: 8000,
     coolTime: 24.5,
-    PicArr: ["images/Card/Plants/TallNut.png", "images/Plants/TallNut/0.gif", "images/Plants/TallNut/TallNut.gif", "images/Plants/TallNut/TallnutCracked1.gif", "images/Plants/TallNut/TallnutCracked2.gif"],
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Plants/TallNut.png", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/TallNut/0.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/TallNut/TallNut.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/TallNut/TallnutCracked1.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/TallNut/TallnutCracked2.gif"],
     Tooltip: "不会被跳过的坚实壁垒",
     Produce: '高坚果是重型壁垒植物，而且不会被跳过。<p>韧性：<font color="#FF0000">非常高</font><br>特殊：<font color="#FF0000">不会被跨过或越过</font></p>人们想知道，坚果墙和高坚果是否在竞争。高</font><br>坚果以男中音的声调大声笑了。“我们之间怎么</font><br>会存在竞争关系？我们是哥们儿。你知道坚果墙</font><br>为我做了什么吗……”高坚果的声音越来越小，</font><br>他狡黠地笑着。”',
     CanGrow: function(c, b, f) {
@@ -1549,7 +1549,7 @@ oTallNut = InheritO(oWallNut, {
     Stature: 1,
     getHurt: function(e, b, a) {
         var c = this,
-        d = $(c.id).childNodes[1]; ! (b % 3) ? (c.HP -= a) < 1 ? c.Die() : c.HP < 2667 ? c.HurtStatus < 2 && (c.HurtStatus = 2, d.src = "images/Plants/TallNut/TallnutCracked2.gif") : c.HP < 5333 && c.HurtStatus < 1 && (c.HurtStatus = 1, d.src = "images/Plants/TallNut/TallnutCracked1.gif") : c.Die(1)
+        d = $(c.id).childNodes[1]; ! (b % 3) ? (c.HP -= a) < 1 ? c.Die() : c.HP < 2667 ? c.HurtStatus < 2 && (c.HurtStatus = 2, d.src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/TallNut/TallnutCracked2.gif") : c.HP < 5333 && c.HurtStatus < 1 && (c.HurtStatus = 1, d.src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/TallNut/TallnutCracked1.gif") : c.Die(1)
     }
 }),oTenManNute = InheritO(CPlants, {
     EName: "oTenManNute",
@@ -1562,7 +1562,7 @@ oTallNut = InheritO(oWallNut, {
     HP: 16660,
     Stature: 1,
     canEat: 1,
-    PicArr: ["images/Card/Plants/TenManNute.png", "images/Plants/TenManNut/0.gif", "images/Plants/TenManNut/Spikeweed.gif"],
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Plants/TenManNute.png", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/TenManNut/0.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/TenManNut/Spikeweed.gif"],
     Attack: 60,
     ArZ: {},
     Tooltip: "能近距离攻击僵尸",
@@ -1580,9 +1580,9 @@ oTallNut = InheritO(oWallNut, {
         switch (true) {
         case((d = e.HP -= b) < 1) : e.Die();
             break;
-        case d < 101 : a.src = "images/Plants/TenManNut/Spikeweed.gif";
+        case d < 101 : a.src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/TenManNut/Spikeweed.gif";
             break;
-        case d < 201 : a.src = "images/Plants/TenManNut/Spikeweed.gif"
+        case d < 201 : a.src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/TenManNut/Spikeweed.gif"
         }
     },
     NormalAttack: function(b, a) {
@@ -1618,7 +1618,7 @@ oTenManNut = InheritO(CPlants, {
     HP: 11000,
     Stature: 1,
     canEat: 1,
-    PicArr: ["images/Card/Plants/TenManNut.png", "images/Plants/TenManNut/0.gif", "images/Plants/TenManNut/Spikeweed.gif"],
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Plants/TenManNut.png", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/TenManNut/0.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/TenManNut/Spikeweed.gif"],
     Attack: 40,
     ArZ: {},
     Tooltip: "能近距离攻击僵尸",
@@ -1636,9 +1636,9 @@ oTenManNut = InheritO(CPlants, {
         switch (true) {
         case((d = e.HP -= b) < 1) : e.Die();
             break;
-        case d < 101 : a.src = "images/Plants/TenManNut/Spikeweed.gif";
+        case d < 101 : a.src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/TenManNut/Spikeweed.gif";
             break;
-        case d < 201 : a.src = "images/Plants/TenManNut/Spikeweed.gif"
+        case d < 201 : a.src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/TenManNut/Spikeweed.gif"
         }
     },
     NormalAttack: function(b, a) {
@@ -1671,7 +1671,7 @@ oCherryBomb = InheritO(CPlants, {
     beAttackedPointR: 92,
     SunNum: 150,
     coolTime: 20,
-    PicArr: ["images/Card/Plants/CherryBomb.png", "images/Plants/CherryBomb/0.gif", "images/Plants/CherryBomb/CherryBomb.gif", "images/Plants/CherryBomb/Boom.gif" + $Random],
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Plants/CherryBomb.png", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/CherryBomb/0.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/CherryBomb/CherryBomb.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/CherryBomb/Boom.gif" + $Random],
     AudioArr: ["cherrybomb"],
     Tooltip: "炸掉一定区域内的所有僵尸",
     Produce: '樱桃炸弹，能炸掉一定区域内所有僵尸。他们</font><br>一种下就会立刻引爆。所以请把他们种在僵尸</font><br>们的身边。<p>伤害：<font color="#FF0000">巨大</font><br>范围：<font color="#FF0000">一个中等区域内的所有僵尸</font><br>使用方法：<font color="#FF0000">单独使用，立即爆炸</font></p>“我要‘爆’开了。”樱桃一号说。“不，我们是</font><br>‘炸’开了！”它哥哥樱桃二号说。经过激烈的商</font><br>议之后，他们才统一“爆炸这个说法。”',
@@ -1720,7 +1720,7 @@ oJalapeno = InheritO(oCherryBomb, {
     height: 89,
     SunNum: 125,
     beAttackedPointR: 48,
-    PicArr: ["images/Card/Plants/Jalapeno.png", "images/Plants/Jalapeno/0.gif", "images/Plants/Jalapeno/Jalapeno.gif", "images/Plants/Jalapeno/JalapenoAttack.gif"],
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Plants/Jalapeno.png", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/Jalapeno/0.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/Jalapeno/Jalapeno.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/Jalapeno/JalapenoAttack.gif"],
     AudioArr: ["jalapeno"],
     Tooltip: "消灭整行的敌人",
     Produce: '火爆辣椒可以摧毁一整条线上的敌人。<p>伤害：<font color="#FF0000">极高</font><br>范围：<font color="#FF0000">整条线上的僵尸</font><br>用法：<font color="#FF0000">单独使用，立即生效</font></p>“嘎嘎嘎嘎嘎嘎嘎！！！”火爆辣椒说。他现在</font><br>不会爆炸，还不到时候，不过快了，喔~，快了快</font><br>了，快来了。他知道，他感受到了，他一生都是</font><br>在等待这个时刻！',
@@ -1741,7 +1741,7 @@ oJalapeno = InheritO(oCherryBomb, {
                 }
                 h.Die(1);
                 EditEle(b.childNodes[1], {
-                    src: "images/Plants/Jalapeno/JalapenoAttack.gif"
+                    src: "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/Jalapeno/JalapenoAttack.gif"
                 },
                 {
                     width: "755px",
@@ -1771,7 +1771,7 @@ oSpikeweed = InheritO(CPlants, {
     SunNum: 100,
     Stature: -1,
     canEat: 0,
-    PicArr: ["images/Card/Plants/Spikeweed.png", "images/Plants/Spikeweed/0.gif", "images/Plants/Spikeweed/Spikeweed.gif"],
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Plants/Spikeweed.png", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/Spikeweed/0.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/Spikeweed/Spikeweed.gif"],
     Attack: 20,
     ArZ: {},
     Tooltip: "扎破轮胎, 也能伤害走在上面的僵尸",
@@ -1829,7 +1829,7 @@ oSpikerock = InheritO(oSpikeweed, {
     beAttackedPointL: 10,
     beAttackedPointR: 74,
     SunNum: 125,
-    PicArr: ["images/Card/Plants/Spikerock.png", "images/Plants/Spikerock/0.gif", "images/Plants/Spikerock/Spikerock.gif", "images/Plants/Spikerock/2.gif", "images/Plants/Spikerock/3.gif"],
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Plants/Spikerock.png", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/Spikerock/0.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/Spikerock/Spikerock.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/Spikerock/2.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/Spikerock/3.gif"],
     Attack: 40,
     Tooltip: "能扎破多个轮胎, 并伤害经过上面的僵尸",
     Produce: '地刺王可以扎破多个轮胎，并对踩到他的僵尸</font><br>造成伤害。<p><font color="#FF0000">可以种植在地刺上</font></p>地刺王刚刚从欧洲旅行回来。他玩的很高兴，</font><br>也认识了很多有趣的人。这些都真的拓展了他</font><br>视野——他从来不知道，他们建造了这么大博</font><br>物馆，有这么多的画作。这对他说太惊奇了。',
@@ -1854,9 +1854,9 @@ oSpikerock = InheritO(oSpikeweed, {
         switch (true) {
         case((d = e.HP -= b) < 1) : e.Die();
             break;
-        case d < 101 : a.src = "images/Plants/Spikerock/3.gif";
+        case d < 101 : a.src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/Spikerock/3.gif";
             break;
-        case d < 201 : a.src = "images/Plants/Spikerock/2.gif"
+        case d < 201 : a.src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/Spikerock/2.gif"
         }
     }
 }),
@@ -1868,7 +1868,7 @@ oGarlic = InheritO(CPlants, {
     beAttackedPointR: 40,
     SunNum: 50,
     HP: 400,
-    PicArr: ["images/Card/Plants/Garlic.png", "images/Plants/Garlic/0.gif", "images/Plants/Garlic/Garlic.gif", "images/Plants/Garlic/Garlic_body2.gif", "images/Plants/Garlic/Garlic_body3.gif"],
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Plants/Garlic.png", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/Garlic/0.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/Garlic/Garlic.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/Garlic/Garlic_body2.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/Garlic/Garlic_body3.gif"],
     Tooltip: "将僵尸赶到其它的横行",
     Produce: '大蒜可以让僵尸改变前进的路线。<p>范围：<font color="#FF0000">近距离接触</font><br>特点：<font color="#FF0000">改变僵尸的前进路线</font></p>路线转向，这不仅仅是大蒜的专业，更是他</font><br>的热情所在。他在布鲁塞尔大学里，获得了转向</font><br>学的博士学位。他能把路线向量和反击阵列，讲</font><br>上一整天。他甚至会把家里的东西，推到街上去</font><br>。不知道为啥，他老婆还可以忍受这些。',
     CanGrow: function(c, b, f) {
@@ -1883,7 +1883,7 @@ oGarlic = InheritO(CPlants, {
         var c = this,
         d = $(c.id).childNodes[1]; ! (b % 3) ? (c.HP -= 20) < 1 ? c.Die() : (e.ChangeR({
             R: c.R
-        }), c.HP < 134 ? c.HurtStatus < 2 && (c.HurtStatus = 2, d.src = "images/Plants/Garlic/Garlic_body3.gif") : c.HP < 267 && c.HurtStatus < 1 && (c.HurtStatus = 1, d.src = "images/Plants/Garlic/Garlic_body2.gif")) : c.Die(1)
+        }), c.HP < 134 ? c.HurtStatus < 2 && (c.HurtStatus = 2, d.src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/Garlic/Garlic_body3.gif") : c.HP < 267 && c.HurtStatus < 1 && (c.HurtStatus = 1, d.src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/Garlic/Garlic_body2.gif")) : c.Die(1)
     }
 }),
 oSquash = InheritO(CPlants, {
@@ -1893,7 +1893,7 @@ oSquash = InheritO(CPlants, {
     height: 226,
     beAttackedPointR: 67,
     SunNum: 50,
-    PicArr: ["images/Card/Plants/Squash.png", "images/Plants/Squash/0.gif", "images/Plants/Squash/Squash.gif", "images/Plants/Squash/SquashAttack.gif", "images/Plants/Squash/SquashL.png", "images/Plants/Squash/SquashR.png"],
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Plants/Squash.png", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/Squash/0.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/Squash/Squash.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/Squash/SquashAttack.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/Squash/SquashL.png", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/Squash/SquashR.png"],
     AudioArr: ["squash_hmm", "gargantuar_thump"],
     Tooltip: "压扁接近的僵尸",
     Produce: '窝瓜会压扁第一个接近它的僵尸。<p>伤害：<font color="#FF0000">极高</font><br>范围：<font color="#FF0000">短，覆盖所有它压到的僵尸。</font><br>用法：<font color="#FF0000">单独使用</font></p>“我准备好了！”窝瓜大吼道，“干吧！！算我</font><br>一份！没人比我厉害！我就是你要的人！来啊！</font><br>等啥啊？要的就是这个！”',
@@ -1912,7 +1912,7 @@ oSquash = InheritO(CPlants, {
         b = this.id,
         a = $(b).childNodes[1],
         f = h.isAttacking;
-        h.beAttacked && h.Altitude > -1 && h.Altitude < 2 && (f || !f && c - this.AttackedRX < 71) && (PlayAudio("squash_hmm"), oT.$[this.R].splice(e, 1), a.src = c > this.AttackedRX ? "images/Plants/Squash/SquashR.png": "images/Plants/Squash/SquashL.png", oSym.addTask(100,
+        h.beAttacked && h.Altitude > -1 && h.Altitude < 2 && (f || !f && c - this.AttackedRX < 71) && (PlayAudio("squash_hmm"), oT.$[this.R].splice(e, 1), a.src = c > this.AttackedRX ? "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/Squash/SquashR.png": "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/Squash/SquashL.png", oSym.addTask(100,
         function(d, j, i) {
             var k = $P[d];
             k && k.NormalAttack(k, h.id, i)
@@ -1923,7 +1923,7 @@ oSquash = InheritO(CPlants, {
         var a = $(d.id),
         e = $Z[c];
         e && (b = e.ZX + e.Speed * 4 * (!e.WalkDirection ? -1 : 1) - 50);
-        a.childNodes[1].src = "images/Plants/Squash/SquashAttack.gif" + $Random + Math.random();
+        a.childNodes[1].src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/Squash/SquashAttack.gif" + $Random + Math.random();
         SetStyle(a, {
             left: b + "px"
         });
@@ -1949,7 +1949,7 @@ oChomper = InheritO(CPlants, {
     beAttackedPointR: 70,
     SunNum: 150,
     AudioArr: ["bigchomp"],
-    PicArr: ["images/Card/Plants/Chomper.png", "images/Plants/Chomper/0.gif", "images/Plants/Chomper/Chomper.gif", "images/Plants/Chomper/ChomperAttack.gif", "images/Plants/Chomper/ChomperDigest.gif"],
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Plants/Chomper.png", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/Chomper/0.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/Chomper/Chomper.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/Chomper/ChomperAttack.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/Chomper/ChomperDigest.gif"],
     Tooltip: "能一口气吞下一只僵尸, 但处于咀嚼状态中十分脆弱",
     Produce: '大嘴花可以一口吞掉一整只僵尸，但是他们消</font><br>化僵尸的时候很脆弱。<p>伤害：<font color="#FF0000">巨大</font><br>范围：<font color="#FF0000">非常近</font><br>特点：<font color="#FF0000">消化时间很长</font></p>大嘴花几乎可以去“恐怖小店”，来表演它的绝</font><br>技了，不过他的经纪人压榨了他太多的钱，所</font><br>以他没去成。尽管如此，大嘴花没有怨言，只</font><br>说了句这只是交易的一部分。',
     GetDX: function() {
@@ -1968,7 +1968,7 @@ oChomper = InheritO(CPlants, {
         return a.Altitude == 1 && a.beAttacked
     },
     NormalAttack: function(a, b) {
-        $(a).childNodes[1].src = "images/Plants/Chomper/ChomperAttack.gif" + $Random + Math.random();
+        $(a).childNodes[1].src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/Chomper/ChomperAttack.gif" + $Random + Math.random();
         oSym.addTask(70,
         function(c, d) {
             PlayAudio("bigchomp");
@@ -1979,12 +1979,12 @@ oChomper = InheritO(CPlants, {
                 g && ((h = $Z[f]) && h.beAttacked && h.PZ ? $(e).childNodes[1].src = h.getRaven(e) ? (oSym.addTask(4200,
                 function(i) {
                     var j = $P[i];
-                    j && (j.canTrigger = 1, $(i).childNodes[1].src = "images/Plants/Chomper/Chomper.gif")
+                    j && (j.canTrigger = 1, $(i).childNodes[1].src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/Chomper/Chomper.gif")
                 },
-                [e]), "images/Plants/Chomper/ChomperDigest.gif") : (g.canTrigger = 1, "images/Plants/Chomper/Chomper.gif") : oSym.addTask(18,
+                [e]), "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/Chomper/ChomperDigest.gif") : (g.canTrigger = 1, "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/Chomper/Chomper.gif") : oSym.addTask(18,
                 function(i) {
                     var j = $P[i];
-                    j && (j.canTrigger = 1, $(i).childNodes[1].src = "images/Plants/Chomper/Chomper.gif")
+                    j && (j.canTrigger = 1, $(i).childNodes[1].src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/Chomper/Chomper.gif")
                 },
                 [e]))
             },
@@ -1997,11 +1997,11 @@ oBigChomper = InheritO(oChomper, {
     EName: "oBigChomper",
     CName: "超级大嘴花",
     coolTime: 15,
-    PicArr: ["images/Card/Plants/BigChomper.png", "images/Plants/BigChomper/0.gif", "images/Plants/BigChomper/Chomper.gif", "images/Plants/BigChomper/ChomperAttack.gif", "images/Plants/BigChomper/ChomperDigest.gif"],
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Plants/BigChomper.png", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/BigChomper/0.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/BigChomper/Chomper.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/BigChomper/ChomperAttack.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/BigChomper/ChomperDigest.gif"],
     Tooltip: "超级大嘴花能一口气吞下一只僵尸, 并且咀嚼速度是普通大嘴花的50%",
     Produce: '超级大嘴花能一口气吞下一只僵尸, 并且咀嚼速</font><br>度是普通大嘴花的50%。<p>伤害：<font color="#FF0000">巨大</font><br>范围：<font color="#FF0000">非常近</font><br>特点：<font color="#FF0000">咀嚼时间短</font></p>超级大嘴花曾经是电视节目“超级大胃王”节</font><br>目的常客，但后来他被踢出了节目组，原因是</font><br>它的存在直接影响到观众的饮食量和节目收视</font><br>率。没办法，为了糊口他只得干起吞食僵尸行</font><br>动。',
     NormalAttack: function(a, b) {
-        $(a).childNodes[1].src = "images/Plants/BigChomper/ChomperAttack.gif" + $Random + Math.random();
+        $(a).childNodes[1].src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/BigChomper/ChomperAttack.gif" + $Random + Math.random();
         oSym.addTask(70,
         function(c, d) {
             PlayAudio("bigchomp");
@@ -2012,12 +2012,12 @@ oBigChomper = InheritO(oChomper, {
                 g && ((h = $Z[f]) && h.beAttacked && h.PZ ? $(e).childNodes[1].src = h.getRaven(e) ? (oSym.addTask(2100,
                 function(i) {
                     var j = $P[i];
-                    j && (j.canTrigger = 1, $(i).childNodes[1].src = "images/Plants/BigChomper/Chomper.gif")
+                    j && (j.canTrigger = 1, $(i).childNodes[1].src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/BigChomper/Chomper.gif")
                 },
-                [e]), "images/Plants/BigChomper/ChomperDigest.gif") : (g.canTrigger = 1, "images/Plants/BigChomper/Chomper.gif") : oSym.addTask(9,
+                [e]), "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/BigChomper/ChomperDigest.gif") : (g.canTrigger = 1, "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/BigChomper/Chomper.gif") : oSym.addTask(9,
                 function(i) {
                     var j = $P[i];
-                    j && (j.canTrigger = 1, $(i).childNodes[1].src = "images/Plants/BigChomper/Chomper.gif")
+                    j && (j.canTrigger = 1, $(i).childNodes[1].src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/BigChomper/Chomper.gif")
                 },
                 [e]))
             },
@@ -2036,7 +2036,7 @@ oFumeShroom = InheritO(CPlants, {
     BookHandBack: 2.5,
     SleepGif: 3,
     night: true,
-    PicArr: ["images/Card/Plants/FumeShroom.png", "images/Plants/FumeShroom/0.gif", "images/Plants/FumeShroom/FumeShroom.gif", "images/Plants/FumeShroom/FumeShroomSleep.gif", "images/Plants/FumeShroom/FumeShroomAttack.gif", "images/Plants/FumeShroom/FumeShroomBullet.gif"],
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Plants/FumeShroom.png", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/FumeShroom/0.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/FumeShroom/FumeShroom.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/FumeShroom/FumeShroomSleep.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/FumeShroom/FumeShroomAttack.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/FumeShroom/FumeShroomBullet.gif"],
     AudioArr: ["fume"],
     Tooltip: "喷射可以穿过门板的气液",
     Produce: '大喷菇喷出的臭气可以穿透铁丝网门。<p>伤害：<font color="#FF0000">普通，可穿透铁丝网门</font><br>范围：<font color="#FF0000">臭气中的所有僵尸<br>白天睡觉</font></p>“我以前那份没前途的工作，是为一个面包房</font><br>生产酵母孢，”大喷菇说。“然后小喷菇，上帝</font><br>保佑它，告诉了我这个喷杀僵尸的机会。现在</font><br>我真觉得自己完全不同了。”',
@@ -2055,7 +2055,7 @@ oFumeShroom = InheritO(CPlants, {
     },
     PrivateBirth: function(b) {
         var a = b.id;
-        NewEle(a + "_Bullet", "div", "position:absolute;visibility:hidden;width:343px;height:62px;left:" + b.AttackedRX + "px;top:" + (b.pixelTop + 5) + "px;background:url(images/Plants/FumeShroom/FumeShroomBullet.gif);z-index:" + (b.zIndex + 1), 0, EDPZ)
+        NewEle(a + "_Bullet", "div", "position:absolute;visibility:hidden;width:343px;height:62px;left:" + b.AttackedRX + "px;top:" + (b.pixelTop + 5) + "px;background:url(https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/FumeShroom/FumeShroomBullet.gif);z-index:" + (b.zIndex + 1), 0, EDPZ)
     },
     PrivateDie: function(a) {
         ClearChild($(a.id + "_Bullet"))
@@ -2074,19 +2074,19 @@ oFumeShroom = InheritO(CPlants, {
         a = c + "_Bullet";
         while (e--) { (g = d[e]).Altitude < 2 && g.getHit1(g, 20)
         }
-        b.childNodes[1].src = "images/Plants/FumeShroom/FumeShroomAttack.gif";
+        b.childNodes[1].src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/FumeShroom/FumeShroomAttack.gif";
         SetVisible($(a));
         ImgSpriter(a, c, [["0 0", 9, 1], ["0 -62px", 9, 2], ["0 -124px", 9, 3], ["0 -186px", 9, 4], ["0 -248px", 9, 5], ["0 -310px", 9, 6], ["0 -372px", 9, 7], ["0 -434px", 9, -1]], 0,
         function(i, j) {
             var h = $(j);
-            $P[j] && (h.childNodes[1].src = "images/Plants/FumeShroom/FumeShroom.gif", SetHidden($(i)))
+            $P[j] && (h.childNodes[1].src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/FumeShroom/FumeShroom.gif", SetHidden($(i)))
         })
     }
 }),
 oIceFumeShroom = InheritO(oFumeShroom, {
     EName: "oIceFumeShroom",
     CName: "寒冰大喷菇",
-    PicArr: ["images/Card/Plants/FumeShroom.png", "images/Plants/FumeShroom/0.gif", "images/Plants/FumeShroom/FumeShroom.gif", "images/Plants/FumeShroom/FumeShroomSleep.gif", "images/Plants/FumeShroom/FumeShroomAttack.gif", "images/Plants/FumeShroom/FumeShroomBullet.gif"],
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Plants/FumeShroom.png", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/FumeShroom/0.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/FumeShroom/FumeShroom.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/FumeShroom/FumeShroomSleep.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/FumeShroom/FumeShroomAttack.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/FumeShroom/FumeShroomBullet.gif"],
     Tooltip: "喷射可以穿过门板的气液",
     Produce: '大喷菇喷出的臭气可以穿透铁丝网门。<p>伤害：<font color="#FF0000">普通，可穿透铁丝网门</font><br>范围：<font color="#FF0000">臭气中的所有僵尸<br>白天睡觉</font></p>“我以前那份没前途的工作，是为一个面包房</font><br>生产酵母孢，”大喷菇说。“然后小喷菇，上帝</font><br>保佑它，告诉了我这个喷杀僵尸的机会。现在</font><br>我真觉得自己完全不同了。”',
     NormalAttack: function() {
@@ -2100,12 +2100,12 @@ oIceFumeShroom = InheritO(oFumeShroom, {
         a = c + "_Bullet";
         while (e--) { (g = d[e]).Altitude < 2 && g.getSnowPea(g, 20)
         }
-        b.childNodes[1].src = "images/Plants/FumeShroom/FumeShroomAttack.gif";
+        b.childNodes[1].src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/FumeShroom/FumeShroomAttack.gif";
         SetVisible($(a));
         ImgSpriter(a, c, [["0 0", 9, 1], ["0 -62px", 9, 2], ["0 -124px", 9, 3], ["0 -186px", 9, 4], ["0 -248px", 9, 5], ["0 -310px", 9, 6], ["0 -372px", 9, 7], ["0 -434px", 9, -1]], 0,
         function(i, j) {
             var h = $(j);
-            $P[j] && (h.childNodes[1].src = "images/Plants/FumeShroom/FumeShroom.gif", SetHidden($(i)))
+            $P[j] && (h.childNodes[1].src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/FumeShroom/FumeShroom.gif", SetHidden($(i)))
         })
     }
 }),
@@ -2119,7 +2119,7 @@ oCoffeeBean = InheritO(CPlants, {
     SunNum: 75,
     PKind: 3,
     canEat: 0,
-    PicArr: ["images/Card/Plants/CoffeeBean.png", "images/Plants/CoffeeBean/0.gif", "images/Plants/CoffeeBean/CoffeeBean.gif", "images/Plants/CoffeeBean/CoffeeBeanEat.gif" + $Random],
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Plants/CoffeeBean.png", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/CoffeeBean/0.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/CoffeeBean/CoffeeBean.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/CoffeeBean/CoffeeBeanEat.gif" + $Random],
     AudioArr: ["coffee", "wakeup"],
     Tooltip: "咖啡豆，可以唤醒睡眠中的蘑菇们。",
     Produce: '咖啡豆，可以唤醒睡眠中的蘑菇们。<p>使用方法：<font color="#FF0000">单独使用，立即生效</font><br>特点：<font color="#FF0000">可以种在其他植物上，用来唤醒蘑菇们</font></p>咖啡豆：“嘿，伙计们！嘿，怎么回事？是谁？</font><br>嘿！你瞧见那个东西没？什么东西？哇！是狮子</font><br>！”嗯，咖啡豆确定，这样可以让自己很兴奋</font><br>。',
@@ -2161,7 +2161,7 @@ oGloomShroom = InheritO(oFumeShroom, {
     height: 81,
     beAttackedPointR: 92,
     SunNum: 150,
-    PicArr: ["images/Card/Plants/GloomShroom.png", "images/Plants/GloomShroom/0.gif", "images/Plants/GloomShroom/GloomShroom.gif", "images/Plants/GloomShroom/GloomShroomSleep.gif", "images/Plants/GloomShroom/GloomShroomAttack.gif", "images/Plants/GloomShroom/GloomShroomBullet.gif"],
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Plants/GloomShroom.png", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/GloomShroom/0.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/GloomShroom/GloomShroom.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/GloomShroom/GloomShroomSleep.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/GloomShroom/GloomShroomAttack.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/GloomShroom/GloomShroomBullet.gif"],
     AudioArr: ["kernelpult", "kernelpult2"],
     Tooltip: "围绕自身释放大量孢子<br>",
     Produce: '围绕自身释放大量孢子<p><font color="#FF0000">可以种植在大喷菇上</font></p>“我喜欢喷射大量烟雾。”忧郁蘑菇说，“我</font><br>知道许多人不喜欢这样，他们说这又粗鲁啦烟</font><br>雾又很臭啦之类的，我只想说，你们想不想自</font><br>己的脑袋被僵尸吃掉？”',
@@ -2183,7 +2183,7 @@ oGloomShroom = InheritO(oFumeShroom, {
     },
     PrivateBirth: function(b) {
         var a = b.id;
-        NewEle(a + "_Bullet", "div", "position:absolute;visibility:hidden;width:210px;height:200px;left:" + (b.pixelLeft - 60) + "px;top:" + (b.pixelTop - 65) + "px;background:url(images/Plants/GloomShroom/GloomShroomBullet.gif);z-index:" + (b.zIndex + 1), 0, EDPZ)
+        NewEle(a + "_Bullet", "div", "position:absolute;visibility:hidden;width:210px;height:200px;left:" + (b.pixelLeft - 60) + "px;top:" + (b.pixelTop - 65) + "px;background:url(https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/GloomShroom/GloomShroomBullet.gif);z-index:" + (b.zIndex + 1), 0, EDPZ)
     },
     PrivateDie: function(a) {
         ClearChild($(a.id + "_Bullet"))
@@ -2216,12 +2216,12 @@ oGloomShroom = InheritO(oFumeShroom, {
             PlayAudio(["kernelpult", "kernelpult2"][Math.floor(Math.random() * 2)]); --i && oSym.addTask(100, arguments.callee, [i])
         },
         [4]);
-        d.childNodes[1].src = "images/Plants/GloomShroom/GloomShroomAttack.gif";
+        d.childNodes[1].src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/GloomShroom/GloomShroomAttack.gif";
         SetVisible($(l));
         ImgSpriter(l, j, [["0 0", 9, 1], ["0 -200px", 9, 2], ["0 -400px", 9, 3], ["0 -600px", 9, 4], ["0 -800px", 9, 5], ["0 -1000px", 9, 6], ["0 -1200px", 9, 7], ["0 -1400px", 9, 8], ["0 -1600px", 9, 9], ["0 -1800px", 9, 10], ["0 -2000px", 9, 11], ["0 -2200px", 9, -1]], 0,
         function(m, n) {
             var i = $(n);
-            $P[n] && (i.childNodes[1].src = "images/Plants/GloomShroom/GloomShroom.gif");
+            $P[n] && (i.childNodes[1].src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/GloomShroom/GloomShroom.gif");
             SetHidden($(m))
         })
     }
@@ -2235,7 +2235,7 @@ oPuffShroom = InheritO(oFumeShroom, {
     beAttackedPointR: 25,
     SunNum: 0,
     Stature: -1,
-    PicArr: ["images/Card/Plants/PuffShroom.png", "images/Plants/PuffShroom/0.gif", "images/Plants/PuffShroom/PuffShroom.gif", "images/Plants/PuffShroom/PuffShroomSleep.gif", "images/Plants/ShroomBullet.gif", "images/Plants/ShroomBulletHit.gif"],
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Plants/PuffShroom.png", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/PuffShroom/0.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/PuffShroom/PuffShroom.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/PuffShroom/PuffShroomSleep.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/ShroomBullet.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/ShroomBulletHit.gif"],
     AudioArr: ["puff"],
     Tooltip: "向敌人发射短程孢子",
     Produce: '小喷菇是免费的，不过射程很近。<p>伤害：<font color="#FF0000">中等</font><br>范围：<font color="#FF0000">近<br>白天要睡觉</font></p>小喷菇：“我也是最近才知道僵尸的存在，和</font><br>很多蘑菇一样，我只是把他们想象成童话和电</font><br>影里的怪物。不过这次的经历已经让我大开眼</font><br>界了。',
@@ -2244,7 +2244,7 @@ oPuffShroom = InheritO(oFumeShroom, {
         return [[b, Math.min(c + 250, oS.W), 0]]
     },
     PrivateBirth: function(a) {
-        a.BulletEle = NewImg(0, "images/Plants/ShroomBullet.gif", "left:" + (a.AttackedLX - 46) + "px;top:" + (a.pixelTop + 40) + "px;visibility:hidden;z-index:" + (a.zIndex + 2))
+        a.BulletEle = NewImg(0, "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/ShroomBullet.gif", "left:" + (a.AttackedLX - 46) + "px;top:" + (a.pixelTop + 40) + "px;visibility:hidden;z-index:" + (a.zIndex + 2))
     },
     PrivateDie: function(a) {
         a.BulletEle = null
@@ -2270,7 +2270,7 @@ oPuffShroom = InheritO(oFumeShroom, {
             h = oZ.getZ0(e, f);
             h && h.Altitude == 1 ? (h.getPea(h, 20, 0), (SetStyle(d, {
                 left: g + 38 + "px"
-            })).src = "images/Plants/ShroomBulletHit.gif", oSym.addTask(10, ClearChild, [d])) : (e += 5) < oS.W ? (d.style.left = (g += 5) + "px", oSym.addTask(1, arguments.callee, [j, d, e, f, g])) : ClearChild(d)
+            })).src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/ShroomBulletHit.gif", oSym.addTask(10, ClearChild, [d])) : (e += 5) < oS.W ? (d.style.left = (g += 5) + "px", oSym.addTask(1, arguments.callee, [j, d, e, f, g])) : ClearChild(d)
         },
         [c, $(c), a, b.R, a - 46])
     }
@@ -2285,7 +2285,7 @@ oScaredyShroom = InheritO(oFumeShroom, {
     Cry: 0,
     ArZ: [],
     Attacking: 0,
-    PicArr: ["images/Card/Plants/ScaredyShroom.png", "images/Plants/ScaredyShroom/0.gif", "images/Plants/ScaredyShroom/ScaredyShroom.gif", "images/Plants/ScaredyShroom/ScaredyShroomSleep.gif", "images/Plants/ScaredyShroom/ScaredyShroomCry.gif", "images/Plants/ShroomBullet.gif", "images/Plants/ShroomBulletHit.gif"],
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Plants/ScaredyShroom.png", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/ScaredyShroom/0.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/ScaredyShroom/ScaredyShroom.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/ScaredyShroom/ScaredyShroomSleep.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/ScaredyShroom/ScaredyShroomCry.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/ShroomBullet.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/ShroomBulletHit.gif"],
     Tooltip: "远程射手, 但敌人靠近时会蜷缩不动",
     Produce: '胆小菇是一种远程射手，敌人接近后会躲起来。<p>伤害：<font color="#FF0000">普通</font><br>特点：<font color="#FF0000">敌人接近后就停止攻击<br>白天睡觉</font></p>“谁在那？”胆小菇低声说，声音细微难辨。“</font><br>走开！我不想见任何人。除非……除非你是马</font><br>戏团的人。”',
     GetDX: CPlants.prototype.GetDX,
@@ -2298,7 +2298,7 @@ oScaredyShroom = InheritO(oFumeShroom, {
     TriggerCheck: function(e, c) {
         var b = this,
         a = b.id;
-        e.PZ && Math.abs(e.ZX - b.MX) < 121 && e.beAttacked ? (b.ArZ.push(e.id), !b.Cry && (b.Cry = 1, $(a).childNodes[1].src = "images/Plants/ScaredyShroom/ScaredyShroomCry.gif", b.CryCheck(a))) : (e.R == b.R && !b.Cry && !b.Attacking && e.Altitude > 0 && e.Altitude < 3 && b.NormalAttack())
+        e.PZ && Math.abs(e.ZX - b.MX) < 121 && e.beAttacked ? (b.ArZ.push(e.id), !b.Cry && (b.Cry = 1, $(a).childNodes[1].src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/ScaredyShroom/ScaredyShroomCry.gif", b.CryCheck(a))) : (e.R == b.R && !b.Cry && !b.Attacking && e.Altitude > 0 && e.Altitude < 3 && b.NormalAttack())
     },
     PrivateBirth: function(c) {
         var b = c.AttackedLX,
@@ -2309,7 +2309,7 @@ oScaredyShroom = InheritO(oFumeShroom, {
             pixelLeft: a,
             F: oGd.MB2
         });
-        c.BulletEle = NewImg(0, "images/Plants/ShroomBullet.gif", "left:" + a + "px;top:" + (c.pixelTop + 35) + "px;visibility:hidden;z-index:" + (c.zIndex + 2));
+        c.BulletEle = NewImg(0, "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/ShroomBullet.gif", "left:" + a + "px;top:" + (c.pixelTop + 35) + "px;visibility:hidden;z-index:" + (c.zIndex + 2));
         c.MX = b + 9
     },
     PrivateDie: function(a) {
@@ -2330,7 +2330,7 @@ oScaredyShroom = InheritO(oFumeShroom, {
             i = oZ.getZ0(f, g);
             i && i.Altitude == 1 ? (i.getPea(i, 20, 0), (SetStyle(e, {
                 left: h + 38 + "px"
-            })).src = "images/Plants/ShroomBulletHit.gif", oSym.addTask(10, ClearChild, [e])) : (f += 5) < oS.W ? (e.style.left = (h += 5) + "px", oSym.addTask(1, arguments.callee, [k, e, f, g, h])) : ClearChild(e)
+            })).src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/ShroomBulletHit.gif", oSym.addTask(10, ClearChild, [e])) : (f += 5) < oS.W ? (e.style.left = (h += 5) + "px", oSym.addTask(1, arguments.callee, [k, e, f, g, h])) : ClearChild(e)
         },
         [d, $(d), b, c.R, b - 46]);
         c.Attacking = 1;
@@ -2358,7 +2358,7 @@ oScaredyShroom = InheritO(oFumeShroom, {
                 c = (f = d.ArZ).length;
                 while (c--) { (!(e = $Z[f[c]]) || !e.PZ || Math.abs(e.ZX - d.MX) > 120) && f.splice(c, 1)
                 }
-                f.length ? d.CryCheck(b) : (d.Cry = 0, $(b).childNodes[1].src = "images/Plants/ScaredyShroom/ScaredyShroom.gif")
+                f.length ? d.CryCheck(b) : (d.Cry = 0, $(b).childNodes[1].src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/ScaredyShroom/ScaredyShroom.gif")
             }
         },
         [a])
@@ -2374,7 +2374,7 @@ oHypnoShroom = InheritO(oFumeShroom, {
     SunNum: 75,
     coolTime: 30,
     HP: 1,
-    PicArr: ["images/Card/Plants/HypnoShroom.png", "images/Plants/HypnoShroom/0.gif", "images/Plants/HypnoShroom/HypnoShroom.gif", "images/Plants/HypnoShroom/HypnoShroomSleep.gif"],
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Plants/HypnoShroom.png", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/HypnoShroom/0.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/HypnoShroom/HypnoShroom.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/HypnoShroom/HypnoShroomSleep.gif"],
     Tooltip: "让一只僵尸为你作战",
     Produce: '当僵尸吃下魅惑菇后，他将会掉转方向为你作</font><br>战。<p>使用方法：<font color="#FF0000">单独使用，接触生效</font><br>特点：<font color="#FF0000">让一只僵尸为你作战<br>白天睡觉</font></p>魅惑菇声称：“僵尸们是我们的朋友，他们被</font><br>严重误解了，僵尸们在我们的生态环境里扮演着</font><br>重要角色。我们可以也应当更努力地让他们学</font><br>会用我们的方式来思考。”',
     InitTrigger: function() {},
@@ -2401,7 +2401,7 @@ oIceShroom = InheritO(oFumeShroom, {
     beAttackedPointR: 63,
     SunNum: 75,
     coolTime: 50,
-    PicArr: ["images/Card/Plants/IceShroom.png", "images/Plants/IceShroom/0.gif", "images/Plants/IceShroom/IceShroom.gif", "images/Plants/IceShroom/IceShroomSleep.gif", "images/Plants/IceShroom/Snow.gif", "images/Plants/IceShroom/icetrap.gif"],
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Plants/IceShroom.png", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/IceShroom/0.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/IceShroom/IceShroom.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/IceShroom/IceShroomSleep.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/IceShroom/Snow.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/IceShroom/icetrap.gif"],
     AudioArr: ["frozen", "wakeup"],
     Tooltip: "暂时使画面里的所有敌人停止行动",
     Produce: '寒冰菇，能短暂的冻结屏幕上所有僵尸。<p>伤害：<font color="#FF0000">非常低，冻结僵尸</font><br>范围：<font color="#FF0000">屏幕上的所有僵尸</font><br>用法：<font color="#FF0000">单独使用，立即生效<br>白天睡觉</font></p>寒冰菇皱着眉头，倒不是因为它不高兴或不满</font><br>意，只是因为，它儿时因受创伤而</font><br>遗留下了面瘫。',
@@ -2414,7 +2414,7 @@ oIceShroom = InheritO(oFumeShroom, {
     WakeUP: function(a) {
         var b = a.id;
         a.Sleep = 0;
-        $(b).childNodes[1].src = "images/Plants/IceShroom/IceShroom.gif";
+        $(b).childNodes[1].src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/IceShroom/IceShroom.gif";
         a.NormalAttack(b)
     },
     NormalAttack: function(a) {
@@ -2430,7 +2430,7 @@ oIceShroom = InheritO(oFumeShroom, {
                 function(g) {
                     ClearChild(g)
                 },
-                [NewEle(b, "div", "position:absolute;left:0;top:0;width:900px;height:600px;z-index:10;filter:alpha(opacity=50);opacity:.5;background:#9CF url(images/Plants/IceShroom/Snow.gif) no-repeat scroll " + (f.pixelLeft - 197) + "px " + (f.pixelTop - 80) + "px", 0, EDPZ)]);
+                [NewEle(b, "div", "position:absolute;left:0;top:0;width:900px;height:600px;z-index:10;filter:alpha(opacity=50);opacity:.5;background:#9CF url(https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/IceShroom/Snow.gif) no-repeat scroll " + (f.pixelLeft - 197) + "px " + (f.pixelTop - 80) + "px", 0, EDPZ)]);
                 f.Die()
             }
         },
@@ -2449,7 +2449,7 @@ oSunShrooms = InheritO(oFumeShroom, {
     Status: 0,
     HP: 12000,
      coolTime: 35,
-    PicArr: ["images/Card/Plants/Sun.png", "images/interface/Sun.gif"],
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Plants/Sun.png", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/Sun.gif"],
     Tooltip: "直接给你提供一大堆阳光",
     Produce: '阳光菇开始提供少量阳光，稍后提供正常数量</font><br>阳光。<p>生产阳光：<font color="#FF0000">开始低，之后正常<br>白天睡觉</font></p>阳光菇讨厌阳光。恨到当它内部产生点阳光时</font><br>，就尽可能快的吐出来。它就是不能忍受这个</font><br>。对它来说，阳光令人厌恶。',
     GetDX: CPlants.prototype.GetDX,
@@ -2489,7 +2489,7 @@ oSunShrooms = InheritO(oFumeShroom, {
         [a.id])
     },
     BirthStyle: function(c, d, b, a) {
-        oS.DKind ? (c.canTrigger = 0, c.Sleep = 1, b.childNodes[1].src = "images/interface/Sun.gif") : (oSym.addTask(600,
+        oS.DKind ? (c.canTrigger = 0, c.Sleep = 1, b.childNodes[1].src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/Sun.gif") : (oSym.addTask(600,
         function(h, g, f) {
             var e = $P[h];
             e && e.ProduceSun(e, g, f)
@@ -2497,7 +2497,7 @@ oSunShrooms = InheritO(oFumeShroom, {
         [d, GetX(c.C) - 40, GetY(c.R)]), oSym.addTask(0,
         function(f) {
             var e = $P[f];
-            e && (e.Sleep = 0, $(f).childNodes[1].src = "images/interface/Sun.gif", e.Status = 1)
+            e && (e.Sleep = 0, $(f).childNodes[1].src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/Sun.gif", e.Status = 1)
         },
         [d]));
         EditEle(b, {
@@ -2517,12 +2517,12 @@ oSunShrooms = InheritO(oFumeShroom, {
     WakeUP: function(a) {
         var b = a.id;
         a.ProduceSun(a, GetX(a.C) - 40, GetY(a.R));
-        $(b).childNodes[1].src = "images/interface/Sun.gif";
+        $(b).childNodes[1].src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/Sun.gif";
         a.Sleep = 0;
         oSym.addTask(0,
         function(d) {
             var c = $P[d];
-            c && ($(d).childNodes[1].src = "images/interface/Sun.gif", c.Status = 1)
+            c && ($(d).childNodes[1].src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/Sun.gif", c.Status = 1)
         },
         [b])
     }
@@ -2537,7 +2537,7 @@ oSunShroom = InheritO(oFumeShroom, {
     SunNum: 25,
     Stature: -1,
     Status: 0,
-    PicArr: ["images/Card/Plants/SunShroom.png", "images/Plants/SunShroom/0.gif", "images/Plants/SunShroom/SunShroom2.gif", "images/Plants/SunShroom/SunShroomSleep.gif", "images/Plants/SunShroom/SunShroom.gif"],
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Plants/SunShroom.png", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/SunShroom/0.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/SunShroom/SunShroom2.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/SunShroom/SunShroomSleep.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/SunShroom/SunShroom.gif"],
     Tooltip: "阳光菇开始提供少量阳光，稍后提供正常数量阳光。",
     Produce: '阳光菇开始提供少量阳光，稍后提供正常数量</font><br>阳光。<p>生产阳光：<font color="#FF0000">开始低，之后正常<br>白天睡觉</font></p>阳光菇讨厌阳光。恨到当它内部产生点阳光时</font><br>，就尽可能快的吐出来。它就是不能忍受这个</font><br>。对它来说，阳光令人厌恶。',
     GetDX: CPlants.prototype.GetDX,
@@ -2546,7 +2546,7 @@ oSunShroom = InheritO(oFumeShroom, {
     PrivateDie: function(a) {},
     PrivateBirth: function() {},
     BirthStyle: function(c, d, b, a) {
-        oS.DKind ? (c.canTrigger = 0, c.Sleep = 1, b.childNodes[1].src = "images/Plants/SunShroom/SunShroomSleep.gif") : (oSym.addTask(600,
+        oS.DKind ? (c.canTrigger = 0, c.Sleep = 1, b.childNodes[1].src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/SunShroom/SunShroomSleep.gif") : (oSym.addTask(600,
         function(h, g, f) {
             var e = $P[h];
             e && e.ProduceSun(e, g, f)
@@ -2554,7 +2554,7 @@ oSunShroom = InheritO(oFumeShroom, {
         [d, GetX(c.C) - 40, GetY(c.R)]), oSym.addTask(12000,
         function(f) {
             var e = $P[f];
-            e && (e.Sleep = 0, $(f).childNodes[1].src = "images/Plants/SunShroom/SunShroom.gif", e.Status = 1)
+            e && (e.Sleep = 0, $(f).childNodes[1].src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/SunShroom/SunShroom.gif", e.Status = 1)
         },
         [d]));
         EditEle(b, {
@@ -2574,12 +2574,12 @@ oSunShroom = InheritO(oFumeShroom, {
     WakeUP: function(a) {
         var b = a.id;
         a.ProduceSun(a, GetX(a.C) - 40, GetY(a.R));
-        $(b).childNodes[1].src = "images/Plants/SunShroom/SunShroom2.gif";
+        $(b).childNodes[1].src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/SunShroom/SunShroom2.gif";
         a.Sleep = 0;
         oSym.addTask(12000,
         function(d) {
             var c = $P[d];
-            c && ($(d).childNodes[1].src = "images/Plants/SunShroom/SunShroom.gif", c.Status = 1)
+            c && ($(d).childNodes[1].src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/SunShroom/SunShroom.gif", c.Status = 1)
         },
         [b])
     }
@@ -2593,13 +2593,13 @@ oDoomShroom = InheritO(oFumeShroom, {
     coolTime: 50,
     SunNum: 125,
     AudioArr: ["doomshroom"],
-    PicArr: ["images/Card/Plants/DoomShroom.png", "images/Plants/DoomShroom/0.gif", "images/Plants/DoomShroom/DoomShroom.gif", "images/Plants/DoomShroom/Sleep.gif", "images/Plants/DoomShroom/BeginBoom.gif", "images/Plants/DoomShroom/crater10.png", "images/Plants/DoomShroom/crater11.png", "images/Plants/DoomShroom/crater20.png", "images/Plants/DoomShroom/crater21.png", "images/Plants/DoomShroom/crater30.png", "images/Plants/DoomShroom/crater31.png", "images/Plants/DoomShroom/Boom.png"],
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Plants/DoomShroom.png", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/DoomShroom/0.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/DoomShroom/DoomShroom.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/DoomShroom/Sleep.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/DoomShroom/BeginBoom.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/DoomShroom/crater10.png", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/DoomShroom/crater11.png", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/DoomShroom/crater20.png", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/DoomShroom/crater21.png", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/DoomShroom/crater30.png", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/DoomShroom/crater31.png", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/DoomShroom/Boom.png"],
     Tooltip: "造成大规模的伤害, 但会在原地留下一个坑, 坑中无法种植物",
     Produce: '毁灭菇可以摧毁大范围的僵尸，并留下一个不</font><br>能种植物的大弹坑。<p>伤害：<font color="#FF0000">极高</font><br>范围：<font color="#FF0000">大范围内的所有僵尸</font><br>用法：<font color="#FF0000">单独使用，立即生效</font><br>特点：<font color="#FF0000">留下一个弹坑<br>白天睡觉</font></p>“你很幸运，我是和你一伙的，”毁灭菇说，“</font><br>我能摧毁任何你所珍视的东西，小菜一碟。”',
     InitTrigger: function() {},
     BirthStyle: function(c, d, b, a) {
         oS.DKind ? (c.Sleep = 1, b.childNodes[1].src = c.PicArr[c.SleepGif]) : (c.Sleep = 0, c.getHurt = function() {},
-        b.childNodes[1].src = "images/Plants/DoomShroom/BeginBoom.gif", c.NormalAttack(d));
+        b.childNodes[1].src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/DoomShroom/BeginBoom.gif", c.NormalAttack(d));
         EditEle(b, {
             id: d
         },
@@ -2609,7 +2609,7 @@ oDoomShroom = InheritO(oFumeShroom, {
         var b = a.id;
         a.Sleep = 0;
         a.getHurt = function() {};
-        $(b).childNodes[1].src = "images/Plants/DoomShroom/BeginBoom.gif";
+        $(b).childNodes[1].src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/DoomShroom/BeginBoom.gif";
         a.NormalAttack(b)
     },
     NormalAttack: function(a) {
@@ -2639,7 +2639,7 @@ oDoomShroom = InheritO(oFumeShroom, {
                 } while ( h ++< f );
                 d.Die(); (o = j[r + "_" + 0]) && o.Die(); (o = j[r + "_" + 2]) && o.Die();
                 oGd.$Crater[r] = 2;
-                NewEle(q, "div", "position:absolute;overflow:hidden;z-index:" + (d.zIndex + 2) + ";width:283px;height:324px;left:" + (d.pixelLeft - 80) + "px;top:" + (d.pixelTop - 220) + "px;background:url(images/Plants/DoomShroom/Boom.png) no-repeat", 0, EDPZ);
+                NewEle(q, "div", "position:absolute;overflow:hidden;z-index:" + (d.zIndex + 2) + ";width:283px;height:324px;left:" + (d.pixelLeft - 80) + "px;top:" + (d.pixelTop - 220) + "px;background:url(https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/DoomShroom/Boom.png) no-repeat", 0, EDPZ);
                 oSym.addTask(20,
                 function(i) {
                     ClearChild(i)
@@ -2658,13 +2658,13 @@ oDoomShroom = InheritO(oFumeShroom, {
         var a;
         switch (oGd.$LF[b]) {
         case 1:
-            a = NewEle(f, "div", "position:absolute;z-index:" + (3 * b - 1) + ";overflow:hidden;background:url(images/Plants/DoomShroom/crater1" + oS.DKind + ".png) no-repeat;width:90px;height:61px;left:" + (e || (GetX(d) - 45)) + "px;top:" + (c || (GetY(b) - 30)) + "px", 0, EDPZ);
+            a = NewEle(f, "div", "position:absolute;z-index:" + (3 * b - 1) + ";overflow:hidden;background:url(https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/DoomShroom/crater1" + oS.DKind + ".png) no-repeat;width:90px;height:61px;left:" + (e || (GetX(d) - 45)) + "px;top:" + (c || (GetY(b) - 30)) + "px", 0, EDPZ);
             break;
         case 2:
-            a = NewEle(f, "div", "position:absolute;z-index:" + (3 * b - 1) + ";overflow:hidden;background:url(images/Plants/DoomShroom/crater2" + oS.DKind + ".png) no-repeat;width:85px;height:53px;left:" + (e || (GetX(d) - 42)) + "px;top:" + (c || (GetY(b) - 26)) + "px", 0, EDPZ);
+            a = NewEle(f, "div", "position:absolute;z-index:" + (3 * b - 1) + ";overflow:hidden;background:url(https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/DoomShroom/crater2" + oS.DKind + ".png) no-repeat;width:85px;height:53px;left:" + (e || (GetX(d) - 42)) + "px;top:" + (c || (GetY(b) - 26)) + "px", 0, EDPZ);
             break;
         case 3:
-            a = NewEle(f, "div", "position:absolute;z-index:" + (3 * b - 1) + ";overflow:hidden;background:url(images/Plants/DoomShroom/crater31.png) no-repeat;width:75px;height:77px;left:" + (e || (GetX(d) - 37)) + "px;top:" + (c || (GetY(b) - 19)) + "px", 0, EDPZ);
+            a = NewEle(f, "div", "position:absolute;z-index:" + (3 * b - 1) + ";overflow:hidden;background:url(https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/DoomShroom/crater31.png) no-repeat;width:75px;height:77px;left:" + (e || (GetX(d) - 37)) + "px;top:" + (c || (GetY(b) - 19)) + "px", 0, EDPZ);
             break;
         default:
         }
@@ -2698,7 +2698,7 @@ oTangleKlep = InheritO(CPlants, {
     },
     NormalGif: 1,
     AudioArr: ["TangleKlep"],
-    PicArr: ["images/Card/Plants/TangleKlep.png", "images/Plants/TangleKlep/0.gif", "images/Plants/TangleKlep/Float.gif", "images/Plants/TangleKlep/Grab.png", "images/interface/splash.png"],
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Plants/TangleKlep.png", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/TangleKlep/0.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/TangleKlep/Float.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/TangleKlep/Grab.png", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/splash.png"],
     Tooltip: "可以将僵尸拉入水底的水生植物",
     Produce: '缠绕水草是一种可以把接近他的僵尸拉进水中</font><br>的水生植物。<p>伤害：<font color="#FF0000">极高</font><br>用法：<font color="#FF0000">单独使用，接触后生效</font><br>特点：<font color="#FF0000">必须种在水中</font></p>“我是完全隐形的，”缠绕水草自己想，“我就</font><br>藏在水面下，没人会看到我。”他的朋友告诉他</font><br>，他们可以清楚地看到他。不过，缠绕水草似</font><br>乎不想改变自己的看法。',
     CanGrow: function(c, b, d) {
@@ -2712,7 +2712,7 @@ oTangleKlep = InheritO(CPlants, {
         return [[b, c, 0]]
     },
     BirthStyle: function(c, d, b, a) {
-        b.childNodes[1].src = "images/Plants/TangleKlep/Float.gif";
+        b.childNodes[1].src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/TangleKlep/Float.gif";
         EditEle(b, {
             id: d
         },
@@ -2730,7 +2730,7 @@ oTangleKlep = InheritO(CPlants, {
         b.getHurt = function() {};
         b.beAttacked = 0;
         b.isAttacking = 1;
-        NewImg(0, "images/Plants/TangleKlep/Grab.png", "left:" + b.beAttackedPointL + "px;top:" + (b.height - 67) + "px", b.Ele);
+        NewImg(0, "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/TangleKlep/Grab.png", "left:" + b.beAttackedPointL + "px;top:" + (b.height - 67) + "px", b.Ele);
         oSym.addTask(50,
         function(g, h) {
             PlayAudio("TangleKlep");
@@ -2738,8 +2738,8 @@ oTangleKlep = InheritO(CPlants, {
             f = h.id,
             d = e + "_splash",
             c = f + "_splash";
-            NewEle(d, "div", "position:absolute;background:url(images/interface/splash.png);left:" + (g.pixelLeft - 4) + "px;top:" + (g.pixelTop - 16) + "px;width:97px;height:88px;over-flow:hidden", 0, EDPZ);
-            NewEle(c, "div", "position:absolute;background:url(images/interface/splash.png);left:" + (h.AttackedLX - 10) + "px;top:" + (h.pixelTop + h.height - 88) + "px;width:97px;height:88px;over-flow:hidden", 0, EDPZ);
+            NewEle(d, "div", "position:absolute;background:url(https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/splash.png);left:" + (g.pixelLeft - 4) + "px;top:" + (g.pixelTop - 16) + "px;width:97px;height:88px;over-flow:hidden", 0, EDPZ);
+            NewEle(c, "div", "position:absolute;background:url(https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/splash.png);left:" + (h.AttackedLX - 10) + "px;top:" + (h.pixelTop + h.height - 88) + "px;width:97px;height:88px;over-flow:hidden", 0, EDPZ);
             ImgSpriter(d, e, [["0 0", 9, 1], ["-97px 0", 9, 2], ["-194px 0", 9, 3], ["-291px 0", 9, 4], ["-388px 0", 9, 5], ["-485px 0", 9, 6], ["-582px 0", 9, 7], ["-679px 0", 9, -1]], 0,
             function(i, j) {
                 ClearChild($(i))
@@ -2767,7 +2767,7 @@ oSeaShroom = InheritO(oPuffShroom, {
     getShadow: function(a) {
         return "display:none"
     },
-    PicArr: ["images/Card/Plants/SeaShroom.png", "images/Plants/SeaShroom/0.gif", "images/Plants/SeaShroom/SeaShroom.gif", "images/Plants/SeaShroom/SeaShroomSleep.gif", "images/Plants/ShroomBullet.gif", "images/Plants/ShroomBulletHit.gif"],
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Plants/SeaShroom.png", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/SeaShroom/0.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/SeaShroom/SeaShroom.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/SeaShroom/SeaShroomSleep.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/ShroomBullet.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/ShroomBulletHit.gif"],
     CanGrow: function(c, b, d) {
         var a = b + "_" + d;
         return ! (d < 1 || d > 9 || oGd.$LF[b] - 2 || c[0] || c[1] || oGd.$Crater[a] || oGd.$Tombstones[a])
@@ -2792,7 +2792,7 @@ oCactus = InheritO(CPlants, {
     AudioArr: ["plantgrow"],
     Status: 0,
     PicArr: (function() {
-        return ["images/Card/Plants/Cactus.png", "images/Plants/Cactus/0.gif", "images/Plants/Cactus/Cactus.gif", "images/Plants/Cactus/Cactus2.gif", "images/Plants/Cactus/Attack.gif", "images/Plants/Cactus/Attack2.gif", "images/Plants/Cactus/Elongation.gif", "images/Plants/Cactus/Shorten.gif", "images/Plants/Cactus/Projectile32.png"]
+        return ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Plants/Cactus.png", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/Cactus/0.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/Cactus/Cactus.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/Cactus/Cactus2.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/Cactus/Attack.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/Cactus/Attack2.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/Cactus/Elongation.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/Cactus/Shorten.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/Cactus/Projectile32.png"]
     })(),
     Tooltip: "能发射刺穿气球的子弹",
     Produce: '仙人掌发射的穿刺弹可以用来打击地面和空中</font><br>目标<p>伤害：<font color="#FF0000">中等</font><br>范围：<font color="#FF0000">地面和空中</font></p>确实，仙人掌非常“刺儿”，但是她的刺下，隐</font><br>藏着颗温柔的心，充满着爱和善良。她只是想拥</font><br>抱别人，和被别人拥抱。大多数人都做不到这点</font><br>，但是仙人掌她并不介意。她盯着一只铠甲鼠好</font><br>一阵子了，这次好像真的可以抱抱了。',
@@ -2859,14 +2859,14 @@ oCactus = InheritO(CPlants, {
             PlayAudio("plantgrow");
             a.canTrigger = 0;
             a.Status = 1;
-            $(b).childNodes[1].src = "images/Plants/Cactus/Elongation.gif";
+            $(b).childNodes[1].src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/Cactus/Elongation.gif";
             oSym.addTask(1,
             function(e) {
                 var d = $P[e],
                 c;
                 if (d) {
                     d.NormalGif = 3;
-                    $(e).childNodes[1].src = "images/Plants/Cactus/Cactus2.gif";
+                    $(e).childNodes[1].src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/Cactus/Cactus2.gif";
                     c = d.CheckLoop;
                     d.CheckLoop = d.CheckLoop2;
                     d.CheckLoop2 = c;
@@ -2889,14 +2889,14 @@ oCactus = InheritO(CPlants, {
         } else {
             a.canTrigger = 0;
             a.Status = 0;
-            $(b).childNodes[1].src = "images/Plants/Cactus/Shorten.gif";
+            $(b).childNodes[1].src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/Cactus/Shorten.gif";
             oSym.addTask(1,
             function(e) {
                 var d = $P[e],
                 c;
                 if (d) {
                     d.NormalGif = 2;
-                    $(e).childNodes[1].src = "images/Plants/Cactus/Cactus.gif";
+                    $(e).childNodes[1].src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/Cactus/Cactus.gif";
                     c = d.CheckLoop;
                     d.CheckLoop = d.CheckLoop2;
                     d.CheckLoop2 = c;
@@ -2915,11 +2915,11 @@ oCactus = InheritO(CPlants, {
         var b = this,
         c = "CB" + Math.random(),
         a = b.id;
-        $(a).childNodes[1].src = "images/Plants/Cactus/Attack.gif";
+        $(a).childNodes[1].src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/Cactus/Attack.gif";
         oSym.addTask(40,
         function(e) {
             var d = $(e);
-            d && (d.childNodes[1].src = "images/Plants/Cactus/Cactus.gif")
+            d && (d.childNodes[1].src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/Cactus/Cactus.gif")
         },
         [a]);
         NewImg(c, b.PicArr[8], "left:" + (b.AttackedRX + 25) + "px;top:" + (b.pixelTop + 103) + "px;visibility:hidden;z-index:" + (b.zIndex + 2), EDPZ);
@@ -2941,11 +2941,11 @@ oCactus = InheritO(CPlants, {
         var b = this,
         c = "CB" + Math.random(),
         a = b.id;
-        $(a).childNodes[1].src = "images/Plants/Cactus/Attack2.gif";
+        $(a).childNodes[1].src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/Cactus/Attack2.gif";
         oSym.addTask(50,
         function(e) {
             var d = $(e);
-            d && (d.childNodes[1].src = "images/Plants/Cactus/Cactus2.gif")
+            d && (d.childNodes[1].src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/Cactus/Cactus2.gif")
         },
         [a]);
         NewImg(c, b.PicArr[8], "left:" + (b.AttackedRX + 125) + "px;top:" + (b.pixelTop + 33) + "px;visibility:hidden;z-index:" + (b.zIndex + 2), EDPZ);
@@ -2974,7 +2974,7 @@ oOxygen = InheritO(CPlants, {
     HP: 300,
     BookHandBack: 3.5,
     coolTime: 7.5,
-    PicArr: ["images/Card/Plants/Oxygen.png", "images/Plants/Oxygen/0.gif", "images/Plants/Oxygen/Oxygen.gif"],
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Plants/Oxygen.png", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/Oxygen/0.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/Oxygen/Oxygen.gif"],
     Tooltip: "氧气藻可以提供氧气给地上的植物",
     Produce: '氧气藻可以提供氧气给地上的植物<p>韧性：<font color="FF0000">中</font><p><font color="#000000">范围：<font color="#1F470B">3x3</font></p>噗咕……氧气藻默默地吐着气泡，倒不是他愿</font><br>意一直吐，只怪他昨天喝了太多汽水。不过有传</font><br>言说，他除了吐气泡就不会别的了。',
     //GetDY: function(b, c, a) {
@@ -3014,12 +3014,12 @@ oFlamesMushroom = InheritO(CPlants, {
     HP: 4000,
     BookHandBack: 2.5,
     coolTime: 30,
-    PicArr: ["images/Card/Plants/FlamesMushroom.png", "images/Plants/FlamesMushroom/0.gif", "images/Plants/FlamesMushroom/FlamesMushroom.gif", "images/Plants/FlamesMushroom/FlamesMushroom1.gif", "images/Plants/FlamesMushroom/FlamesMushroom2.gif"],
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Plants/FlamesMushroom.png", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/FlamesMushroom/0.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/FlamesMushroom/FlamesMushroom.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/FlamesMushroom/FlamesMushroom1.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/FlamesMushroom/FlamesMushroom2.gif"],
     Tooltip: "烈焰菇可以召唤多个毁灭菇，嗨翻全场僵尸",
     Produce: '烈焰菇可以召唤多个毁灭菇，嗨翻全场僵尸<p>韧性：<font color="FF0000">高</font><p><font color="#000000">技能：<font color="#1F470B">在自身3x3范围内召唤8只毁灭菇</font></p>烈焰菇总是为自己的火焰感到反感，因为它们</font><br>总是伤害到自己的朋友。所以为了朋友，烈焰</font><br>菇到花园里找到了自己的归宿。',
     getHurt: function(e, b, a) {
         var c = this,
-        d = $(c.id).childNodes[1]; ! (b % 3) ? (c.HP -= a) < 1 ? c.Die() : c.HP < 2667 ? c.HurtStatus < 2 && (c.HurtStatus = 2, d.src = "images/Plants/FlamesMushroom/FlamesMushroom2.gif") : c.HP < 5333 && c.HurtStatus < 1 && (c.HurtStatus = 1, d.src = "images/Plants/FlamesMushroom/FlamesMushroom1.gif") : c.Die(1)
+        d = $(c.id).childNodes[1]; ! (b % 3) ? (c.HP -= a) < 1 ? c.Die() : c.HP < 2667 ? c.HurtStatus < 2 && (c.HurtStatus = 2, d.src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/FlamesMushroom/FlamesMushroom2.gif") : c.HP < 5333 && c.HurtStatus < 1 && (c.HurtStatus = 1, d.src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/FlamesMushroom/FlamesMushroom1.gif") : c.Die(1)
     },
     //GetDY: function(b, c, a) {
     //    return 6
@@ -3051,7 +3051,7 @@ oOG = InheritO(CPlants, {
     SunNum: 0,
     canEat: 0,
     BookHandBack: 5,
-    PicArr: ["images/Card/Plants/Oxygen.png", "images/Plants/Oxygen/0.gif", "images/Plants/Oxygen/Oxygen1.gif"],
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Plants/Oxygen.png", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/Oxygen/0.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/Oxygen/Oxygen1.gif"],
     PKind: 0,
     Stature: -1,
     GetDY: function(b, c, a) {
@@ -3081,7 +3081,7 @@ oPlantern = InheritO(CPlants, {
     canEat: 1,
     BookHandBack: 2.5,
     SunNum: 25,
-    PicArr: ["images/Card/Plants/Plantern.png", "images/Plants/Plantern/0.gif", "images/Plants/Plantern/Plantern.gif"],
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Plants/Plantern.png", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/Plantern/0.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/Plantern/Plantern.gif"],
     Tooltip: "照亮一片区域, 让玩家可以看穿战场迷雾",
     Produce: '路灯花，能照亮一片区域，让你看清战场迷雾<p>范围：<font color="#FF0000">一片圆形区域</font><br>特点：<font color="#FF0000">使你看清战场迷雾</font></p>灯笼草拒绝科学，他只会埋头苦干。其他植物</font><br>吃的是光，挤出的是氧气。灯笼草吃的是黑暗，</font><br>挤出的却是光。对于他如何能产生光这件事，灯</font><br>笼草持谨慎态度。“我不会说这是‘巫术’，我</font><br>也不会使用‘黑暗力量’，我只是……我想我说</font><br>得够多的了。”',
     PrivateBirth: function(c) {
@@ -3118,7 +3118,7 @@ ostar = InheritO(CPlants, {
     BookHandBack: 3.5,
     Tooltip: "海星果的触手可以轻易掀翻僵尸并造成混乱",
     Produce: '海星果的触手可以轻易掀翻僵尸并造成混乱<p>攻击：<font color="#FF0000">较大</font><br>路径：<font color="#FF0000">随机的撞击线</font></p>海星果永远保持着迷人的微笑，没人知道他那</font><br>么热爱转圈圈却不会头晕的秘密，有人说因为他</font><br>那双斗鸡眼只看一点才不会转晕。',
-    PicArr: ["images/Card/Plants/star.png", "images/Plants/star/0.gif", "images/Plants/star/starRoll.gif"],
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Plants/star.png", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/star/0.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/star/starRoll.gif"],
     AudioArr: ["bowling", "bowlingimpact", "bowlingimpact2"],
     CanAttack: 1,
     InitTrigger: function() {},
@@ -3203,7 +3203,7 @@ ostar1 = InheritO(oNutBowling, {
     canEat: 0,
     BookHandBack: 3,
     Stature: 1,
-    PicArr: ["images/Card/Plants/star.png", "images/Plants/star/0.gif", "images/Plants/star/starRoll.gif"],
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Plants/star.png", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/star/0.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/star/starRoll.gif"],
     Tooltip: "",
     Produce: '',
     PrivateBirth: function(a) {
@@ -3234,7 +3234,7 @@ oGun = InheritO(oPuffShroom, {
     beAttackedPointR: 25,
     BookHandBack: 3.5,
     SunNum: 0,
-    PicArr: ["images/Card/Plants/gun.png", "images/Plants/gun/0.gif", "images/Plants/gun/SeaShroom.gif", "images/Plants/gun/SeaShroomSleep.gif", "images/Plants/gun/ShroomBullet.gif", "images/Plants/gun/ShroomBulletHit.gif"],
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Plants/gun.png", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/gun/0.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/gun/SeaShroom.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/gun/SeaShroomSleep.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/gun/ShroomBullet.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/gun/ShroomBulletHit.gif"],
     CanGrow: function(e, d, f) {
         var c = d + "_" + f,
         b = oGd.$LF[d],
@@ -3244,7 +3244,7 @@ oGun = InheritO(oPuffShroom, {
     Tooltip: "轻型海底作战植物",
     Produce: '水枪草可以直接种在海底，但射程比较短。<p>伤害：<font color="#FF0000">小</font><br>射程：<font color="#FF0000">短</font></p>自从水枪草得到了绝世的吐纳秘籍之后一直在</font><br>不断地练习着，希望自己能够突破三米的射程。',
     PrivateBirth: function(a) {
-        a.BulletEle = NewImg(0, "images/Plants/gun/ShroomBullet.gif", "left:" + (a.AttackedLX - 46) + "px;top:" + (a.pixelTop + 40) + "px;visibility:hidden;z-index:" + (a.zIndex + 2))
+        a.BulletEle = NewImg(0, "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/gun/ShroomBullet.gif", "left:" + (a.AttackedLX - 46) + "px;top:" + (a.pixelTop + 40) + "px;visibility:hidden;z-index:" + (a.zIndex + 2))
     },
     BirthStyle: function(c, d, b, a) {
         EditEle(b, {
@@ -3276,7 +3276,7 @@ oGun = InheritO(oPuffShroom, {
             h = oZ.getZ0(e, f);
             h && h.Altitude == 1 ? (h.getPea(h, 20, 0), (SetStyle(d, {
                 left: g + 38 + "px"
-            })).src = "images/Plants/gun/ShroomBulletHit.gif", oSym.addTask(10, ClearChild, [d])) : (e += 5) < oS.W ? (d.style.left = (g += 5) + "px", oSym.addTask(1, arguments.callee, [j, d, e, f, g])) : ClearChild(d)
+            })).src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/gun/ShroomBulletHit.gif", oSym.addTask(10, ClearChild, [d])) : (e += 5) < oS.W ? (d.style.left = (g += 5) + "px", oSym.addTask(1, arguments.callee, [j, d, e, f, g])) : ClearChild(d)
         },
         [c, $(c), a, b.R, a - 46])
     }
@@ -3291,7 +3291,7 @@ oSeaAnemone = InheritO(oGloomShroom, {
     coolTime: 15,
     BookHandBack: 3.5,
     AudioArr: ["SeaAnemone"],
-    PicArr: ["images/Card/Plants/SeaAnemone.png", "images/Plants/SeaAnemone/0.gif", "images/Plants/SeaAnemone/GloomShroom.gif", "images/Plants/SeaAnemone/GloomShroomSleep.gif", "images/Plants/SeaAnemone/GloomShroomAttack.gif", "images/Plants/SeaAnemone/GloomShroomBullet.gif"],
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Plants/SeaAnemone.png", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/SeaAnemone/0.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/SeaAnemone/GloomShroom.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/SeaAnemone/GloomShroomSleep.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/SeaAnemone/GloomShroomAttack.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/SeaAnemone/GloomShroomBullet.gif"],
     AudioArr: ["kernelpult", "kernelpult2"],
     Tooltip: "电海葵花可以对在他周围的僵尸造成巨大伤害<br>",
     Produce: '电海葵花可以对在他周围的僵尸造成巨大伤害</font></p>自信的电海葵花毫不畏惧任何困难，一头杀马</font><br>特式的发型是他引以为傲的事情，可他说这是上</font><br>次在村口找王师傅给剃的。',
@@ -3309,7 +3309,7 @@ oSeaAnemone = InheritO(oGloomShroom, {
     },
     PrivateBirth: function(b) {
         var a = b.id;
-        NewEle(a + "_Bullet", "div", "position:absolute;visibility:hidden;width:210px;height:200px;left:" + (b.pixelLeft - 60) + "px;top:" + (b.pixelTop - 65) + "px;background:url(images/Plants/SeaAnemone/GloomShroomBullet.gif);z-index:" + (b.zIndex + 1), 0, EDPZ)
+        NewEle(a + "_Bullet", "div", "position:absolute;visibility:hidden;width:210px;height:200px;left:" + (b.pixelLeft - 60) + "px;top:" + (b.pixelTop - 65) + "px;background:url(https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/SeaAnemone/GloomShroomBullet.gif);z-index:" + (b.zIndex + 1), 0, EDPZ)
     },
     NormalAttack: function() {
         PlayAudio("SeaAnemone");
@@ -3329,12 +3329,12 @@ oSeaAnemone = InheritO(oGloomShroom, {
             PlayAudio(["kernelpult", "kernelpult2"][Math.floor(Math.random() * 2)]); --i && oSym.addTask(100, arguments.callee, [i])
         },
         [4]);
-        d.childNodes[1].src = "images/Plants/SeaAnemone/GloomShroomAttack.gif";
+        d.childNodes[1].src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/SeaAnemone/GloomShroomAttack.gif";
         SetVisible($(l));
         ImgSpriter(l, j, [["0 0", 9, 1], ["0 -200px", 9, 2], ["0 -400px", 9, 3], ["0 -600px", 9, 4], ["0 -800px", 9, 5], ["0 -1000px", 9, 6], ["0 -1200px", 9, 7], ["0 -1400px", 9, 8], ["0 -1600px", 9, 9], ["0 -1800px", 9, 10], ["0 -2000px", 9, 11], ["0 -2200px", 9, -1]], 0,
         function(m, n) {
             var i = $(n);
-            $P[n] && (i.childNodes[1].src = "images/Plants/SeaAnemone/GloomShroom.gif");
+            $P[n] && (i.childNodes[1].src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/SeaAnemone/GloomShroom.gif");
             SetHidden($(m))
         })
     }
@@ -3353,7 +3353,7 @@ oTTS = InheritO(CPlants, {
     },
     NormalGif: 1,
     AudioArr: ["TTS"],
-    PicArr: ["images/Card/Plants/TTS.png", "images/Plants/TTS/0.gif", "images/Plants/TTS/Float.gif", "images/Plants/TTS/Grab.png", "images/Plants/TTS/splash.png"],
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Plants/TTS.png", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/TTS/0.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/TTS/Float.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/TTS/Grab.png", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/TTS/splash.png"],
     Tooltip: "会用力抓住靠近他的任何东西",
     Produce: '荆棘海草会用力抓住靠近他的任何东西并拖入</font><br>地下。<p>伤害：<font color="FF0000">巨大</font><br>范围：<font color="#FF0000">一格</font><br>使用方法：<font color="#FF0000">一次性使用。</font></p>荆棘海草最近一次的表白又被捷足先登了，这</font><br>使他很伤心。不过很快他就重新振作起来并吸取</font><br>教训。一定要抓住机会！但他似乎对这句话理解</font><br>有误：他无论碰到什么都会死死地抓住。',
     CanGrow: function(e, d, f) {
@@ -3366,7 +3366,7 @@ oTTS = InheritO(CPlants, {
         return [[b, c, 0]]
     },
     BirthStyle: function(c, d, b, a) {
-        b.childNodes[1].src = "images/Plants/TTS/Float.gif";
+        b.childNodes[1].src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/TTS/Float.gif";
         EditEle(b, {
             id: d
         },
@@ -3385,14 +3385,14 @@ oTTS = InheritO(CPlants, {
         b.getHurt = function() {};
         b.beAttacked = 0;
         b.isAttacking = 1;
-        NewImg(0, "images/Plants/TTS/Grab.png", "left:" + b.beAttackedPointL + "px;top:" + (b.height - 67) + "px", b.Ele);
+        NewImg(0, "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/TTS/Grab.png", "left:" + b.beAttackedPointL + "px;top:" + (b.height - 67) + "px", b.Ele);
         oSym.addTask(50,
         function(g, h) {
             var e = g.id,
             f = h.id,
             d = e + "_splash",
             c = f + "_splash";
-            NewEle(c, "div", "position:absolute;background:url(images/Plants/TTS/splash.png);left:" + (h.AttackedLX - 10) + "px;top:" + (h.pixelTop + h.height - 88) + "px;width:97px;height:88px;over-flow:hidden", 0, EDPZ);
+            NewEle(c, "div", "position:absolute;background:url(https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/TTS/splash.png);left:" + (h.AttackedLX - 10) + "px;top:" + (h.pixelTop + h.height - 88) + "px;width:97px;height:88px;over-flow:hidden", 0, EDPZ);
             ImgSpriter(d, e, [["0 0", 9, 1], ["-97px 0", 9, 2], ["-194px 0", 9, 3], ["-291px 0", 9, 4], ["-388px 0", 9, 5], ["-485px 0", 9, 6], ["-582px 0", 9, 7], ["-679px 0", 9, -1]], 0,
             function(i, j) {
                 ClearChild($(i))
@@ -3416,7 +3416,7 @@ oMagneticmuShroom = InheritO(CPlants, {
     SunNum: 50,
     BookHandBack: 2.5,
     AudioArr: ["Magneticmu"],
-    PicArr: ["images/Card/Plants/MagneticmuShroom.png", "images/Plants/MagneticmuShroom/0.gif", "images/Plants/MagneticmuShroom/Shrubbery.gif", "images/Plants/MagneticmuShroom/ShrubberyBoom.gif" + $Random],
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Plants/MagneticmuShroom.png", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/MagneticmuShroom/0.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/MagneticmuShroom/Shrubbery.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/MagneticmuShroom/ShrubberyBoom.gif" + $Random],
     Tooltip: "磁力菇可以用磁力吸取僵尸的头盔等其它金属物品。",
     Produce: '磁力菇可以吸走周围僵尸的护具<p>范围：<font color="#FF0000">约一行</font><br>使用方法：<font color="#FF0000">安放即可使用（一次性）</font></p>磁力是一种强大的力量，非常强大，强大到有</font><br>时都吓到磁力菇自己了。能力越大，责任越大</font><br>，他不知道自己能否肩负得起这责任',
     InitTrigger: function() {},
@@ -3441,7 +3441,7 @@ oMagneticmuShroom = InheritO(CPlants, {
                 }
                 h.Die(1);
                 EditEle(b.childNodes[1], {
-                    src: "images/Plants/MagneticmuShroom/ShrubberyBoom.gif"
+                    src: "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/MagneticmuShroom/ShrubberyBoom.gif"
                 },
                 {
                     width: "176px",
@@ -3465,7 +3465,7 @@ oLaserBean = InheritO(CPlants, {
     SunNum: 450,
     coolTime: 30,
     HP: 4000,
-    PicArr: ["images/Card/Plants/LaserBean.png", "images/Plants/LaserPea/0.gif", "images/Plants/LaserPea/LaserPea.gif", "images/Plants/LaserPea/LaserPeaSleep.gif", "images/Plants/LaserPea/LaserPeaAttack.gif", "images/Plants/LaserPea/LaserPeaBullet.gif"],
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Card/Plants/LaserBean.png", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/LaserPea/0.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/LaserPea/LaserPea.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/LaserPea/LaserPeaSleep.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/LaserPea/LaserPeaAttack.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/LaserPea/LaserPeaBullet.gif"],
     AudioArr: ["LaserBean"],
     Tooltip: "向一整排僵尸发射高火力激光。",
     Produce: '激光蚕豆向一整排僵尸发射激光<p>范围：<font color="#FF0000">一整排僵尸<p>本豆由上海宝开绘制<br></font><p><br>这位就是大名鼎鼎的激光豆。但是为什么他是</font><br>蚕豆？恐怕没人搞得清楚。',
@@ -3489,7 +3489,7 @@ oLaserBean = InheritO(CPlants, {
     },
     PrivateBirth: function(b) {
         var a = b.id;
-        NewEle(a + "_Bullet", "div", "position:absolute;visibility:hidden;width:343px;height:62px;left:" + b.AttackedRX + "px;top:" + (b.pixelTop + 5) + "px;background:url(images/Plants/LaserPea/LaserPeaBullet.gif);z-index:" + (b.zIndex + 1), 0, EDPZ)
+        NewEle(a + "_Bullet", "div", "position:absolute;visibility:hidden;width:343px;height:62px;left:" + b.AttackedRX + "px;top:" + (b.pixelTop + 5) + "px;background:url(https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/LaserPea/LaserPeaBullet.gif);z-index:" + (b.zIndex + 1), 0, EDPZ)
     },
     PrivateDie: function(a) {
         ClearChild($(a.id + "_Bullet"))
@@ -3508,19 +3508,19 @@ oLaserBean = InheritO(CPlants, {
         a = c + "_Bullet";
         while (e--) { (g = d[e]).Altitude < 2 && g.getHit1(g, 850)
         }
-        b.childNodes[1].src = "images/Plants/LaserPea/LaserPeaAttack.gif";
+        b.childNodes[1].src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/LaserPea/LaserPeaAttack.gif";
         SetVisible($(a));
         ImgSpriter(a, c, [["0 0", 4, 1], ["0 -62px", 4, 2], ["0 -124px", 5, 3], ["0 -186px", 5, 4], ["0 -248px", 5, 5], ["0 -310px", 6, 6], ["0 -372px", 6, 7], ["0 -434px", 7, -1]], 0,
         function(i, j) {
             var h = $(j);
-            $P[j] && (h.childNodes[1].src = "images/Plants/LaserPea/LaserPea.gif", SetHidden($(i)))
+            $P[j] && (h.childNodes[1].src = "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/Plants/LaserPea/LaserPea.gif", SetHidden($(i)))
         })
     }
 }),
 oGoldenPrize = InheritO(CPlants, {
     EName: "oGoldenPrize",
     CName: "金葵花奖杯",
-    PicArr: ["images/interface/0.gif", "images/interface/0.gif"],
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/0.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/0.gif"],
     Tooltip: "恭喜你通过了本挑战关！"
 }),
 oShovel = InheritO(CPlants, {
@@ -3529,6 +3529,6 @@ oShovel = InheritO(CPlants, {
     width: 130,
     height: 114,
     beAttackedPointR: 70,
-    PicArr: ["images/interface/Shovel/0.gif", "images/interface/Shovel/0.gif"],
+    PicArr: ["https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/Shovel/0.gif", "https://gongjv.jun-ye.top/zhiwudazhanjiangsi/images/interface/Shovel/0.gif"],
     Tooltip: "铲子可以移除植物！"
 })
