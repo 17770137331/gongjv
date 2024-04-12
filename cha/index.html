@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/layer.css" id="layuicss-layer">
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/layer.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 center-block" style="float: none;">
+      <br>
+      <div class="panel panel-primary">
+        <div class="panel-heading" style="background: linear-gradient(to right,#b221ff,#14b7ff,#8ae68a);">
+          <h3 class="panel-title">在线查询</h3>
+        </div>
+        <div class="panel-body" style="text-align: center;">
+          <div class="list-group">
+            <div class="list-group-item list-group-item-info" style="font-weight: bold;">
+              <input class="form-control" id="input" placeholder="请输入">
+            </div>
+            <div class="list-group-item">
+              <a onclick="qbang('shoujichaqq')"
+                class="btn btn-block btn-primary"
+                style="background: linear-gradient(to right,#b221ff,#14b7ff);">手机号查询绑定qq</a>
+              <br>
+              <a onclick="qbang('qqchashouji')"
+                class="btn btn-block btn-primary"
+                style="background: linear-gradient(to right,#b221ff,#14b7ff);">qq号查询绑定手机</a>
+              <br>
+              <a onclick="qbang('qqchalol')"
+                class="btn btn-block btn-primary"
+                style="background: linear-gradient(to right,#b221ff,#14b7ff);">QQ号查询LOL信息</a>
+              <br>
+              <a onclick="qbang('lolchaqq')"
+                class="btn btn-block btn-primary"
+                style="background: linear-gradient(to right,#b221ff,#14b7ff);">LOL查询QQ信息</a>
+              <br>
+              <a onclick="qbang('qqchamima')"
+                class="btn btn-block btn-primary"
+                style="background: linear-gradient(to right,#b221ff,#14b7ff);">QQ号查询老密</a>
+              <br>
+              <a onclick="qbang('weibochashouji')"
+                class="btn btn-block btn-primary"
+                style="background: linear-gradient(to right,#b221ff,#14b7ff);">微博通过ID查手机号</a>
+              <br>
+              <a onclick="qbang('shoujichaweibo')"
+                class="btn btn-block btn-primary"
+                style="background: linear-gradient(to right,#b221ff,#14b7ff);">通过手机号查微博ID</a>
+              <br>
+            </div>
+            <div class="list-group-item list-group-item-warning" style="font-weight: bold;display: none;"
+              id="jiexi_data">
+              <div class="input-group">
+                <span class="input-group-addon ">绑定QQ</span>
+                <input type="text" class="form-control" placeholder id="qq" readonly>
+              </div>
+              <div class="input-group">
+                <span class="input-group-addon ">密保手机号码</span>
+                <input type="text" class="form-control" placeholder id="mobile" readonly>
+              </div>
+              <div class="input-group">
+                <span class="input-group-addon">号码归属地</span>
+                <input type="text" class="form-control" placeholder id="mobileduqu" readonly>
+              </div>
+              <div class="input-group">
+                <span class="input-group-addon">QQ密码</span>
+                <input type="text" class="form-control" placeholder id="qqlm" readonly>
+              </div>
+              <div class="input-group">
+                <span class="input-group-addon">LOL信息</span>
+                <input type="text" class="form-control" placeholder id="lol" readonly>
+              </div>
+              <div class="input-group">
+                <span class="input-group-addon">微博UID</span>
+                <input type="text" class="form-control" placeholder id="wbuid" readonly>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default text-center">
+        <div class="panel-body">
+          ©&nbsp;2024&nbsp;&nbsp;在线查询工具
+          <br>
+          <div id="result"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+<script src="./js/index.js"></script>
+
+</body>
+
+</html>
