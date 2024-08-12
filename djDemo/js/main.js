@@ -595,7 +595,7 @@ let musicState=true //是否播放中
 
 function musicPlay(){
   musicState=true
-  objMusic.play()
+  // objMusic.play()
   
   document.addEventListener('WeixinJSBridgeReady',function(){
     objMusic.play()
