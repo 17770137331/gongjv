@@ -179,7 +179,7 @@ var loader=new ImagesLoader();
       'pause.png',
       'play.png',
       'pixels.png',
-    ],'./images/');
+    ],'https://gongjv.jun-ye.top/djDemo/images/');
     loader.complete(function(){
         console.log('completed');
         $('.loading').hide()
