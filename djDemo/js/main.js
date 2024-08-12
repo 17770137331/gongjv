@@ -285,28 +285,29 @@ $('.tabCont li').each(function(i){
     console.log(tadid)
     console.log(i)
     //风景 0-8
-    if((i<=8)&&(i>=0)){
-      let n=i+1
-      let key = new PIXI.Texture.fromImage('https://gongjv.jun-ye.top/djDemo/images/img/bg'+n+'.jpg');
-      app.stage.getChildByName('bg').texture= key;
-    }
+    // if((i<=8)&&(i>=0)){
+    //   let n=i+1
+    //   let key = new PIXI.Texture.fromImage('https://gongjv.jun-ye.top/djDemo/images/img/bg'+n+'.jpg');
+    //   app.stage.getChildByName('bg').texture= key;
+    // }
 
-    //人物 9-14  9新郎  12新娘
+    // //人物 9-14  9新郎  12新娘
 
-    if((i<=14)&&(i>=9)){
-      showSub(i,tadid)
-    }
+    // if((i<=14)&&(i>=9)){
+    //   showSub(i,tadid)
+    // }
 
-    //修饰 15-26
-    if((i<=26)&&(i>=15)){
-      addSpr(2,tadid)
-    }
+    // //修饰 15-26
+    // if((i<=26)&&(i>=15)){
+    //   addSpr(2,tadid)
+    // }
 
-    //宠物 27-32
-    if((i<=32)&&(i>=27)){
+    // //宠物 27-32
+    // if((i<=32)&&(i>=27)){
       
-      addSpr(2,tadid)
-    }
+    //   addSpr(2,tadid)
+    // }
+    addSpr(2,tadid)
   })
 })
 
@@ -436,7 +437,7 @@ function addSpr(who,picname){
   }
 try{
   //清除选中状态
-  // clearSelected()
+  clearSelected()
 }
 catch{
 
@@ -544,7 +545,7 @@ let sprName='' //执行拖拽的精灵组别名
 
 function drapdropTouchStart(e){
   //清除选中状态
-  // clearSelected()
+  clearSelected()
   $('.subtab ul').hide()
 
   //当前精灵组选中状态
