@@ -437,7 +437,7 @@ function addSpr(who,picname){
   }
 try{
   //清除选中状态
-  clearSelected()
+  // clearSelected()
 }
 catch{
 
@@ -545,7 +545,7 @@ let sprName='' //执行拖拽的精灵组别名
 
 function drapdropTouchStart(e){
   //清除选中状态
-  clearSelected()
+  // clearSelected()
   $('.subtab ul').hide()
 
   //当前精灵组选中状态
@@ -656,7 +656,7 @@ function del(){
 //生成海报
 function makehaibao(){
   //清除选中状态
-  clearSelected()
+  // clearSelected()
 
   setTimeout(function(){
     app.render()
