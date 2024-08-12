@@ -92,15 +92,15 @@ var loader=new ImagesLoader();
       $('.txt1').show()
       $('.txt1').addClass('enterTxt1')
 
-      // setTimeout(()=>{
+      setTimeout(()=>{
         $('.txt2').show()
         $('.txt2').addClass('enterTxt2')
-      // },500)
+      },500)
 
-      // setTimeout(()=>{
+      setTimeout(()=>{
         $('.gb').hide()
         $('.bzcj').show()
-      // },3000)
+      },3000)
       
 
     }
