@@ -67,7 +67,6 @@ var loader=new ImagesLoader();
         console.log('completed');
         $('.loading').hide()
         $('.kv').show()
-        addSpr(2, 'pet2')
     });
     loader.process(function(){
         console.log('process'+this.processNum);
@@ -158,9 +157,7 @@ bgSpr.height=1334
 bgSpr.name='bg'
 
 // bgSpr.mask = feface2;
-setTimeout(() => {
-  
-}, 2000)
+addSpr(2, 'pet2')
 app.stage.addChild(bgSpr)
 
 
