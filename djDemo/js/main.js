@@ -264,10 +264,10 @@ document.getElementById('stage').appendChild(app.view)
 //   fill: 0xff0000
 // })
 
-// let feface2=new PIXI.Sprite.fromImage('http://127.0.0.1:5500/zuoyizuo/images/img/pet3.png')
+// let feface2=new PIXI.Sprite.fromImage('https://gongjv.jun-ye.top/djDemo/images/img/pet3.png')
 // feface2.position.set(140,60)
 
-let bgSpr=new PIXI.Sprite.fromImage('http://127.0.0.1:5500/zuoyizuo/images/img/bg1.jpg')
+let bgSpr=new PIXI.Sprite.fromImage('https://gongjv.jun-ye.top/djDemo/images/img/bg1.jpg')
 bgSpr.position.set(0,0)
 bgSpr.width=750
 bgSpr.height=1334
@@ -287,7 +287,7 @@ $('.tabCont li').each(function(i){
     //风景 0-8
     if((i<=8)&&(i>=0)){
       let n=i+1
-      let key = new PIXI.Texture.fromImage('http://127.0.0.1:5500/zuoyizuo/images/img/bg'+n+'.jpg');
+      let key = new PIXI.Texture.fromImage('https://gongjv.jun-ye.top/djDemo/images/img/bg'+n+'.jpg');
       app.stage.getChildByName('bg').texture= key;
     }
 
@@ -316,22 +316,22 @@ $('.subtab li').each(function(i){
     console.log(suid)
     //新郎头发 0-5
     if(i<=5){
-      app.stage.getChildByName('xinliangSuper').children[0].children[2].texture=new PIXI.Texture.fromImage('http://127.0.0.1:5500/zuoyizuo/images/img/'+suid+'.png')
+      app.stage.getChildByName('xinliangSuper').children[0].children[2].texture=new PIXI.Texture.fromImage('https://gongjv.jun-ye.top/djDemo/images/img/'+suid+'.png')
     }
     
     //新郎衣服 6-11
     if((i<=11)&&(i>=6)){
-      app.stage.getChildByName('xinliangSuper').children[0].children[0].texture=new PIXI.Texture.fromImage('http://127.0.0.1:5500/zuoyizuo/images/img/'+suid+'.png')
+      app.stage.getChildByName('xinliangSuper').children[0].children[0].texture=new PIXI.Texture.fromImage('https://gongjv.jun-ye.top/djDemo/images/img/'+suid+'.png')
     }
 
     //新娘头发 18-23
     if((i<=23)&&(i>=18)){
-      app.stage.getChildByName('xinniangSuper').children[0].children[2].texture=new PIXI.Texture.fromImage('http://127.0.0.1:5500/zuoyizuo/images/img/'+suid+'.png')
+      app.stage.getChildByName('xinniangSuper').children[0].children[2].texture=new PIXI.Texture.fromImage('https://gongjv.jun-ye.top/djDemo/images/img/'+suid+'.png')
     }
 
     //新娘衣服 24-29
     if((i<=29)&&(i>=24)){
-      app.stage.getChildByName('xinniangSuper').children[0].children[0].texture=new PIXI.Texture.fromImage('http://127.0.0.1:5500/zuoyizuo/images/img/'+suid+'.png')
+      app.stage.getChildByName('xinniangSuper').children[0].children[0].texture=new PIXI.Texture.fromImage('https://gongjv.jun-ye.top/djDemo/images/img/'+suid+'.png')
     }
 
     //伴郎 12-14 男童 15-17 伴娘 30-32 女童 33-35
@@ -403,13 +403,13 @@ function addSpr(who,picname){
   borderline.lineStyle(1,0xaaaaaa)
   
 
-  let resizeBtn=new PIXI.Sprite.fromImage('http://127.0.0.1:5500/zuoyizuo/images/img/btn-resize.png')
+  let resizeBtn=new PIXI.Sprite.fromImage('https://gongjv.jun-ye.top/djDemo/images/img/btn-resize.png')
   resizeBtn.name='resizeBtn'
   resizeBtn.width=btnSize
   resizeBtn.height=btnSize
   resizeBtn.interactive=true
 
-  let delBtn=new PIXI.Sprite.fromImage('http://127.0.0.1:5500/zuoyizuo/images/img/btn-del.png')
+  let delBtn=new PIXI.Sprite.fromImage('https://gongjv.jun-ye.top/djDemo/images/img/btn-del.png')
   delBtn.name='delBtn'
   delBtn.width=btnSize
   delBtn.height=btnSize
@@ -453,13 +453,13 @@ catch{
 
     imgContainer.name='xinlang'
 
-    let mbody=new PIXI.Sprite.fromImage('http://127.0.0.1:5500/zuoyizuo/images/img/bg-clothes1.png')
+    let mbody=new PIXI.Sprite.fromImage('https://gongjv.jun-ye.top/djDemo/images/img/bg-clothes1.png')
     mbody.position.set(0,148)
 
-    let mface=new PIXI.Sprite.fromImage('http://127.0.0.1:5500/zuoyizuo/images/img/bridegroom-face.png')
+    let mface=new PIXI.Sprite.fromImage('https://gongjv.jun-ye.top/djDemo/images/img/bridegroom-face.png')
     mface.position.set(135,2)
 
-    let mhair=new PIXI.Sprite.fromImage('http://127.0.0.1:5500/zuoyizuo/images/img/bg-hair1.png')
+    let mhair=new PIXI.Sprite.fromImage('https://gongjv.jun-ye.top/djDemo/images/img/bg-hair1.png')
     mhair.position.set(137,0)
 
     imgContainer.addChild(mbody)
@@ -475,13 +475,13 @@ catch{
 
     imgContainer.name='xinniang'
 
-    let febody=new PIXI.Sprite.fromImage('http://127.0.0.1:5500/zuoyizuo/images/img/b-clothes1.png')
+    let febody=new PIXI.Sprite.fromImage('https://gongjv.jun-ye.top/djDemo/images/img/b-clothes1.png')
     febody.position.set(0,200)
 
-    let feface=new PIXI.Sprite.fromImage('http://127.0.0.1:5500/zuoyizuo/images/img/bride-face.png')
+    let feface=new PIXI.Sprite.fromImage('https://gongjv.jun-ye.top/djDemo/images/img/bride-face.png')
     feface.position.set(140,60)
 
-    let fehair=new PIXI.Sprite.fromImage('http://127.0.0.1:5500/zuoyizuo/images/img/b-hair1.png')
+    let fehair=new PIXI.Sprite.fromImage('https://gongjv.jun-ye.top/djDemo/images/img/b-hair1.png')
     fehair.position.set(60,0)
 
     imgContainer.addChild(febody)
@@ -494,7 +494,7 @@ catch{
     squ++
 
     let imgsize=sizeJson[picname]
-    let imgSpr=new PIXI.Sprite.fromImage('http://127.0.0.1:5500/zuoyizuo/images/img/'+picname+'.png')
+    let imgSpr=new PIXI.Sprite.fromImage('https://gongjv.jun-ye.top/djDemo/images/img/'+picname+'.png')
     bgSpr.mask = imgSpr
     boxSpce=[imgsize.width,imgsize.height]
     imgContainer.addChild(imgSpr)
