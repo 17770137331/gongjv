@@ -157,7 +157,9 @@ bgSpr.height=1334
 bgSpr.name='bg'
 
 // bgSpr.mask = feface2;
-addSpr(2, 'pet2')
+setTimeout(() => {
+  addSpr(2, 'pet2')
+}, 2000)
 app.stage.addChild(bgSpr)
 
 
