@@ -92,15 +92,15 @@ var loader=new ImagesLoader();
       $('.txt1').show()
       $('.txt1').addClass('enterTxt1')
 
-      setTimeout(()=>{
+      // setTimeout(()=>{
         $('.txt2').show()
         $('.txt2').addClass('enterTxt2')
-      },500)
+      // },500)
 
-      setTimeout(()=>{
+      // setTimeout(()=>{
         $('.gb').hide()
         $('.bzcj').show()
-      },3000)
+      // },3000)
       
 
     }
@@ -159,7 +159,6 @@ bgSpr.name='bg'
 // bgSpr.mask = feface2;
 addSpr(2, 'pet2')
 app.stage.addChild(bgSpr)
-
 
 //点击页卡内容
 $('.tabCont li').each(function(i){
@@ -317,14 +316,8 @@ function addSpr(who,picname){
       }
     }
   }
-try{
   //清除选中状态
   // clearSelected()
-}
-catch{
-
-}
-
 
   if(who==0){
     //新郎
@@ -532,6 +525,8 @@ function resizeTouchMove(e){
 
 //删除
 function del(){
+  debugger
+  console.log(this.parent)
   app.stage.removeChild(this.parent)
 }
 
